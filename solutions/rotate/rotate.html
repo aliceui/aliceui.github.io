@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>翻转 - 兼容解决方案</title>
+  <link rel="stylesheet" charset="utf-8" href="../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./rotate.css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="container">      
+
+  <ol class="howto">
+    <li>使用 CSS filter 实现 CSS3 的 <code>transform</code> 效果
+    </li>
+    <li>注意: rotate 所占空间与未 rotate 前一样
+    </li>
+    <li>结构(例:3栏):
+      <pre>
+                &lt;span class="sl-rotate .sl-rotate-90"&gt;顺时针转一下&lt;/span&gt;
+                &lt;span class="sl-rotate sl-rotate-90cw"&gt;顺时针转一下&lt;/span&gt;
+                &lt;span class="sl-rotate sl-rotate-90ccw"&gt;逆时针转一下&lt;/span&gt;
+      </pre>
+    </li>
+  </ol> <!-- .howto -->
+    
+
+    <p><span class="sl-rotate sl-rotate-90ccw" style="background:#eee;">逆时针转一下</span></p>
+    
+    <div class="sl-rotate sl-rotate-90cw" style="width:90px;height:90px;background:#9c0;">顺时针转一下</div>
+    
+  </div><!-- #container -->
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

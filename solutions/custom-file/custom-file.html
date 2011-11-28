@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-e">
+<title>自定义 file 上传</title>
+  <link rel="stylesheet" charset="utf-8" href="../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./custom-file.css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+  
+  <div id="container">
+  
+  <ol class="howto">
+    <li>
+      <p>自定义file上传比较常见</p>
+    </li>
+        <li>HTML:
+            <pre>&lt;span class=&quot;sl-custom-file&quot;&gt;
+            &lt;input type=&quot;button&quot; value=&quot;点击选择图片&quot; /&gt;
+            &lt;input type=&quot;file&quot; exts=&quot;png|jpg|bmp&quot; class=&quot;ui-input-file&quot; /&gt;
+            &lt;/span&gt;</pre>
+        </li>     
+    </li>
+  </ol> <!-- .howto -->     
+    
+    <p>
+    <span class="sl-custom-file">
+      <span class="ui-btn ui-btn-ok"><input type="button" value="点击选择图片" class="ui-btn-text" /></span>
+      <input type="file" exts="png|jpg|bmp" class="ui-input-file" />
+    </span>png|jpg|bmp
+    </p>     
+     
+  <span class="sl-custom-file">
+    <input type="button" value="点击选择图片" />
+    <input type="file" accept="png|jpg|bmp" class="ui-input-file" />
+  </span>
+    
+  </div><!-- #container -->
+  
+</div><!-- #wrapper -->
+</body>
+</html>

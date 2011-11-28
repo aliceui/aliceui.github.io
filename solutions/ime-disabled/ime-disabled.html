@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>禁用中文输入 - 兼容解决方案</title>
+  <link rel="stylesheet" charset="utf-8" href="../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="ime-disabled.css" />
+</head>
+
+<body>
+
+<div id="wrapper" class="single">
+    
+  <div id="container">
+  
+      <ol class="howto">
+        <li>HTML:
+                <pre class="auto-style1">
+                &lt;input type=&quot;text&quot; value=&quot;&quot; class=&quot;sl-ime-disabled&quot; /&gt;</pre>
+        </li>
+        <li>优点: 有密码框（等只输入非中文的地方）使用，让用户不需要切换输入法，提升体验，等</li>   
+        </ol>
+        
+    <p>DEMO: 请输入中文</p>
+    <input type="text" value="" class="sl-ime-disabled" />
+    
+  </div><!-- #container -->
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

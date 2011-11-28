@@ -1,0 +1,23 @@
+@charset="utf-8";
+
+/*
+	@ 名称: 自动换行
+	@ 用法: 
+			* 一般块级元素用：.sl-word-break
+			* table中用：.sl-table-break
+	@ 例子：
+		 <span class="sl-custom-file">
+			<input type="button" value="点击选择图片" />
+			<input type="file" exts="png|jpg|bmp" class="ui-input-file" />
+		</span>
+*/
+
+/* 一般 block-level 元素 */
+.sl-word-break, .sl-table-break td, .sl-table-break th{
+	word-wrap:break-word;word-break:break-all;
+}
+
+/* table */
+.sl-table-break{
+	table-layout:fixed;
+}

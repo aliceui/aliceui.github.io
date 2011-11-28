@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Placehoder - 兼容解决方案</title>
+  <link rel="stylesheet" charset="utf-8" href="../base.css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="container">
+  
+  <ol class="howto">
+    <li>Placehoder 的简单实现。推荐 placeholder 转换成 title 的值
+    </li>
+    <li> 实现代码：
+            <pre>
+            var doc = document,
+                inputs = doc.getElementsByTagName('input'),
+            
+                // 检测 placeholder 支持
+                supportPlaceholder = 'placeholder' in doc.createElement('input'),
+            
+                /* 
+                 * 创建 placeholder
+                 * @param {ELEMENT} input 传入的 input 对象
+                 * return {VOID}
+                 * /
+                placeholder = function(input){
+                    var text = input.getAttribute('placeholder'),
+                        defaultValue = input.defaultValue;
+                    
+                    // 制作一个假 placeholder
+                    // 需要 css 配合，在 JS 中设置 style 并不太好
+                    input.value = text;
+            
+                    // 聚焦去掉假 placeholder
+                    input.onfocus = function(){
+                        if(input.value === defaultValue || input.value === text){
+                            this.value = '';
+                        }
+                    }
+            
+                    // 当失焦值为空时，补回 placeholder 的值
+                    input.onblur = function(){
+                        if(input.value === ''){
+                            this.value = text;
+                        }
+                    }
+                };
+            
+            if(!supportPlaceholder){
+                for(var i = 0, len = inputs.length; i < len; i++){
+                    var input = inputs[i], text = input.getAttribute('placeholder');
+                    
+                    // 当 input[type=text] 并且 placeholder 值不为空是执行
+                    if(input.type === 'text' && text){
+                        placeholder(input);
+                    }
+                }    
+            }            
+            </pre>
+    </li>
+    </ol> <!-- .howto --> 
+    
+      
+  <p>Name: <input type="text" placeholder="username"></p>
+    <p>Site: <input type="text" placeholder="http://sofish.de" /></p>
+    
+    
+  </div> <!-- #container -->
+  
+</div> <!-- #wrapper -->
+
+<script>
+var doc = document,
+    inputs = doc.getElementsByTagName('input'),
+    supportPlaceholder = 'placeholder' in doc.createElement('input'),
+    placeholder = function(input){
+        var text = input.getAttribute('placeholder'),
+            defaultValue = input.defaultValue;
+
+        input.value = text;
+        input.onfocus = function(){
+            if(input.value === defaultValue || input.value === text){
+                this.value = '';
+            }
+        }
+        input.onblur = function(){
+            if(input.value === ''){
+                this.value = text;
+            }
+        }
+    };
+
+if(!supportPlaceholder){
+    for(var i = 0, len = inputs.length; i < len; i++){
+        var input = inputs[i], text = input.getAttribute('placeholder');
+        if(input.type === 'text' && text){
+            placeholder(input);
+        }
+    }    
+}
+
+</script>
+
+</body>
+</html>
