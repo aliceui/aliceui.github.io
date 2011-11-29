@@ -7,5 +7,6 @@
 */
 
 .sl-ime-disabled{
-	ime-mode:disabled;
+	ime-mode:disabled!important;
+	
 }
