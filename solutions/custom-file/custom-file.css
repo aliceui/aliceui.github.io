@@ -30,7 +30,6 @@
 	_zoom:10; /* overwrite */
 	height:100%;
 	_height:auto;
-    font-size:300px;
 	opacity:0;
 	filter:alpha(opacity=0);
 	-ms-filter:"alpha(opacity=0)";
