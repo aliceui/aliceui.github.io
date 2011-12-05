@@ -2,13 +2,13 @@
   @ 名称: 1像素圆角
   @ 描述: 需要自己设置宽度，或者高度，否则会随内容自适应
   @ 用法: 
-    最外层：.sl-rc-wrap 
+    最外层：.sl-rc 
     内容层：.sl-rc-cnt
     鼠标经过：.sl-rc-hover
 */
 
 /* base */
-.sl-rc-wrap{
+.sl-rc{
   display:inline-block;vertical-align: middle;
   border-left:1px solid #ddd;border-right:1px solid #ddd;  /* 可重设 */
 }
@@ -25,12 +25,12 @@
 }
 
 /* HACK for ie6 7 */
-div.sl-rc-wrap, p.sl-rc-wrap, h2.sl-rc-wrap, h3.sl-rc-wrap, h4.sl-rc-wrap, h5.sl-rc-wrap, h6.sl-rc-wrap, ul.sl-rc-wrap, ol.sl-rc-wrap{
+div.sl-rc, p.sl-rc, h2.sl-rc, h3.sl-rc, h4.sl-rc, h5.sl-rc, h6.sl-rc, ul.sl-rc, ol.sl-rc{
   *display: inline;
 }
 
 /* 鼠标经过 */
-.sl-rc-hover, .sl-rc-hover .sl-rc-cnt, .sl-rc-wrap:hover, .sl-rc-wrap:hover .sl-rc-cnt{
+.sl-rc-hover, .sl-rc-hover .sl-rc-cnt, .sl-rc:hover, .sl-rc:hover .sl-rc-cnt{
   border-color: #aaa; /* 可重设 */
   text-decoration: none;
 }
