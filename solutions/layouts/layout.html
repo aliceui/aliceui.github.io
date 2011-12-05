@@ -34,22 +34,22 @@
         <p>当需要而已的时候，如果有n栏，那么，&lt; n 的栏都用 <code>.fn-left</code> 让它float left；第n栏，也就是最近一栏使用 <code>.fn-right</code>向左浮动</p>
       </li>
       <li>等高栏
-        <p>在需要等高的栏中，都添加<code>.sl-col-equal</code>来让他们等高</p>
+        <p>在需要等高的栏中，都添加<code>.sl-equalheight-item</code>来让他们等高</p>
       </li>
       <li>结构(例:3栏)：别忘记给每个栏加宽度
         <pre>
-                &lt;div class=&quot;sl-col-cnt&quot;&gt;
+                &lt;div class=&quot;sl-equalheight&quot;&gt;
                   &lt;div class=&quot;fn-left&quot;&gt;...&lt;/div&gt;
                   &lt;div class=&quot;fn-left&quot;&gt;...&lt;/div&gt;
                   &lt;div class=&quot;fn-right&quot;&gt;...&lt;/div&gt;
-                &lt;/div&gt;&lt;!-- .sl-col-cnt --&gt;
+                &lt;/div&gt;&lt;!-- .sl-equalheight --&gt;
         </pre>
       </li>
     </ol> <!-- .howto -->   
   
   
       <h3>2 column</h3>
-      <div class="sl-col-cnt fn-clear">
+      <div class="sl-equalheight fn-clear">
         <div id="col2-1" class="fn-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
@@ -59,17 +59,17 @@
       </div>
   
     <h3>2 column width equal height</h3>
-      <div class="sl-col-cnt fn-clear">
-        <div id="col2-1" class="fn-left sl-col-equal">
+      <div class="sl-equalheight fn-clear">
+        <div id="col2-1" class="sl-equalheight-item fn-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div id="col2-2"  class="fn-right sl-col-equal">
+        <div id="col2-2"  class="sl-equalheight-item fn-right">
         Just another column floated to right
         </div>
       </div>
 
       <h3>3 column width equal height</h3>
-      <div class="sl-col-cnt fn-clear">
+      <div class="sl-equalheight fn-clear">
         <div id="col3-1" class="fn-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
@@ -82,14 +82,14 @@
       </div>
       
       <h3>3 column width equal height</h3>
-      <div class="sl-col-cnt fn-clear">
-        <div id="col3-1" class="fn-left sl-col-equal">
+      <div class="sl-equalheight fn-clear">
+        <div id="col3-1" class="fn-left sl-equalheight-item">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div id="col3-2" class="fn-left sl-col-equal">
+        <div id="col3-2" class="fn-left sl-equalheight-item">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div id="col3-3"  class="fn-right sl-col-equal">
+        <div id="col3-3"  class="fn-right sl-equalheight-item">
         Just another column floated to right
         </div>
       </div>
