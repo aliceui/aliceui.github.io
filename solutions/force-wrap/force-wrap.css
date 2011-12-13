@@ -1,0 +1,22 @@
+@charset="utf-8";
+
+/*
+	@ 名称: 自动换行
+	@ 用法: 
+			* 一般块级元素用：.sl-break
+			* table标签中需添加：.sl-break-table
+    @ 例子: 
+            <p class="sl-break">…</p>
+            
+            <table class="sl-break sl-break-table"></table>
+*/
+
+/* 一般 block-level 元素 */
+.sl-break, .sl-break td, .sl-break th{
+	word-wrap:break-word;word-break:break-all;
+}
+
+/* table */
+.sl-break-table{
+	table-layout:fixed;
+}
