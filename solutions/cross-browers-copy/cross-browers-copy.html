@@ -1,97 +1,46 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="gb2312">
-<title>跨浏览器剪贴功能- 兼容解决方案</title>
-<style type="text/css">
-		body { font-family:arial,sans-serif; font-size:9pt; }
-		
-		.my_clip_button { width:150px; text-align:center; border:1px solid black; background-color:#ccc; margin:10px; padding:10px; cursor:default; font-size:9pt; }
-		.my_clip_button.hover { background-color:#eee; }
-		.my_clip_button.active { background-color:#aaa; }
+    <head>
+    <meta charset="UTF-8">
+    <title>璺ㄦ祻瑙堝櫒鍓创鍔熻兘- 鍏煎瑙ｅ喅鏂规</title>
+    <style type="text/css">
+		body{padding:30px;}
+        p{margin-bottom:15px;}
+        #tip{display:none;color:#080;font-size:12px;}
 	</style>
-	<script type="text/javascript" src="ZeroClipboard.js"></script>
-	<script language="JavaScript">
-		window.onload = function(){	
-			
-			copyTriggle('d_clip_button', 'clip', 'fe_text');
-		}
-		// copyTriggle 中的 buttonID 是触发的按钮id
-		function copyTriggle(buttonID, triggleID, copyTextID) {
-			triggleID = new ZeroClipboard.Client();
-			triggleID.setHandCursor( true );
-			
-			triggleID.addEventListener('mouseOver', function (client) {
-				triggleID.setText( document.getElementById(copyTextID).value);
-			});	
-			triggleID.glue(buttonID);
-		}
-	</script>
 </head>
-
 <body>
-<div id="wrapper" class="single">
-	<div id="sub-nav">
-		<h2>兼容解决方案 &raquo; 跨浏览器剪贴功能</h2>
-		
-		
-		<a class="action-back" href="#">Back</a>
-	</div><!-- #nav -->
-	
-	<div id="container">
-	
-		<div class="howto">
-		<h4>跨浏览器剪贴功能:</h4>
-		<ol>
-			<li>IE本身有提供了原生的支持: <code>clipboardData</code> 和 <code>setData</code>。Firefox 等都没有，因此利用 flash 来做跨浏览器支持。
-			</li>
-			<li>使用：ZeroClipboard （目前最好的解决方式）
-<pre>
-// 设置 flash 地址, 创建实例
-ZeroClipboard.setMoviePath('SWF文件的地址');
-var clip = new ZeroClipboard.Client();
 
-// 详情: http://www.deluxeblogtips.com/2010/06/javascript-copy-to-clipboard.html
-clip.setText(''); 
+<p>Copy to Clipboard: <br />
+    <input id="text" size="40" value="http://aliceui.com"/>
+    <span id="tip"></span>
+</p> 
 
-// js中提供了事件处理器, 等arale可用后再替换
-clip.addEventListener('mouseDown', function(){
-	var pre = document.getElementById('pre');
-	clip.setText(pre.innerHTML);
-});
+<input id="button" type="button" value="copy me!" />
 
-// copy是复制按钮的ID
-clip.glue('copy');
-</pre>
-			</li>
-		</ol>
-	</div><!-- .howto -->			
-		
-	<table width="100%">
-		<tr>
-			<td width="50%" valign="top">
-				<!-- Upload Form -->
-				<table>
-					<tr>
-						<td align="right"><b>Text:</b></td>
-						<td align="left"><textarea id="fe_text" cols=50 rows=5>Copy me!</textarea></td>
-					</tr>
-				</table>
-				<br/>
-				<div id="d_clip_container" style="position:relative">
-					<div id="d_clip_button" class="my_clip_button"><b>Copy To Clipboard...</b></div>
-				</div>
-			</td>
-		</tr>
-	</table>
-	
-	<br/><br/>
-	在这里可以粘贴你复制的内容：<br/>
-	<textarea id="testarea" cols=50 rows=10></textarea><br/>
-	<input type=button value="Clear Test Area" onClick="document.getElementById('testarea').value = '';"/>
-		
-	</div><!-- #container -->
-	
-</div><!-- #wrap -->
+<script type="text/javascript" src="ZeroClipboard.js"></script>
+<script language="JavaScript">
+        var clip = new ZeroClipboard.Client(),
+            doc = document,
+            tip = doc.getElementById('tip'),
+            text = doc.getElementById('text');
+        
+        clip.setText( '' ); // will be set later on mouseDown
+        clip.setHandCursor( true );
+                
+        clip.addEventListener( 'complete', function(client, text) {
+                tip.innerHTML = 'copied鈥�';
+                tip.style.display = 'inline';
+                setTimeout(function(){
+                    tip.style.display = 'none';
+                }, 1000);
+        } );
+        
+        clip.addEventListener( 'mouseDown', function(client) { 
+                clip.setText( text.value );
+        } );
+        
+        clip.glue( 'button' );
+</script>
 </body>
 </html>
