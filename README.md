@@ -1,14 +1,34 @@
-Alice 是支付宝前端部 Alice 小组的产品仓库，这里包括 Alipay Style Library (ASL) 和一些 HTML5/CSS3 的标准研究文档。所有代码有文档均由 Alice 小组负责开发、维护和更新。
+### 一、关于 Alice 的一些话：
 
-### 一、Alipay Style Library (ASL)
+展示网站地址：[http://aliceui.com]();
 
-ASL 是支付宝样式框架的总称，包括一套代码规范、一个代码库（因涉及公司具体体产品，并未开源）、插件库和一套部署、应用方案。目前规范版本为 v3，详见：[Alice V3 规范](https://github.com/sofish/Alice/wiki/Alice-v3-%E8%A7%84%E8%8C%83)
+Alice 是支付宝前端样式解决方案小组的项目代称。她包括构建样式库的 `样式库解决方案`，帮助团队理解新技术的 `W3C标准文档库` 和正在进行中 `实验项目` 等; 也是团队的代称。目前 Alice 的主要职责是提供 CSS 和 HTML 方面的技术支持和解决方案开发。
 
-### 二、HTML5 / CSS3 标准文档 (W3C Specs)
-主要是 W3C 规范的研究和整理。目换是为了方便团队学习。
+基于 `分享·贡献·学习` 的理念建立 [Alice UI](http://aliceui.com, 'Alice UI') 这个网站，开源部分团队成果。发布的所有开源源代码，均采用 [MIT License](http://aliceui.com/license.txt) 许可。欢迎参与 Alice 的开发，或[提出你宝贵的意见](mailto:admin@aliceui.com)。
 
-### 三、技术文章 (Tech Posts)
-一些翻译的文章和技术论文等。
+### 二、想了解更多：
 
-### 四、贡献者名单
+- [Alice 入门指南](http://aliceui.com/getting-start)
+
+ 如何快速开始，了解和使用 Alice 提升团队合作的效率。
+
+- [成为作者/贡献者](http://aliceui.com/getting-start#develop)
+
+ 成为一个代码贡献者、插件作者，或者 fork 一个自己的分支吧，让你的简历多一份可写的内容
+
+- [Alice 样式库解决方案](http://aliceui.com/alice-css)
+
+ 如果我们风格统一，那么代码将是有规可循的。我们可以根据命名了解结构，根据结构理解构建的代码原理。对于跨产品合作，将是无缝的；对于多人 debug 也将是无碍的。样式解决方案正在为这样的目标努力。现在她已经应用于支付宝的各条产品线。
+
+ 她包括一套规范（CSS规范+样式库构建规范），一个兼容解决方案库和一个需要你根据规范和团队产品去构建的团队样式库。
+ 
+- [阅读 HTML5/CSS3 标准文档](http://aliceui.com/w3c-docs)
+
+ 标准化文档项（Standard Specs），目前主要是对 HTML5/CSS3 这些较新的标准技术进行的标准文档研究。使用于标准布道。让更多不熟悉相关技术的人可以阅读更易懂的文档、了解需要注意的点和知悉相关的解决方案。后续计划是产出网站应用新技术的渐进增强方案和实践解决方案。
+ 
+### 三、意见反馈：
+
+ 任何批评、问题和意见等，都欢迎与我们联系：[admin@aliceui.com](mailto:admin@aliceui.com)
+
+
 
