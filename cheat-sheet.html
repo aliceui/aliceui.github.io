@@ -1,0 +1,333 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Alice Cheat-sheet</title>
+<style type="text/css">
+h1{
+	text-align:center;
+	margin-bottom:0;
+	font-family:"conslas";
+	color:#eee;
+}
+h2{
+	padding:4px;
+	background:#dfd5cc;
+	font-size:16px;
+	margin-bottom:0;
+	color: #fff;
+}
+table{
+	width:100%;
+	margin-bottom:10px;
+}
+th,td{
+	font-size:12px;
+	padding:2px 5px;
+}
+caption,th{
+	text-align:left;
+	padding:5px 0;
+	font-family:幼圆
+}
+.left,.right{
+	width:48%;
+	float:left;
+	margin-right:10px;
+}
+dl{
+	margin-left: 18px;
+}
+dt{
+	font-family:"Courier New", Courier, monospace;
+	font-weight:600;
+}
+dd{
+	font-size:13px;
+	font-family:微软雅黑;
+	color:#444;
+}
+.title 
+{
+    font: 345% "Microsoft YaHei";
+    color: #d76c48;
+    left: 4px;
+    margin:0; 
+    padding-bottom: .2em;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+.pr{
+	position:relative;
+}
+.pa{
+	position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Alice CSS解决方案</h1>
+
+<div class="left">
+
+<h2>Base</h2>
+<dl>
+	<dt>fn-hide</dt>
+	<dd>隐藏</dd>
+	<dt>fn-clear</dt>
+	<dd>清除浮动</dd>
+	<dt>fn-left</dt>
+	<dd>左浮动</dd>
+	<dt>fn-right</dt>
+	<dd>右浮动</dd>
+	<dt></dt>
+	<dd></dd>
+	</dl>
+<h2>Form UI Component</h2>
+<dl><dt>ui-input</dt>
+	<dd>输入框</dd>
+	<dt>ui-button</dt>
+	<dd>按钮</dd>
+	<dt>ui-button-ok</dt>
+	<dd>表单提交按钮</dd>
+	<dt>ui-button-round</dt>
+	<dd>圆角按钮</dd>
+	<dt>ui-form</dt>
+	<dd>表单</dd>
+	<dt>ui-form-item</dt>
+	<dd>表单项</dd>
+	<dt>ui-form-item ui-form-error</dt>
+	<dd>出错表单项</dd>
+	<dt>ui-form-item ui-form-warn</dt>
+	<dd>警告的表单项</dd>
+	<dt>ui-form-status</dt>
+	<dd>表单提交状态</dd>
+	<dt>ui-banklist</dt>
+	<dd>银行列表</dd>
+</dl>
+<h2>Container</h2>
+	<dl><dt>ui-title</dt>
+	<dd>标题</dd>
+	<dt>ui-faq</dt>
+	<dd>常见问答</dd>
+	<dt></dt>
+	<dd></dd>
+</dl>
+<h2>Solution</h2>
+<dl>
+	<dt>sl-rc-wrap</dt>
+	<dd>1px圆角</dd>
+	<dt>sl-custom-file</dt>
+	<dd>自定义file控件外观</dd>
+	<dt>sl-resizefont</dt>
+	<dd>自定义字体大小</dd>
+	<dt>sl-ime-disabled</dt>
+	<dd>禁用输入法</dd>
+	<dt>sl-col-cnt</dt>
+	<dd>布局，包括常用的等高栏</dd>
+	<dt>sl-col-equal</dt>
+	<dd>等高</dd>	
+	<dt>sl-word-break</dt>
+	<dd>块级文本强制换行</dd>
+	<dt>sl-table-break</dt>
+	<dd>表格文本强制换行</dd>
+	<dt>fixed-top</dt>
+	<dd>固定位置</dd>
+	<dt>sl-select-free </dt>
+	<dd>IE6 select穿透</dd>		
+	<dt></dt>
+	<dd></dd>
+</dl>
+</div>
+<div class="right">
+<h2>JS Component</h2>
+<div class="pr">
+<dl>
+	<dt>ui-xbox</dt>
+	<dd>xbox</dd>
+	<dt>ui-autocomplete</dt>
+	<dd>自动完成</dd>
+	<dt>ui-counter</dt>
+	<dd>倒计时</dd>
+	<dt>ui-dropdown</dt>
+	<dd>下拉选择框</dd>
+	<dt>ui-progressbar</dt>
+	<dd>进度条</dd>
+	<dt>ui-tab</dt>
+	<dd>tab</dd>
+	<dt>ui-accordion</dt>
+	<dd>手风琴</dd>
+	<dt></dt>
+	<dd></dd>
+</dl>
+<h2>Table</h2>
+<dl>
+	<dt>ui-table</dt>
+	<dd>表格</dd>
+	<dt>ui-table ui-table-detail</dt>
+	<dd>表单确认表格</dd>
+	<dt>ui-table ui-table-no-grid</dt>
+	<dd>无间隔线表格</dd>
+	<dt>ui-table ui-table-radius</dt>
+	<dd>圆角表头表格</dd>			
+	<dt></dt>
+	<dd></dd>
+</dl>
+<h2>Navigator</h2>
+<dl>
+	<dt>ui-step</dt>
+	<dd>个人版步骤</dd>
+	<dt>ui-page</dt>
+	<dd>分页</dd>
+	<dt>ui-nav</dt>
+	<dd>垂直导航</dd>		
+	<dt></dt>
+	<dd></dd>
+</dl>
+	<div class="pa">
+		
+	</div>
+</div>
+
+<br />
+<h2>附：</h2>
+<table style="width: 72%" cellpadding="0" cellspacing="0" bordercolordark="#cccccc" bordercolorlight="#ffffff" border="1">
+	<caption>前缀说明</caption>
+	<thead>
+		<tr>
+			<th>类型</th>
+			<th>前缀</th>
+			<th>由来</th>
+		</tr>
+	</thead>
+	<tr>
+		<td>功能型</td>
+		<td>fn</td>
+		<td>function</td>
+	</tr>
+	<tr>
+		<td>JS用到</td>
+		<td>J</td>
+		<td>javascript</td>
+	</tr>
+</table>
+<table style="width: 72%" cellpadding="0" cellspacing="0" bordercolordark="#cccccc" bordercolorlight="#ffffff" border="1">
+	<caption>约定样式</caption>
+	<thead>
+		<tr>
+			<th style="width: 139px">名称</th>
+			<th style="width: 153px">说明</th>
+			<th>由来</th>
+		</tr>
+	</thead>
+	<tr>
+		<td style="width: 139px">first</td>
+		<td style="width: 153px">标签集合第一个</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td style="width: 139px">last</td>
+		<td style="width: 153px">标签集合最后一个</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td style="width: 139px">container</td>
+		<td style="width: 153px">容器</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td style="width: 139px">selected</td>
+		<td style="width: 153px">被选择的项</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td style="width: 139px">hover</td>
+		<td style="width: 153px">悬停的项</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td style="width: 139px">current</td>
+		<td style="width: 153px">当前项</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td style="width: 139px">header</td>
+		<td style="width: 153px">头部</td>
+		<td>header</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-focus</td>
+		<td style="width: 153px">当前焦点</td>
+		<td>focus</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-mini</td>
+		<td style="width: 153px">小</td>
+		<td>small</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-disabled</td>
+		<td style="width: 153px">禁用</td>
+		<td>disabled</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-title</td>
+		<td style="width: 153px">组件标题</td>
+		<td>title</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-content</td>
+		<td style="width: 153px">组件内容</td>
+		<td>content</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-text</td>
+		<td style="width: 153px">文本内容</td>
+		<td>text</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-success</td>
+		<td style="width: 153px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-error</td>
+		<td style="width: 153px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-warn</td>
+		<td style="width: 153px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="width: 139px">-explain</td>
+		<td style="width: 153px">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<div>
+<pre>约定Hack：
+	*width	IE6+
+	_width	IE6
+	只对IE写hack
+		
+基类扩展类：
+	class="基类 扩展类"，如 class="ui-btn ui-btn-ok" 描述“确定”按钮。 
+	class="ui-btn ui-btn-cancel" 描述“取消”按钮
+</pre>
+</div>
+</div>
+
+<div class="title">
+   Alice Cheat Sheet
+</div>
+
+
+</body>
+
+</html>
