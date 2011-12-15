@@ -1,10 +1,3 @@
----
-title: CSS3 Transform
-layout: doc
-categories:
-- css3
----
-
 <h1 style="font-family:Courier New">CSS3: Transform</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)

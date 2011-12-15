@@ -1,10 +1,3 @@
----
-title: HTML5 Web Workers API
-layout: doc
-categories:
-- html5
----
-
 <h1 style="font-family:Courier New">HTML5: Web Workers API</h1>
 <ol style="font-family:Courier New"><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
 <li><a href="#spec-api" target="_self">API 参考</a></li>

@@ -1,10 +1,3 @@
----
-title: CSS3 Backgrounds
-layout: doc
-categories:
-- css3
----
-
 # CSS3: Backgrounds
 
 1. [浏览器支持](#spec-browser)

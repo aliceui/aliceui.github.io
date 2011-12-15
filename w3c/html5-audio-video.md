@@ -1,10 +1,3 @@
----
-title: HTML5 Audio &amp; Video API
-layout: doc
-categories:
-- html5
----
-
 <h1 style="font-family:Courier New">HTML5: Audio &amp; Video API</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)

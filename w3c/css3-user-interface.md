@@ -1,10 +1,3 @@
----
-title: CSS3 User Interface
-layout: doc
-categories:
-- css3
----
-
 <h1 style="font-family:Courier New">CSS3: user-interface</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
