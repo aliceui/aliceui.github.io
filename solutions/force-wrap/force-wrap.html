@@ -2,50 +2,47 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>强制换行 - 兼容解决方案</title>
-  <link rel="stylesheet" charset="utf-8" href="../base.css" />
-  <link rel="stylesheet" charset="utf-8" href="./nowrapurl.css" />
+<title>强制换行</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./force-wrap.css" />
+  <style type="text/css">
+		body{padding:30px;}
+        p, table{margin-bottom:15px;}
+        h3{font-size:20px;}
+        table th{background:#fbfbfb;}
+        table td, table th{border:1px dotted #eee;padding:10px;}
+  </style>
 </head>
 
 <body>
 
 <div id="wrapper" class="single">
 
-  <div id="container">      
-  
-  <ol class="howto">
-    <li>一般块级元素添加 <code>class="sl-break"</code>
-      <p>如 <code>&lt;div class="sl-break"&gt;&lt;/div&gt;</code></p>
-    </li>
-    <li>table, 同理: 添加 <code>class="sl-break sl-break-table"</code>
-    </li>
-  </ol>  <!-- .howto -->
-    
   <div class="fn-clear" style="margin-bottom:30px;">
-  <p class="fn-left sl-break" style="width:200px;margin-top:20px;margin-right:30px;background:#e8edef;">
-    <strong>EXPECTED:</strong><br />
-    http://support.sugarsync.com/ics/support/default.asp?deptID=4579&task=knowledge&questionID=332!!safsafow49737563483; oisdfkhq98w9qhibci3uycriu1nxiu3yzb8snyxr437ctg43uob24t3zni4ybc27ty4372t4ccccix3yt3ui2xgnfrioszrunrsafwqwqfxqw|salfk/1214232s/af/
+  <h3>一般块元素换行:</h3>
+  <p class="fn-left sl-wrap" style="width:200px;margin-top:20px;margin-right:30px;background:#e8edef;">
+    http://aliceui.com/helloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceui
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </p>
   
+  <h3>一般块元素不换行:</h3>
   <p class="fn-left" style="width:200px;margin-top:20px;background:#ffc;">
-  <strong >NOWRAP:</strong><br />
-  http://support.sugarsync.com/ics/support/default.asp?deptID=4579&task=knowledge&questionID=332!!safsafow49737563483; oisdfkhq98w9qhibci3uycriu1nxiu3yzb8snyxr437ctg43uob24t3zni4ybc27ty4372t4ccccix3yt3ui2xgnfrioszrunrsafwqwqfxqw|salfk/1214232s/af/
+  http://aliceui.com/helloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceui
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
+  </p>
   </div>
   
-  <table width="500px;" class="sl-break sl-break-table">
+  <table width="500px;" class="sl-wrap sl-wrap-table">
     <tr>
-      <th colspan="2"><strong>EXPECTED:</strong></th>
+      <th colspan="2"><h3>换行的 table:</h3></th>
     </tr>
     <tr>
       <td>
-      http://support.sugarsync.com/ics/support/default.asp?deptID=4579&task=knowledge&questionID=332!!safsafow49737563483; oisdfkhq98w9qhibci3uycriu1nxiu3yzb8snyxr437ctg43uob24t3zni4ybc27ty4372t4ccccix3yt3ui2xgnfrioszrunrsafwqwqfxqw|salfk/1214232s/af/
+      http://aliceui.com/helloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceui
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </td>
       <td>
-      http://support.sugarsync.com/ics/support/default.asp?deptID=4579&task=knowledge&questionID=332!!safsafow49737563483; oisdfkhq98w9qhibci3uycriu1nxiu3yzb8snyxr437ctg43uob24t3zni4ybc27ty4372t4ccccix3yt3ui2xgnfrioszrunrsafwqwqfxqw|salfk/1214232s/af/
+      http://aliceui.com/helloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceuihelloalicehelloalicehelloaliceuihelloaliceui
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </td>
     </tr>
@@ -53,7 +50,7 @@
     
   <table width="500px;" style="margin-bottom:20px;">
   <tr>
-    <th colspan="2"><strong>unEXPECTED:</strong></th>
+    <th colspan="2"><h3>未换行的 table:</h3></th>
   </tr>
     <tr>
       <td>
@@ -66,10 +63,6 @@
       </td>
     </tr>
   </table>
-  
-
-  
-  </div><!-- #container -->
   
 </div><!-- #wrapper -->
 

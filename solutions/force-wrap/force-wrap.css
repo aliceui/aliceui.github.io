@@ -1,22 +1,22 @@
 @charset="utf-8";
 
 /*
-	@ 名称: 自动换行
+	@ 名称: 强制换行
 	@ 用法: 
-			* 一般块级元素用：.sl-break
-			* table标签中需添加：.sl-break-table
+			* 一般块级元素用：.sl-wrap
+			* table标签中需添加：.sl-wrap-table
     @ 例子: 
-            <p class="sl-break">…</p>
+            <p class="sl-wrap">…</p>
             
-            <table class="sl-break sl-break-table"></table>
+            <table class="sl-wrap sl-wrap-table"></table>
 */
 
 /* 一般 block-level 元素 */
-.sl-break, .sl-break td, .sl-break th{
+.sl-wrap, .sl-wrap td, .sl-wrap th{
 	word-wrap:break-word;word-break:break-all;
 }
 
 /* table */
-.sl-break-table{
+.sl-wrap-table{
 	table-layout:fixed;
 }

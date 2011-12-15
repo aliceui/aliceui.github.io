@@ -2,32 +2,22 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Drop Shadow - 兼容解决方案</title>
-  <link rel="stylesheet" charset="utf-8" href="../base.css" />
-  <link rel="stylesheet" charset="utf-8" href="dropshadow.css" />
+<title>跨浏览器投影</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./drop-shadow.css" />
+  <style type="text/css">
+		body{padding:30px;}
+        p{margin-bottom:15px;}
+  </style>
 </head>
 
 <body>
 
-<div id="wrapper" class="single">
-  <div id="container">
-  <ol class="howto">
-    <li>使用 CSS filter 实现 CSS3 的<code>box-shadow</code> 效果，使用控制不同方向的投影来消除 filter 实现投影有噪点的不足。</li>
-    <li>注意：记得添加 background 属性，防止 IE 把投影转移到文字上</li>
-    <li>用法：
-      <pre>
-            &lt;div class=&quot;sl-shadow&quot;&gt;
-            &lt;d!-- your context to go --&gt;
-            &lt;/div&gt;&lt;!-- .sl-shadow --&gt;
-      </pre>
-    </li>
-  </ol> <!-- .howto -->     
+<div id="wrapper" class="single">     
     
     <div class="sl-shadow" style="width:500px;height:300px;padding:20px;">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
      </div><!-- sl-shadow -->
-
-  </div><!-- #container -->
   
 </div><!-- #wrapper -->
 

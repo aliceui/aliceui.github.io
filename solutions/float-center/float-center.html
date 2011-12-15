@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Float:center - 兼容解决方案</title>
-  <link rel="stylesheet" charset="utf-8" href="../base.css" />
-  <link rel="stylesheet" charset="utf-8" href="./floatcenter.css" />
+<title>Float:center</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./float-center.css" />
   <style type="text/css">
-    h3{font-size:30px;margin:20px 0 10px;padding-bottom: 1px solid #eee;}
+	body{padding:30px;}
+    p{margin-bottom:15px;}
+    
     .sl-floatcenter{border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:3px 0;}
     .sl-floatcenter-item{border:3px solid orange;background:#f36;color:#fff;padding:3px 10px;}
   </style>
@@ -15,33 +17,15 @@
 <body>
 
 <div id="wrapper" class="single">
-  
-  <div id="container">
-  
-    <ol class="howto">
-      <li>使用：
-        <p>外框加上 .sl-floatcenter, 子元素加上 .sl-floatcenter-item，元素就可以自动根据父元素的宽度水平居中</p>
-      </li>
-      <li>结构:
-        <pre>
-                &lt;ul class="sl-floatcenter clearfix"&gt;
-                  &lt;li class="sl-floatcenter-item"&gt;item1&lt;/li&gt;
-                  &lt;li class="sl-floatcenter-item"&gt;item2&lt;/li&gt;
-                  &lt;li class="sl-floatcenter-item"&gt;item3&lt;/li&gt;
-                &lt;/ul&gt;
-        </pre>
-      </li>
-    </ol> <!-- .howto -->   
-  
-  
-      <ul class="sl-floatcenter clearfix">
-        <li class="sl-floatcenter-item">item1</li>
-        <li class="sl-floatcenter-item">item2</li>
-        <li class="sl-floatcenter-item">item3</li>
-      </ul>
-  
 
-  </div><!-- #container -->
+  <ul class="sl-floatcenter clearfix">
+    <li class="sl-floatcenter-item">item1</li>
+    <li class="sl-floatcenter-item">item2</li>
+    <li class="sl-floatcenter-item">item3</li>
+    <li class="sl-floatcenter-item">item4</li>
+    <li class="sl-floatcenter-item">item5</li>
+    <li class="sl-floatcenter-item">item6</li>
+  </ul>
   
 </div><!-- #wrapper -->
 
