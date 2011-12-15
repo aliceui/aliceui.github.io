@@ -1,4 +1,4 @@
-官!DOCTYPE > > > >p://aliceui.com]()
+官方网站：[http://aliceui.com]()
 
 ## 一、关于 Alice 的一些话：
 
