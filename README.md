@@ -6,7 +6,16 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
 
 基于 `分享·贡献·学习` 的理念建立 [Alice UI](http://aliceui.com, 'Alice UI') 这个网站，开源部分团队成果。发布的所有开源源代码，均采用 [MIT License](http://aliceui.com/license.txt) 许可。欢迎参与 Alice 的开发，或[提出你宝贵的意见](mailto:admin@aliceui.com)。
 
-## 二、想了解更多：
+## 二、仓库目录结构：
+    
+    ---
+     |---- `plugins/`   浏览器兼容解决方案对应的编辑器插件
+     |---- `solutions/` 浏览器兼容解决方案
+     |---- `w3c/`       HTML5/CSS3 标准文档
+     |---- `base.css`   Alice 的基础，所有样式均基于它
+     |---- `readme.md`     
+
+## 三、想了解更多：
 
 #### 1.[Alice 入门指南](http://aliceui.com/getting-start)
 
@@ -24,7 +33,7 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
 
 标准化文档项（Standard Specs），目前主要是对 HTML5/CSS3 这些较新的标准技术进行的标准文档研究。使用于标准布道。让更多不熟悉相关技术的人可以阅读更易懂的文档、了解需要注意的点和知悉相关的解决方案。后续计划是产出网站应用新技术的渐进增强方案和实践解决方案。
  
-## 三、意见反馈：
+## 四、意见反馈：
 
 任何批评、问题和意见等，都欢迎与我们联系：[admin@aliceui.com](mailto:admin@aliceui.com)
 
