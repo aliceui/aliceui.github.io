@@ -1,4 +1,4 @@
-官方网站：[http://aliceui.com]()
+官!DOCTYPE > > > >p://aliceui.com]()
 
 ## 一、关于 Alice 的一些话：
 
@@ -38,6 +38,15 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
 ## 四、意见反馈：
 
 任何批评、问题和意见等，都欢迎与我们联系：[admin@aliceui.com](mailto:admin@aliceui.com)
+
+## 五、版权和许可
+
+基于 [MIT License](http://en.wikipedia.org/wiki/MIT_License "WikiPedia 中关于 MIT License 的描述") 开源。版权属于 [Sofish Lin](http://aliceui.com) 和 `支付宝前端样式库团队` 所有。版权说明文件可以在这个链接中查看：
+
+[http://aliceui.com/license.txt]()
+
+
+
 
 
 
