@@ -15,8 +15,8 @@
 		3. [方法] 提供模板化的CSS class方法, 规则如下:
 	
 	      <div class="sl-hvalign" style="width:500px"> <!-- 记得加宽度, 不要写行内样式, 这里只是一个提示 -->
-	             <div class="sl-hvalign-cntr">
-	                     <div class="sl-hvalign-cnt">
+	             <div class="sl-hvalign-cnt">
+	                     <div class="sl-hvalign-cnt-inner">
 	                           <!-- your code -->
 	                     </div>
 	             </div>
@@ -32,14 +32,14 @@
 	*position:relative;
 }
 
-.sl-hvalign-cntr{
+.sl-hvalign-cnt{
 	display:table-cell;
 	vertical-align: middle;
 	*position:absolute;
 	top:50%;
 }
 
-.sl-hvalign-cnt{
+.sl-hvalign-cnt-inner{
 	*position:relative;
 	*top:-50%;
 }

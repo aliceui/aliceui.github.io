@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Css 线性渐变</title>
-  <link rel="stylesheet" charset="utf-8" href="../base.css" />
-  <link rel="stylesheet" charset="utf-8" href="../1px_roundCorner/1px_roundcorner.css" />
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="../1px-round-corner/1px-round-corner.css" />
   <style type="text/css">
+    body{padding:30px;}
+    p{margin-bottom:15px;}
+    
     #t span.sl-rc-cnt{
       padding:0 10px;height:30px;line-height: 30px;color:#333;  
       background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e3e3e3));
@@ -41,33 +44,16 @@
 <body>
 
 <div id="wrapper">
-  <div id="container">  
-  
-  <ol class="howto">
-    <li>ͦ挺恶心的，但兼容所有A-Grade浏览器：
-            <pre>
-            background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f6));
-            background: -moz-linear-gradient(top,  #fff,  #f4f5f6);
-            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f5f6');
-            </pre>
-    </li>
-    <li>注：没有现成的class提供样式 | 记得ie的color要写全6位，不然显示不正常 | 
-    引用1px圆角</li>
-    <li>注：在实际项目中只能使用二梯度二色线性渐变，多梯度渐变请暂时不要使用。
-    线二梯度渐变生成器。<a href="http://css3please.com/" target="_blank">在线二
-      梯度渐变生成器</a>在架构组内部可以使用多梯度渐变。<a href="http://www.colorzilla.com/gradient-editor/" target="_blank">在线多梯度渐变</a>
-    </li>
-  </ol> <!-- .howto -->
         
   <table id="t">
     <tr>
       <td width="120">
-        <a href="#" class="sl-rc-wrap">
+        <a href="#" class="sl-rc">
           <span class="sl-rc-cnt">button</span>
         </a>
       </td>
-      <td width="680">
-        <div class="linearbox sl-rc-wrap">
+      <td width="380">
+        <div class="linearbox sl-rc">
           <div class="sl-rc-cnt">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
@@ -75,9 +61,6 @@
       </td>
     </tr>
   </table><!-- #t -->
-    
-    
-  </div><!-- #container -->
   
 </div><!-- #wrapper -->
 

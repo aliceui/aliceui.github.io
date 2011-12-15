@@ -2,41 +2,21 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>去链接、按钮虚线框 - 兼容解决方案</title>
-  <link rel="stylesheet" charset="utf-8" href="../base.css" />
-  <link rel="stylesheet" charset="utf-8" href="./outline.css" />
+<title>去链接、按钮虚线框</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./remove-outline.css" />
+  <style type="text/css">
+		body{padding:30px;}
+        p{margin-bottom:15px;}
+  </style>
 </head>
 
 <body>
 
 <div id="wrapper">
-
-  <div id="container">
-
-  <ol class="howto">
-    <li>IE6
-      <p>一般情况下，链接的outline不应该去除。如果outline形状极丑陋的情况下，视觉效果很差。IE6需要添加以下属性来去除。<code>hidefocus="true"</code></p>
-    </li>
-    <li>Firefox按钮
-            <pre>
-            /* for Firefox */
-            input[type=submit]::-moz-focus-inner,input[type=button]::-moz-focus-inner{    
-              border : 0px; 
-            }
-            /* for IE8 */
-            input[type=submit]:focus, input[type=button]:focus{      
-                outline : none;  
-            } 
-            </pre>
-    </li>
-    <li>更多，请看小鱼的文章：http://sofish.de/1366/</li>
-  </ol> <!-- .howto -->
     
   <p>IE6: <a href="#" hidefocus="true">A outline:hidefocus</a></p>
   <p>Firefox: <input type="button" class="btn" value="no outline button" /></p>
-
-    
-  </div><!-- #container -->
   
 </div><!-- #wrapper -->
 
