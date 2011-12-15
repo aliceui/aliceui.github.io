@@ -17,19 +17,19 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
 
 ## 三、想了解更多：
 
-#### 1.[Alice 入门指南](http://aliceui.com/getting-start)
+#### 1. [Alice 入门指南](http://aliceui.com/getting-start)
 
 如何快速开始，了解和使用 Alice 提升团队合作的效率。
 
-#### 2.[成为作者/贡献者](http://aliceui.com/getting-start#develop)
+#### 2. [成为作者/贡献者](http://aliceui.com/getting-start#develop)
 
 成为一个代码贡献者、插件作者，或者 fork 一个自己的分支吧，让你的简历多一份可写的内容
 
-#### 3.[Alice 样式库解决方案](http://aliceui.com/alice-css)
+#### 3. [Alice 样式库解决方案](http://aliceui.com/alice-css)
 
 如果我们风格统一，那么代码将是有规可循的。我们可以根据命名了解结构，根据结构理解构建的代码原理。对于跨产品合作，将是无缝的；对于多人 debug 也将是无碍的。样式解决方案正在为这样的目标努力。现在她已经应用于支付宝的各条产品线。
  
-#### 4.[阅读 HTML5/CSS3 标准文档](http://aliceui.com/w3c-docs)
+#### 4. [阅读 HTML5/CSS3 标准文档](http://aliceui.com/w3c-docs)
 
 标准化文档项（Standard Specs），目前主要是对 HTML5/CSS3 这些较新的标准技术进行的标准文档研究。使用于标准布道。让更多不熟悉相关技术的人可以阅读更易懂的文档、了解需要注意的点和知悉相关的解决方案。后续计划是产出网站应用新技术的渐进增强方案和实践解决方案。
  
