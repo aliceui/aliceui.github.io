@@ -11,4 +11,4 @@
 
 5. 在文档中输入sl，如下图，选择需要的代码片段，按tab键完成补全。 
 
- ![alt 补全提示](./img/coda.png "补全提示")
+ ![alt 补全提示](https://github.com/sofish/Alice/raw/master/plugins/Coda/img/coda.png "补全提示")
