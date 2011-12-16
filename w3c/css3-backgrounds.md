@@ -147,7 +147,7 @@
 
 **（2）CSS:**
 
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>属性<br>

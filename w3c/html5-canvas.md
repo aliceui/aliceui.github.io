@@ -7,7 +7,7 @@
 6. [参考文献](#spec-ref)
 
 <h2>一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;margin-left:40px" summary="Browser support for HTML5 Graphics &amp; Embedded 
+<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;" summary="Browser support for HTML5 Graphics &amp; Embedded 
 Content" height="190" width="920">
 <tbody>
 <tr>
@@ -397,7 +397,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -434,7 +434,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px">&nbsp; <br>
+<div style="">&nbsp; <br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -472,7 +472,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -499,7 +499,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -547,7 +547,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -573,7 +573,7 @@ Context: var ctx = canvas.getContext('2d');
 </tbody>
 </table>
 **4. Cheetsheet**
-<div id="b.g-" style="margin-left:40px;text-align:left"><img src="images/HTML5-Canvas-Cheetsheet.png" style="height:1027px;width:1388px"></div>
+<div id="b.g-" style=";text-align:left"><img src="images/HTML5-Canvas-Cheetsheet.png" style="height:1027px;width:1388px"></div>
 
 <h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
 * [Deviant Art Muro](http://muro.deviantart.com/ "Deviant Art Muro")

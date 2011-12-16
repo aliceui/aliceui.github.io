@@ -118,7 +118,7 @@
 </tbody>
 </table>
 **2. Video Codes**
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;margin-left:40px" summary="Browser support for 
+<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;" summary="Browser support for 
 HTML5 Video Codecs" height="223" width="920">
 <tbody>
 <tr>

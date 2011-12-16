@@ -7,7 +7,7 @@
 6. [参考文献](#spec-ref)
 
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="472" width="920">
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="472" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>

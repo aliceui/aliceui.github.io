@@ -7,7 +7,7 @@
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -72,7 +72,7 @@
 </table>
 <br>
 <h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1. API SPEC</b>: <a href="http://www.w3.org/TR/offline-webapps/" id="mgxz" title="http://www.w3.org/TR/offline-webapps/">http://www.w3.org/TR/offline-webapps/</a><br>
+<div style=""><b>1. API SPEC</b>: <a href="http://www.w3.org/TR/offline-webapps/" id="mgxz" title="http://www.w3.org/TR/offline-webapps/">http://www.w3.org/TR/offline-webapps/</a><br>
 <br>
 <b>2. HTML<br>
 <br>
@@ -113,9 +113,9 @@
 </table>
 <br>
 </div>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<div style="margin-left:40px"><b>3. Scripting API</b><br>
+<div style=""><b>3. Scripting API</b><br>
 <br>
 </div>
 <div style="margin-left:80px"><b>(1) 浏览器检测<br>
@@ -126,7 +126,7 @@
 (2) 在线还是离线?<br>
 <br>
 </b>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="57" width="495">
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="57" width="495">
 <tbody>
 <tr>
 <th class="tertiary-heading" scope="col"> navigator 属性<br>
@@ -152,7 +152,7 @@
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; // 离线<br>
 &nbsp;&nbsp; &nbsp; }<br>
 <br>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms 
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms 
 Inputs" height="57" width="495">
 <tbody>
 <tr>
@@ -184,7 +184,7 @@ Inputs" height="57" width="495">
 <br>
 (4) Cache States</b><br>
 &nbsp;&nbsp; &nbsp;
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for 
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for 
 HTML5 Forms 
 Inputs" height="57" width="495">
 <tbody>
@@ -233,7 +233,7 @@ Inputs" height="57" width="495">
 </tbody>
 </table>
 <br>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for 
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for 
 HTML5 Forms 
 Inputs" height="57" width="495">
 <tbody>
@@ -296,7 +296,7 @@ Inputs" height="57" width="495">
 <b><br>
 (5) 更新缓存</b><br>
 &nbsp;&nbsp; &nbsp;
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for 
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for 
 HTML5 Forms 
 Inputs" height="57" width="495">
 <tbody>

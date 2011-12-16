@@ -7,7 +7,7 @@
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="zeroBorder" style="font-family:Courier New;margin-left:40px" height="166" width="920">
+<table class="zeroBorder" style="font-family:Courier New;" height="166" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -77,7 +77,7 @@
 </table>
 <br>
 <h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1. API SPEC</b>: <a href="http://dev.w3.org/html5/websockets/" id="ve.m" title="http://dev.w3.org/html5/websockets/">http://dev.w3.org/html5/websockets/</a><br>
+<div style=""><b>1. API SPEC</b>: <a href="http://dev.w3.org/html5/websockets/" id="ve.m" title="http://dev.w3.org/html5/websockets/">http://dev.w3.org/html5/websockets/</a><br>
 <br>
 <b>2. SCRIPT</b><br>
 </div>
@@ -97,7 +97,7 @@ socket.onopen = function () {<br>
 <br>
 <b>(2) Scripting API:</b><br>
 <br>
-<table id="m:6l" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="311" width="920">
+<table id="m:6l" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="311" width="920">
 <tbody>
 <tr>
 <th style="text-align:left">API<br>
@@ -148,7 +148,7 @@ socket.onopen = function () {<br>
 </tbody>
 </table>
 <br>
-<table id="rnih" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="181" width="678">
+<table id="rnih" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="181" width="678">
 <tbody>
 <tr>
 <th>WebSocket 事件<br>
@@ -183,7 +183,7 @@ socket.onopen = function () {<br>
 </tbody>
 </table>
 <br>
-<table id="m:6l" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="175" width="530">
+<table id="m:6l" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="175" width="530">
 <tbody>
 <tr>
 <th>readyState 状态码<br>

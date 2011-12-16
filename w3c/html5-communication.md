@@ -7,7 +7,7 @@
 6. [参考文献](#spec-ref)
 
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="zeroBorder" style="font-family:Courier New;margin-left:40px" height="178" width="920">
+<table class="zeroBorder" style="font-family:Courier New;" height="178" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -145,7 +145,7 @@ javascript
 
 
 <div style="margin-left:80px">
-<table id="j4ex" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="622">
+<table id="j4ex" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="622">
 <tbody>
 <tr>
 <th><font face="Courier New">postMessage(message, targetOrigin, [, ports]);</font><br>
@@ -173,9 +173,9 @@ javascript
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table id="gqid" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="623">
+<table id="gqid" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="623">
 <tbody>
 <tr>
 <th>message 事件<br>
@@ -224,7 +224,7 @@ javascript
 
 XMLHttpRequest
 
-<table id="v_as" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="352" width="621">
+<table id="v_as" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="352" width="621">
 <tbody>
 <tr>
 <th>New XMLHttpRequest Level 2 <a href="http://www.w3.org/TR/2010/WD-XMLHttpRequest2-20100907/#event-xhr-loadstart" id="m6ve" title="progress event">progress event</a> names<br>

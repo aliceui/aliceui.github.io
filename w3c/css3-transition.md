@@ -74,7 +74,7 @@
 <h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-transitions/](http://www.w3.org/TR/css3-transitions/ "http://www.w3.org/TR/css3-transitions/")<br/>
 **（2）CSS:**
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -148,7 +148,7 @@
 </tbody>
 </table>
 <br>
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>transition-timing-function 的值<br>
@@ -197,7 +197,7 @@
 </tbody>
 </table>
 **（3）触发交互: 伪类** （JS-evnet-like?）
-<div style="margin-left:40px">&nbsp;&nbsp; &nbsp; 
+<div style="">&nbsp;&nbsp; &nbsp; 
 <table class="zeroBorder" border="0" cellpadding="3" height="159" width="920">
 <tbody>
 <tr>

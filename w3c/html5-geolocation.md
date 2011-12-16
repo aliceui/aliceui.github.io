@@ -7,7 +7,7 @@
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;margin-left:40px" summary="Browser support for HTML5 
+<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;" summary="Browser support for HTML5 
 Web Applications" height="125" width="920">
 <tbody></tbody>
  
@@ -68,19 +68,19 @@ Web Applications" height="125" width="920">
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br style="font-family:Courier New">
+<div style=""><br style="font-family:Courier New">
 </div>
 <h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1.</b> <b>API SPEC:</b> <a href="http://dev.w3.org/geo/api/spec-source.html" id="l8tt" title="http://dev.w3.org/geo/api/spec-source.html">http://dev.w3.org/geo/api/spec-source.html</a><br>
+<div style=""><b>1.</b> <b>API SPEC:</b> <a href="http://dev.w3.org/geo/api/spec-source.html" id="l8tt" title="http://dev.w3.org/geo/api/spec-source.html">http://dev.w3.org/geo/api/spec-source.html</a><br>
 </div>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 <b>2. Geoloation 数据来源：</b><br>
 <br>
  &nbsp;&nbsp;&nbsp; 注：Geolocation 获取的经纬度是数字格式的，如：Latitude: 39.17222, Longitude: -120.13778，而非 39°10'20'。<br>
  &nbsp;&nbsp; </div>
-<ul style="margin-left:40px"><li>IP address-based getlocation data<br>
+<ul style=""><li>IP address-based getlocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -109,9 +109,9 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <br>
-<ul style="margin-left:40px"><li>GPS-based geolocation data<br>
+<ul style=""><li>GPS-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -140,9 +140,9 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <br>
-<ul style="margin-left:40px"><li>Wi-Fi-based geolocation data<br>
+<ul style=""><li>Wi-Fi-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -165,9 +165,9 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <br>
-<ul style="margin-left:40px"><li>Cell phone-based geolocation data<br>
+<ul style=""><li>Cell phone-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -200,12 +200,12 @@ Web Applications" height="125" width="920">
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <br>
-<ul style="margin-left:40px"><li>User-Defined-based geolocation data<br>
+<ul style=""><li>User-Defined-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <table class="zeroBorder" style="margin-left:80px">
 <tbody>
@@ -242,7 +242,7 @@ Web Applications" height="125" width="920">
 <b>&nbsp;&nbsp; &nbsp; <br>
  &nbsp;&nbsp; &nbsp; 3.</b><font face="courier new"><b>位置数据请问方式<br>
 </b></font><br>
-<table class="zeroBorder" style="margin-left:40px">
+<table class="zeroBorder" style="">
 <tbody>
 <tr>
 <th style="text-align:left"><font face="courier new">方式<br>
@@ -268,20 +268,20 @@ Web Applications" height="125" width="920">
 </tbody>
 </table>
 <br>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 <b>4.</b><font face="courier new"><b>Script</b></font><br>
 </div>
 <div style="margin-left:80px"> &nbsp;&nbsp;&nbsp; <br style="font-family:Courier New">
 <font face="courier new">var geoLocation = navigator.geolocation;</font><br>
 </div>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 <font face="courier new"><b> &nbsp;&nbsp;&nbsp; (1)浏览器检测</b></font><br>
 <br>
 </div>
 <div style="margin-left:120px"><font face="courier new">var hasGeolocation</font> = !!(navigator.geolocation);<br>
 <br>
 </div>
-<div style="margin-left:40px"><font face="courier new"><b>&nbsp;&nbsp; &nbsp;(2)Scripting API<br>
+<div style=""><font face="courier new"><b>&nbsp;&nbsp; &nbsp;(2)Scripting API<br>
  &nbsp;&nbsp;&nbsp; <br>
 </b></font></div>
 <font face="courier new"><b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</b>&nbsp;&nbsp; &nbsp; &lt;1&gt; 获取 geolocation 数据模式：</font><br>
@@ -313,7 +313,7 @@ new">方式</font><br>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <div style="margin-left:80px"><b>&nbsp;</b>&nbsp; &nbsp; <br>
 &nbsp;&nbsp; &nbsp; &lt;2&gt; <font face="courier new">navigator.geolocation</font> 方法:<br>
@@ -490,9 +490,9 @@ new">方式</font><br>
 &nbsp;&nbsp; &nbsp;<a href="http://www.ip2location.com/html5geolocationapi.aspx" id="sx3t" title="Using the traditional Geolocation via IP address">Using the traditional Geolocation via IP address</a><br>
 <h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
 <ul><li>Geolocation 涉及到用户隐私。在用的时候应该慎重。在获取 Geolocation 的时候，一定要征求用户的意思。这是规范中设定的。这就是为什么很多服务都会问你要不要分享自己的位置时有一个Checkbox选项。比较 twitpic.com。在发送用户隐私的时候，可能需要做加密。在隐藏保护的架构上：</li></ul>
-<div id="tw2n" style="margin-left:40px;text-align:left">&nbsp;&nbsp;&nbsp; <img src="images/HTML5-Geolocation.png" style="height:286px;width:558px"><br>
+<div id="tw2n" style=";text-align:left">&nbsp;&nbsp;&nbsp; <img src="images/HTML5-Geolocation.png" style="height:286px;width:558px"><br>
 </div>
-<div id="tw2n" style="margin-left:40px;text-align:left">
+<div id="tw2n" style=";text-align:left">
 <ol><li>Geolocation Application 是不能直接访问设备的，只能通过请求浏览器来访问设备；</li>
 <li>网站页面下载 后，Geolocation Application 调用请求，浏览器截取之，将请求用户的意见；</li>
 <li>浏览器内部包含通过 IP 地址、Wi-Fi、GPS 获取坐标的功能；</li>

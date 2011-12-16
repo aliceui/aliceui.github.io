@@ -6,7 +6,7 @@
 5. [参考文献](#spec-ref)
 
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -92,7 +92,7 @@
 2. **CSS:**
     **(1) transform 2D**
 
-<table class="proptable zeroBorder" style="margin-left:40px;margin-right:auto;text-align:left" height="250" width="920">
+<table class="proptable zeroBorder" style=";margin-right:auto;text-align:left" height="250" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -129,7 +129,7 @@
 </tbody>
 </table>
 <br>
-<table class="proptable zeroBorder" style="margin-left:40px;margin-right:auto;text-align:left" height="118" width="946">
+<table class="proptable zeroBorder" style=";margin-right:auto;text-align:left" height="118" width="946">
 <tbody>
 <tr>
 <th>transform-fucntion<br>
@@ -214,7 +214,7 @@ angle, 角度。<br>
 </tbody>
 </table>
 <br>
-<table class="proptable zeroBorder" style="margin-left:40px;margin-right:auto;text-align:left" height="118" width="946">
+<table class="proptable zeroBorder" style=";margin-right:auto;text-align:left" height="118" width="946">
 <tbody>
 <tr>
 <th>transform-origin 的值<br>

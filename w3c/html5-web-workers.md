@@ -7,7 +7,7 @@
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -68,7 +68,7 @@
 </table>
 <br>
 <h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
+<div style=""><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
 <br>
 <b>2. 浏览器检测:</b><br>
 <br>
@@ -170,7 +170,7 @@
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
 &nbsp;&nbsp;&nbsp; <a href="http://sofish.de/file/html5/worker/" id="e8m4" title="Web Workers Demo">Web Workers Demo</a><br>
@@ -197,7 +197,7 @@
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
 <h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -258,7 +258,7 @@
 </table>
 <br>
 <h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
+<div style=""><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
 <br>
 <b>2. 浏览器检测:</b><br>
 <br>
@@ -360,7 +360,7 @@
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
 &nbsp;&nbsp;&nbsp; <a href="http://sofish.de/file/html5/worker/" id="e8m4" title="Web Workers Demo">Web Workers Demo</a><br>
