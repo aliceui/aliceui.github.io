@@ -12,5 +12,5 @@ cp -rf AliceSolution.mode ~/Library/Application\ Support/Coda/Modes/
 4. 如需 Alice Solution 自动完成，选择 `Text > Syntax Mode > AliceSolution` 即`文本 > 语法模式 > AliceSolution`。
 
 5. 在文档中输入sl，如下图，选择需要的代码片段，按tab键完成补全。 
-
+ 
  ![alt 补全提示](https://github.com/sofish/Alice/raw/master/plugins/Coda/preview.png?raw=true "补全提示")
