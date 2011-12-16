@@ -1,11 +1,11 @@
-## Alice Solutions 
+## 一、Alice Solutions 
 
 欢迎你来开发自己的 solutions，`fork` 我们，给我们 `pull request`；或者直接发邮件到 [admin@aliceui.com](mailto:admin@aliceui.com)。solutions 可以是：
 
 - 浏览器 bug 兼容问题的解决方案
 - HTML5/CSS3 的跨浏览器解决方案
 
-## 现有 solutions 目录结构
+## 二、现有 solutions 目录结构
 
     .
     ├── 1px-round-corner        1像素圆角
