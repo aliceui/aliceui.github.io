@@ -3,7 +3,6 @@
 - 解压 alice-solution-for-Coda.zip，含 AliceSolution.clipes 和 AliceSolution.mode。
 
 - 将 `AliceSolution.mode` 拷贝至 Coda 编辑器的 Modes 目录下。
-
  <pre>
 cp -rf AliceSolution.mode ~/Library/Application\ Support/Coda/Modes/
  </pre>
