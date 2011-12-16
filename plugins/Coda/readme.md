@@ -4,7 +4,9 @@
 
 - 将 `AliceSolution.mode` 拷贝至 Coda 编辑器的 Modes 目录下。
 
-    cp -rf AliceSolution.mode ~/Library/Application\ Support/Coda/Modes/
+ <pre>
+cp -rf AliceSolution.mode ~/Library/Application\ Support/Coda/Modes/
+ </pre>
 
 - 双击 `AliceSolution.clipes`, 将Solution导入coda clips。
 
