@@ -9,6 +9,6 @@
 └── VIM             VIM 插件                  
 </pre>
 
-目前这三个插件的作者都是 Alice Team 的 [62mm](http://xinxin.li) 完成（这MM真厉害）。
+目前这三个插件的作者都是 Alice Team 的 [62mm](http://xinxin.li) 完成。
     
 欢迎为 Alice Solutions 开发插件，同样的，可能 `fork` 我们给我们 `pull request`。或者直接 Email 你的插件到 [admin@aliceui.com](mailto:admin@aliceui.com)。
