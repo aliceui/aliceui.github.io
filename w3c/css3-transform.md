@@ -241,7 +241,7 @@ angle, 角度。<br>
 1. 坐标相对于元素原来的位置，调整 transform 的坐标原点，将会让 transform 的结果不同。<br>
 <br>
 </font>
-<div id="zvlp" style="text-align:left"><img src="images/css3-transform.png" style="height:210px;width:556px"></div>
+<div id="zvlp" style="text-align:left"><img src="/images/css3-transform.png" style="height:210px;width:556px"></div>
 <br>
 <br>
 <font face="Courier New">2. 接受1个或者2个值。</font><br>
