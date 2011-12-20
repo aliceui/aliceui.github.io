@@ -1,13 +1,13 @@
-<h1 style="font-family:Courier New">HTML5: Web Workers API</h1>
-<ol style="font-family:Courier New"><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
+<h1>HTML5: Web Workers API</h1>
+<ol><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
 <li><a href="#spec-api" target="_self">API 参考</a></li>
 <li><a href="#spec-demo" target="_self">DEMO</a></li>
 <li><a href="#spec-caution" target="_self">注意事项</a></li>
 <li><a href="#spec-solution" target="_self">兼容解决方案</a></li>
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -67,8 +67,8 @@
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style=""><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
+<h2 id="spec-api">二、API 参考</h2>
+<div><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
 <br>
 <b>2. 浏览器检测:</b><br>
 <br>
@@ -79,7 +79,7 @@
 &nbsp;&nbsp; &nbsp; var worker = new Worker('worker.js')<br>
 <br>
 </div>
-<table class="zeroBorder" style="margin-left:80px" height="317" width="712">
+<table class="zeroBorder"  height="317" width="712">
 <tbody>
 <tr>
 <th style="text-align:left">API<br>
@@ -142,7 +142,7 @@
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; console.log(e.message);<br>
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; } &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br>
 <br>
-<table class="zeroBorder" style="margin-left:80px" height="108" width="728">
+<table class="zeroBorder"  height="108" width="728">
 <tbody>
 <tr>
 <th style="text-align:left">onerror 事件<br>
@@ -172,13 +172,13 @@
 </table>
 <div style=""><br>
 </div>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo" >三、DEMO</h2>
 &nbsp;&nbsp;&nbsp; <a href="http://sofish.de/file/html5/worker/" id="e8m4" title="Web Workers Demo">Web Workers Demo</a><br>
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution" >四、注意事项</h2>
 &nbsp;&nbsp;&nbsp; null<br>
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution" >五、兼容解决方案</h2>
 &nbsp;&nbsp;&nbsp; JS 本身就是单线程的。只能做相应的模仿。<br>
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref" >六、参考文献</h2>
 <ul><li>BOOK:《Pro HTML5 Programming》</li>
 <li><a class="internal" href="https://developer.mozilla.org/En/DOM/Worker" rel="internal">Worker</a><br>
 </li>
@@ -187,16 +187,15 @@
 <li><a href="http://answers.oreilly.com/topic/1358-introducing-the-web-workers-api/">Introducing the Web Workers API</a><br>
 </li>
 <a href="http://dev.opera.com/articles/view/web-workers-rise-up/" id="nncz" title="Web Workers rise up!"></a><li><a href="http://www.findmebyip.com/litmus" title="HTML5 &amp; CSS3 Support, Web Design Tools &amp; Support">HTML5 &amp; CSS3 Support, Web Design Tools &amp; Support</a></li></ul>
-<br style="font-family:Courier New">
-<h1 style="font-family:Courier New">HTML5: Web Workers API</h1>
-<ol style="font-family:Courier New"><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
+<h1>HTML5: Web Workers API</h1>
+<ol><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
 <li><a href="#spec-api" target="_self">API 参考</a></li>
 <li><a href="#spec-demo" target="_self">DEMO</a></li>
 <li><a href="#spec-caution" target="_self">注意事项</a></li>
 <li><a href="#spec-solution" target="_self">兼容解决方案</a></li>
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
@@ -256,10 +255,8 @@
 </tr>
 </tbody>
 </table>
-<br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style=""><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
-<br>
+<h2 id="spec-api">二、API 参考</h2>
+<div><b>1. API SPEC:</b> <a href="http://www.whatwg.org/specs/web-workers/current-work/" id="q622" title="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a><br>
 <b>2. 浏览器检测:</b><br>
 <br>
 &nbsp;&nbsp; var hasWorker = typeof(Worker) !== 'undefined';<br>
@@ -269,7 +266,7 @@
 &nbsp;&nbsp; &nbsp; var worker = new Worker('worker.js')<br>
 <br>
 </div>
-<table class="zeroBorder" style="margin-left:80px" height="317" width="712">
+<table class="zeroBorder" height="317" width="712">
 <tbody>
 <tr>
 <th style="text-align:left">API<br>
@@ -332,7 +329,7 @@
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; console.log(e.message);<br>
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; } &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br>
 <br>
-<table class="zeroBorder" style="margin-left:80px" height="108" width="728">
+<table class="zeroBorder"  height="108" width="728">
 <tbody>
 <tr>
 <th style="text-align:left">onerror 事件<br>
@@ -360,15 +357,13 @@
 </tr>
 </tbody>
 </table>
-<div style=""><br>
-</div>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo" >三、DEMO</h2>
 &nbsp;&nbsp;&nbsp; <a href="http://sofish.de/file/html5/worker/" id="e8m4" title="Web Workers Demo">Web Workers Demo</a><br>
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 &nbsp;&nbsp;&nbsp; null<br>
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution" >五、兼容解决方案</h2>
 &nbsp;&nbsp;&nbsp; JS 本身就是单线程的。只能做相应的模仿。<br>
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref" >六、参考文献</h2>
 <ul><li>BOOK:《Pro HTML5 Programming》</li>
 <li><a class="internal" href="https://developer.mozilla.org/En/DOM/Worker" rel="internal">Worker</a><br>
 </li>
@@ -377,5 +372,3 @@
 <li><a href="http://answers.oreilly.com/topic/1358-introducing-the-web-workers-api/">Introducing the Web Workers API</a><br>
 </li>
 <a href="http://dev.opera.com/articles/view/web-workers-rise-up/" id="nncz" title="Web Workers rise up!"></a><li><a href="http://www.findmebyip.com/litmus" title="HTML5 &amp; CSS3 Support, Web Design Tools &amp; Support">HTML5 &amp; CSS3 Support, Web Design Tools &amp; Support</a></li></ul>
-<br style="font-family:Courier New">
-
