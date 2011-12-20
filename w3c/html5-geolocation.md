@@ -490,7 +490,7 @@ new">方式</font><br>
 &nbsp;&nbsp; &nbsp;<a href="http://www.ip2location.com/html5geolocationapi.aspx" id="sx3t" title="Using the traditional Geolocation via IP address">Using the traditional Geolocation via IP address</a><br>
 <h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
 <ul><li>Geolocation 涉及到用户隐私。在用的时候应该慎重。在获取 Geolocation 的时候，一定要征求用户的意思。这是规范中设定的。这就是为什么很多服务都会问你要不要分享自己的位置时有一个Checkbox选项。比较 twitpic.com。在发送用户隐私的时候，可能需要做加密。在隐藏保护的架构上：</li></ul>
-<div id="tw2n" style=";text-align:left">&nbsp;&nbsp;&nbsp; <img src="images/HTML5-Geolocation.png" style="height:286px;width:558px"><br>
+<div id="tw2n" style=";text-align:left">&nbsp;&nbsp;&nbsp; <img src="/images/HTML5-Geolocation.png" style="height:286px;width:558px"><br>
 </div>
 <div id="tw2n" style=";text-align:left">
 <ol><li>Geolocation Application 是不能直接访问设备的，只能通过请求浏览器来访问设备；</li>
