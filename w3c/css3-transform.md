@@ -1,11 +1,11 @@
-<h1 style="font-family:Courier New">CSS3: Transform</h1>
+<h1>CSS3: Transform</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
@@ -333,8 +333,7 @@ Transform 3D 目前只有 safari 5 支持。大家自己瞄规范吧。
 
 <h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
 * matrix(a, c, b, d, tx, ty)，在 Firefox 中，tx, ty 允许是长度单位，而 webkit 只允许数字
-* 在 IE6～8 中，可以使用 Microsoft's[Matrix Filter](http://msdn.microsoft.com/en-us/library/ms533014%28VS.85,loband%29.aspx "http://msdn.microsoft.com/en-us/library/ms533014(VS.85,loband).aspx")
-
+* 在 IE6～8 中，可以使用 Microsoft [Matrix Filter](http://msdn.microsoft.com/en-us/library/ms533014%28VS.85,loband%29.aspx "http://msdn.microsoft.com/en-us/library/ms533014(VS.85,loband).aspx") 
 <h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
 * [CSS3 2D Transforms](http://www.w3.org/TR/css3-2d-transforms/ "http://www.w3.org/TR/css3-2d-transforms/#transform-origin-property")
 * [-moz-transform](https://developer.mozilla.org/en/CSS/-moz-transform#Live_Examples "-moz-transform")
