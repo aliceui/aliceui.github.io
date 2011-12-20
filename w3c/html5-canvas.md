@@ -270,7 +270,7 @@ Context: var ctx = canvas.getContext('2d');
 <td rowspan="2" style="text-align:left">x, y 为结束点坐标；cp1x, cp1y 为第一个控制点的坐标;同上；cp2x, cp2y 为第二个控制点的坐标。<br>
 <br>
 <font color="#999999">注：quadratic curve 只有一个控制点，而bezier curve有两个控制点。所以，别把数字 1 写成字母 L 的小写。</font><br>
-<img src="images/HTML5-Canvas-bezierCurveTo.png" style="height:190px;width:190px"><br>
+<img src="/images/HTML5-Canvas-bezierCurveTo.png" style="height:190px;width:190px"><br>
 </td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ Context: var ctx = canvas.getContext('2d');
  &nbsp;&nbsp; swidth, sheight 想实现目标图片的大小；<br>
  &nbsp;&nbsp; dx, dy, 目标图片在画面中的位置坐标点；<br>
  &nbsp;&nbsp; dwidth, dheight 目标图片在画布中的大小。<br>
-<div id="bqa0" style="text-align:left"><img src="images/HTML5-Canvas-drawImage.jpg" style="height:290px;width:300px">&nbsp; &nbsp;&nbsp; <br>
+<div id="bqa0" style="text-align:left"><img src="/images/HTML5-Canvas-drawImage.jpg" style="height:290px;width:300px">&nbsp; &nbsp;&nbsp; <br>
 </div>
 </td>
 </tr>
@@ -379,14 +379,14 @@ Context: var ctx = canvas.getContext('2d');
 </td>
 <td style="text-align:left">线条起始点模式。type 有 3 种：butt/round/square。默认为 butt。<br>
 <font color="#999999">注：butt 与 spuare 的区别是，spuare 的半个 spuare 在基准线给的两端突出。如图：</font><br>
-<div id="du53" style="text-align:left"><img src="images/HTML5-Canvas-lineCap.png" style="height:190px;width:190px"></div>
+<div id="du53" style="text-align:left"><img src="/images/HTML5-Canvas-lineCap.png" style="height:190px;width:190px"></div>
 </td>
 </tr>
 <tr>
 <td style="text-align:left">lineJoin = type<br>
 </td>
 <td style="text-align:left">线组合模式。type 有 3 种：round/bevel/miter。默认为 miter。<br>
-<div id="muct" style="text-align:left"><img src="images/HTML5-Canvas-lineJoin.png" style="height:190px;width:190px"></div>
+<div id="muct" style="text-align:left"><img src="/images/HTML5-Canvas-lineJoin.png" style="height:190px;width:190px"></div>
 </td>
 </tr>
 <tr>
@@ -516,14 +516,14 @@ Context: var ctx = canvas.getContext('2d');
 <td style="text-align:left">translate(x, y)<br>
 </td>
 <td style="text-align:left">把 canvas 的原点行动到 x, y 作为其新原点。<br>
-<div id="eapv" style="text-align:left"><img src="images/HTML5-Canvas-translate.png" style="height:220px;width:220px"></div>
+<div id="eapv" style="text-align:left"><img src="/images/HTML5-Canvas-translate.png" style="height:220px;width:220px"></div>
 </td>
 </tr>
 <tr>
 <td style="text-align:left">rotate(angle)<br>
 </td>
 <td style="text-align:left">&nbsp;顺时间旋转。angle 是指弧度，像 arc 的 startAngle 和 endAngle。<br>
-<div id="j90c" style="text-align:left"><img src="images/HTML5-Canvas-rotate.png" style="height:220px;width:220px"></div>
+<div id="j90c" style="text-align:left"><img src="/images/HTML5-Canvas-rotate.png" style="height:220px;width:220px"></div>
 </td>
 </tr>
 <tr>
@@ -565,15 +565,15 @@ Context: var ctx = canvas.getContext('2d');
 </td>
 <td style="text-align:left"><br>
 共 12 种状态。有多层的状态下。会稍有不同。大家自己手写一下，印象会更深刻一点。分别如下图显示：<br>
-<br>
-<div id="arl7" style="text-align:left"><img src="images/HTML5-Canvas-globalCompositeOperation.png" style="height:492px;width:610px"></div>
+<br/>
+<div id="arl7" style="text-align:left"><img src="/images/HTML5-Canvas-globalCompositeOperation.png" style="height:492px;width:610px"></div>
 <br>
 </td>
 </tr>
 </tbody>
 </table>
 **4. Cheetsheet**
-<div id="b.g-" style=";text-align:left"><img src="images/HTML5-Canvas-Cheetsheet.png" style="height:1027px;width:1388px"></div>
+<div id="b.g-" style=";text-align:left"><img src="/images/HTML5-Canvas-Cheetsheet.png" style="height:1027px;width:1388px"></div>
 
 <h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
 * [Deviant Art Muro](http://muro.deviantart.com/ "Deviant Art Muro")
