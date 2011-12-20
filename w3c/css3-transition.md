@@ -160,7 +160,7 @@
 <td style="text-align:left">关于 timing function<br>
 </td>
 <td style="text-align:left">这个属性通过 <a href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves" id="h.yd" title="贝塞尔曲线">贝塞尔曲线</a> 来决定元素在视觉上的变化。像 photoshop 中的钢笔工具，通常通过来个控制点 p1, p2 来控制 p0, p3 这条线的外观。 
-<div id="qeqo" style="text-align:left"><img src="images/css3-transition.png" style="height:351px;width:379px"></div>
+<div id="qeqo" style="text-align:left"><img src="/images/css3-transition.png" style="height:351px;width:379px"></div>
 <br>
 </td>
 </tr>
