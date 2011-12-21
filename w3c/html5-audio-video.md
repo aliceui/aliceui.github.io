@@ -1,4 +1,4 @@
-<h1 style="font-family:Courier New">HTML5: Audio &amp; Video API</h1>
+<h1>HTML5: Audio &amp; Video API</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
@@ -6,9 +6,9 @@
 5. [兼容解决方案](#spec-solution)
 6. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 **1. Audio Codecs**
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;" summary="Browser support for HTML5 Audio Codecs" height="256" width="920">
+<table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Audio Codecs" height="256" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -118,7 +118,7 @@
 </tbody>
 </table>
 **2. Video Codes**
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;" summary="Browser support for 
+<table class="litmus-browser-support-results zeroBorder" summary="Browser support for 
 HTML5 Video Codecs" height="223" width="920">
 <tbody>
 <tr>
@@ -218,7 +218,7 @@ HTML5 Video Codecs" height="223" width="920">
 </tbody>
 </table>
 
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html](http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html "http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html")
 
 * &lt;audio&gt;
@@ -260,7 +260,7 @@ javascript
            // audio 同 video。
 
 **(2)媒体控制**
-<table class="zeroBorder" style="margin-left:80px" height="205" width="920">
+<table class="zeroBorder" height="205" width="920">
 <tbody>
 <tr>
 <th style="text-align:left">Function<br>
@@ -275,7 +275,7 @@ javascript
 <td style="text-align:left">load()<br>
 </td>
 <td style="text-align:left">下载媒体源<br>
-<font color="#999999">除非是动态生成的元素，一般情况下并不需要这个来调用源。可以用其来进行预加载</font><br>
+除非是动态生成的元素，一般情况下并不需要这个来调用源。可以用其来进行预加载<br>
 </td>
 </tr>
 <tr>
@@ -294,14 +294,14 @@ javascript
 <td style="text-align:left">canPlayType(type)<br>
 </td>
 <td style="text-align:left">可以播放的类型（MIME type）<br>
-<font color="#999999">检测是否支持 fooType 这样的 MIME type !!(document.createElement('video').canPlayType(‘fooType’));</font><br>
+检测是否支持 fooType 这样的 MIME type !!(document.createElement('video').canPlayType(‘fooType’));<br>
 </td>
 </tr>
 </tbody>
 </table>
 
 **（3）属性**
-<table class="zeroBorder" style="margin-left:80px" border="0" cellpadding="1" cellspacing="2" height="527" width="920">
+<table class="zeroBorder" border="0" cellpadding="1" cellspacing="2" height="527" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -474,10 +474,10 @@ javascript
 </tbody>
 </table>
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 * [HTML5 Video](http://sofish.de/file/html5/video/index.html "HTML5 Video")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * 一般下载 video 都需要一段时间，建议给每一个 video 设置一个 Poster
 
 <h2 id="spec-solution">六、兼容解决方案</h2>
@@ -493,7 +493,7 @@ javascript
         </object>
     </video>
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * BOOK:《Pro HTML5 Programming》
 * [The video elemen - HTML5 Draft](http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#video)
 * [The Video Element](http://html5doctor.com/the-video-element/ "The Video Element")

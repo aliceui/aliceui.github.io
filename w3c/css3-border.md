@@ -1,4 +1,4 @@
-<h1 style="font-family:Courier New">CSS3: Border</h1>
+<h1>CSS3: Border</h1>
 
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
@@ -6,7 +6,7 @@
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
 <tbody>
 <tr>
@@ -141,7 +141,7 @@
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-background/#borders](http://www.w3.org/TR/css3-background/#borders "http://www.w3.org/TR/css3-background/#borders")<br>
 **（2）CSS:**
 <table class="proptable zeroBorder" style="" height="369" width="920">
@@ -181,8 +181,8 @@
 <tr valign="baseline">
 <td style="text-align:left"><a href="https://developer.mozilla.org/en/CSS/-moz-border-top-colors" id="mmq3" title="https://developer.mozilla.org/en/CSS/-moz-border-top-colors">border-top-colors</a><br>
 </td>
-<td style="text-align:left"><font face="Courier New">[&lt;color&gt;]* &lt;color&gt; | none</font></td>
-<td style="text-align:left"><font face="Courier New">none</font><br>
+<td style="text-align:left">[&lt;color&gt;]* &lt;color&gt; | none</td>
+<td style="text-align:left">none<br>
 </td>
 <td style="text-align:left">同上</td>
 <td style="text-align:left">同上<br>
@@ -213,7 +213,7 @@
 <tr valign="baseline">
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image" id="jjhh" title="http://www.w3.org/TR/css3-background/#border-image">Border-image</a><br>
 </td>
-<td style="text-align:left"> &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-source"><font face="Courier New">border-image-source</font></a>’&gt; || &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-slice"><font face="Courier New">border-image-slice</font></a>’&gt; [ / &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-width"><font face="Courier New">border-image-width</font></a>’&gt;? [ / &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-outset"><font face="Courier New">border-image-outset</font></a>’&gt; ]? ]? || &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-repeat"><font face="Courier New">border-image-repeat</font></a>’&gt;</td>
+<td style="text-align:left"> &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-source">border-image-source</a>’&gt; || &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-slice">border-image-slice</a>’&gt; [ / &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-width">border-image-width</a>’&gt;? [ / &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-outset">border-image-outset</a>’&gt; ]? ]? || &lt;‘<a href="http://www.w3.org/TR/css3-background/#border-image-repeat">border-image-repeat</a>’&gt;</td>
 <td style="text-align:left">See individual properties <br>
 </td>
 <td style="text-align:left">同上</td>
@@ -226,13 +226,13 @@
 <td style="text-align:left">视觉 </td>
 </tr>
 <tr valign="baseline">
-<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-source"><font face="Courier New">Border-image-source</font></a><br>
+<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-source">Border-image-source</a><br>
 </td>
 <td style="text-align:left">none | <a href="http://www.w3.org/TR/css3-background/#ltimagegt">&lt;image&gt;</a><br>
 </td>
 <td style="text-align:left">none<br>
 </td>
-<td style="text-align:left">所有元素（除了<font face="Courier New">border-collapse</font>=collapse的table元素）<br>
+<td style="text-align:left">所有元素（除了border-collapse=collapse的table元素）<br>
 </td>
 <td style="text-align:left">
 <p>该属性用于指定是否用图像定义边框样式或图像来源路径。</p>
@@ -240,7 +240,7 @@
 <td style="text-align:left">视觉 </td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-slice"><font face="Courier New">Border-image-slice</font></a><br>
+<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-slice">Border-image-slice</a><br>
 </td>
 <td style="text-align:left">[&lt;number&gt; | &lt;percentage&gt;]{1,4} &amp;&amp; fill? <br>
 </td>
@@ -257,7 +257,7 @@
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-width"><font face="Courier New">Border-image-width</font></a><br>
+<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-width">Border-image-width</a><br>
 </td>
 <td style="text-align:left">[ &lt;length&gt; | &lt;percentage&gt; | &lt;number&gt; | auto ]{1,4} <br>
 </td>
@@ -272,7 +272,7 @@
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-outset"><font face="Courier New">Border-image-outset</font></a><br>
+<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-outset">Border-image-outset</a><br>
 </td>
 <td style="text-align:left">[ &lt;length&gt; | &lt;number&gt; ]{1,4} <br>
 </td>
@@ -286,7 +286,7 @@
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-repeat"><font face="Courier New">Border-image-repeat</font></a><br>
+<td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#border-image-repeat">Border-image-repeat</a><br>
 </td>
 <td style="text-align:left">[ stretch | repeat | round ]{1,2} <br>
 </td>
@@ -298,7 +298,7 @@
 <ol><li>stretch：指定用拉伸方式来填充边框背景图。</li>
 <li>repeat：指定用平铺方式来填充边框背景图。当图片碰到边界时，如果超过则被截断。</li>
 <li>round：指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的大小直至正好可以铺满整个边框。</li>
-<li><font face="Courier New">space</font>:指定用平铺方式来填充边框背景图。If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles. <br>
+<li>space:指定用平铺方式来填充边框背景图。If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles. <br>
 </li>
 </ol>
 </td>
@@ -310,7 +310,7 @@
 </td>
 <td style="text-align:left">none | <a href="http://www.w3.org/TR/css3-background/#ltshadowgt">&lt;shadow&gt;</a> [ , <a href="http://www.w3.org/TR/css3-background/#ltshadowgt">&lt;shadow&gt;</a> ]* <br>
 <br>
-<font face="Courier New">&lt;shadow&gt; = inset? &amp;&amp; [ &lt;length&gt;{2,4} &amp;&amp; <a href="http://www.w3.org/TR/css3-background/#ltcolorgt">&lt;color&gt;</a>? ]</font><br>
+&lt;shadow&gt; = inset? &amp;&amp; [ &lt;length&gt;{2,4} &amp;&amp; <a href="http://www.w3.org/TR/css3-background/#ltcolorgt">&lt;color&gt;</a>? ]<br>
 </td>
 <td style="text-align:left">none<br>
 </td>
@@ -335,16 +335,16 @@
 <br>
 <br>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 附件
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * Border-colors兼容性差，只有在firefox下可以。
 * Border-radius可以又很多兼容性解决方案，推荐在高级浏览器下实现圆角，低级的浏览器忽略之。
 * Border-image-slice这个属性需要注意，划分为9宫格后，中间部分的图片最好留空。推荐看下[understanding-border-image](http://css-tricks.com/6883-understanding-border-image/ "http://css-tricks.com/6883-understanding-border-image/")
 * Box-shadow在ie下的解决方案[内网文档](http://arale.alipay.net/alice/solution/dropshadow/dropshadow.php "http://arale.alipay.net/alice/solution/dropshadow/dropshadow.php")
 * 部分属性需要浏览器私有属性实现 -moz- -webkit- -o-
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * [css3-background](http://www.w3.org/TR/css3-background "http://www.w3.org/TR/css3-background")
 * [border-image](http://blog.beyes.tw/487 "http://blog.beyes.tw/487")
 * [https://developer.mozilla.org](https://developer.mozilla.org "https://developer.mozilla.org")

@@ -1,11 +1,11 @@
-<h1 style="font-family:Courier New">CSS3: user-interface</h1>
+<h1>CSS3: user-interface</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
 <tbody>
 <tr>
@@ -140,7 +140,7 @@
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-ui/](http://www.w3.org/TR/css3-ui/ "http://www.w3.org/TR/css3-ui/")<br/>
 **（2）CSS:**
 <table class="proptable zeroBorder" style="" height="1036" width="920">
@@ -178,7 +178,7 @@
 <tr valign="baseline">
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-ui/#box-sizing0">box-sizing</a><br>
 </td>
-<td style="text-align:left"><font face="Courier New">content-box | border-box | inherit </font></td>
+<td style="text-align:left">content-box | border-box | inherit</td>
 <td style="text-align:left">content-box <br>
 </td>
 <td style="text-align:left">所有元素都接受宽度和高度</td>
@@ -240,7 +240,7 @@
 </td>
 <td style="text-align:left">所有元素<br>
 </td>
-<td style="text-align:left">允许设置任意元素一个对等的图标，<font color="#ff0000">注意：一个元素的图标只有在content属性设置为icon时才能使用</font><br>
+<td style="text-align:left">允许设置任意元素一个对等的图标，注意：一个元素的图标只有在content属性设置为icon时才能使用<br>
 </td>
 <td style="text-align:left">全部<br>
 </td>
@@ -255,7 +255,7 @@
 <td style="text-align:left">所有使能元素<br>
 </td>
 <td style="text-align:left">
-<p>指定了元素的导航顺序。'1'意味着最先被导航。<font color="#ff0000">当若干个元素的nav-index值相同时，则按照文档的先后顺序进行导航。</font><br>
+<p>指定了元素的导航顺序。'1'意味着最先被导航。当若干个元素的nav-index值相同时，则按照文档的先后顺序进行导航。<br>
 </p>
 </td>
 <td style="text-align:left">互动<br>
@@ -557,13 +557,13 @@
 * ::repeat-item：描述一个重复序列的一项
 * ::repeat-index：代表重复序列的当前选项
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * 一个元素的图标只有在content属性设置为icon时才能使用
 * 当若干个元素的nav-index值相同时，则按照文档的先后顺序进行导航。
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * [css3中文手册](http://isd.tencent.com/css3/ "http://isd.tencent.com/css3/")
 * [http://www.w3.org/TR/css3-ui/](http://www.w3.org/TR/css3-ui/ "http://www.w3.org/TR/css3-ui/")
 * [http://www.css3.info/preview/](http://www.css3.info/preview/ "http://www.css3.info/preview/")

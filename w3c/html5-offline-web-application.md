@@ -1,12 +1,12 @@
-<h1 style="font-family:Courier New">HTML5: Offline Web Application</h1>
-<ol style="font-family:Courier New"><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
+<h1>HTML5: Offline Web Application</h1>
+<ol><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
 <li><a href="#spec-api" target="_self">API 参考</a></li>
 <li><a href="#spec-demo" target="_self">DEMO</a></li>
 <li><a href="#spec-caution" target="_self">注意事项</a></li>
 <li><a href="#spec-solution" target="_self">兼容解决方案</a></li>
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
@@ -71,16 +71,16 @@
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 <div style=""><b>1. API SPEC</b>: <a href="http://www.w3.org/TR/offline-webapps/" id="mgxz" title="http://www.w3.org/TR/offline-webapps/">http://www.w3.org/TR/offline-webapps/</a><br>
 <br>
 <b>2. HTML<br>
 <br>
 &nbsp;&nbsp;</b> 1. 在 &lt;html /&gt; 中添加 manifest 属性：<br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Courier New"><span class="pun">&lt;</span><span class="tag">html</span> <span class="atn">manifest</span><span class="pun">=</span><span class="atv">"http://www.example.com/example.manifest"</span><span class="pun">&gt;</span><span class="pln"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pun">&lt;</span><span class="tag">html</span> <span class="atn">manifest</span><span class="pun">=</span><span class="atv">"http://www.example.com/example.manifest"</span><span class="pun">&gt;</span><span class="pln"><br>
 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;...<br>
-</span><span class="pun">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/</span><span class="tag">html</span><span class="pun">&gt;</span></font><br>
+</span><span class="pun">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/</span><span class="tag">html</span><span class="pun">&gt;</span><br>
 <br>
 &nbsp;&nbsp; 2. 创建 manifest 文件：foo.manifest<br>
 </div>
@@ -88,25 +88,25 @@
 <table id="vssq" bgcolor="#f3f3f3" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="349" width="572">
 <tbody>
 <tr>
-<td style="text-align:left" width="100%"><span class="pln"><font face="Courier New"><span class="pln">&nbsp;CACHE MANIFEST</span></font></span><span class="pln"><font face="Courier New"><span class="pun"><br>
-&nbsp;# <span class="pln"><font face="Courier New"><span class="pun"><font color="#999999">'#'号是注释，变更注释，也会重新缓存，因些我们常用它来做版本标记</font></span></font></span><br style="color:#999999">
-</span></font></span><span class="pln"><font face="Courier New"><span class="pun">&nbsp;<font color="#000000"># version 0.3 2010.10.23</font></span></font></span><br>
+<td style="text-align:left" width="100%"><span class="pln"><span class="pln">&nbsp;CACHE MANIFEST</span></span><span class="pln"><span class="pun"><br>
+&nbsp;# <span class="pln"><span class="pun">'#'号是注释，变更注释，也会重新缓存，因些我们常用它来做版本标记</span></span><br style="color:#999999">
+</span></span><span class="pln"><span class="pun">&nbsp;# version 0.3 2010.10.23</span></span><br>
 <span class="pln"><span class="pun">&nbsp;&nbsp; &nbsp;&nbsp; </span></span><br>
-<span class="pln"><font face="Courier New"><span class="pun">&nbsp;<font color="#999999"># 在 .manifest 文件中的路径，默认会被缓存</font></span></font></span><br style="color:#999999">
-<span class="pln"><font face="Courier New"><span class="pun"><font color="#999999">&nbsp;# 路径可以是相对的，也可以是绝对的</font></span></font></span><br>
-<span class="pln"><font face="Courier New"><span class="pun">&nbsp;img/</span><span class="pln">a</span><span class="pun">.</span><span class="pln">png</span></font></span><br>
+<span class="pln"><span class="pun">&nbsp;# 在 .manifest 文件中的路径，默认会被缓存</span></span><br style="color:#999999">
+<span class="pln"><span class="pun">&nbsp;# 路径可以是相对的，也可以是绝对的</span></span><br>
+<span class="pln"><span class="pun">&nbsp;img/</span><span class="pln">a</span><span class="pun">.</span><span class="pln">png</span></span><br>
 <br>
-<font face="Courier New"><span class="pln">&nbsp;<font color="#999999"># CACHE 标记下面的文件都会被缓存</font><br>
-<font face="Courier New"><span class="pln">&nbsp;CACHE</span><span class="pun">:</span></font><br>
-</span></font><font face="Courier New"><span class="pln">&nbsp;img/b.img</span></font><br>
+<span class="pln">&nbsp;# CACHE 标记下面的文件都会被缓存<br>
+<span class="pln">&nbsp;CACHE</span><span class="pun">:</span><br>
+</span><span class="pln">&nbsp;img/b.img</span><br>
 <span class="pln">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span><br>
-<font face="Courier New"><span class="pln">&nbsp;<font color="#999999"># NETWORK 标记下面的文件都会保持在线</font></span></font><br>
-<font face="Courier New"><span class="pln">&nbsp;NETWORK:</span></font><br>
-<font face="Courier New"><span class="pln">&nbsp;*</span></font><br>
+<span class="pln">&nbsp;# NETWORK 标记下面的文件都会保持在线</span><br>
+<span class="pln">&nbsp;NETWORK:</span><br>
+<span class="pln">&nbsp;*</span><br>
 <br>
-<font face="Courier New"><span class="pln">&nbsp;<font color="#999999"># FALLBACK 是当文件有网络请求，但又处于离线状态的一种替代方案</font><br>
+<span class="pln">&nbsp;# FALLBACK 是当文件有网络请求，但又处于离线状态的一种替代方案<br>
 &nbsp;FALLBACK:<br>
-&nbsp;/ajax /ajax_offline</span></font><br>
+&nbsp;/ajax /ajax_offline</span><br>
 </td>
 </tr>
 </tbody>
@@ -316,21 +316,19 @@ Inputs" height="57" width="495">
 </table>
 <br>
 </div>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO&nbsp;&nbsp; </h2>
+<h2 id="spec-demo">三、DEMO&nbsp;&nbsp; </h2>
 &nbsp;&nbsp;&nbsp; <a href="http://sofish.de/file/html5/offline/" id="t1rk" title="HTML5 application Cache">HTML5 application Cache</a><br>
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 <ul><li>因为 cache manifest 的主要应用对象是离线应用，因此其会缓存引用 manifest 的页面。如果在一般页面中使用，一定要非常明确自己的使用方法和地方是否正确，不注意的话，容易导致更新不会被显示出来。</li>
 <li>在 Firefox 的 about:cache 可以查看缓存的设备</li></ul>
 <br>
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 &nbsp;&nbsp;&nbsp; 1. 离线缓存 Apache Cache 等，没有前端的缓存解决方案。<br>
 &nbsp;&nbsp;&nbsp; 2. 页面引用文件缓存，使用 iframe： <a href="http://sofish.de/1449" rel="bookmark" title="Permanent Links to
  HTML5 缓存: cache manifest">HTML5 缓存: cache manifest</a><br>
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 <ul><li>BOOK:《Pro HTML5 Programming》</li>
 <li><a href="http://www.w3.org/TR/offline-webapps/" id="is2o" title="HTML5 SPEC: offline web application">HTML5 SPEC: offline web application</a></li>
 <li><a href="http://www.html5rocks.com/tutorials/appcache/beginner/" id="iw6t" title="A Beginner's Guide to Using the Application Cache">A Beginner's Guide to Using the Application Cache</a><br>
 </li>
 <li><a href="http://www.findmebyip.com/litmus" title="HTML5 &amp; CSS3 Support, Web Design Tools &amp; Support">HTML5 &amp; CSS3 Support, Web Design Tools &amp; Support</a></li></ul>
-<br style="font-family:Courier New">
-

@@ -1,4 +1,4 @@
-<h1 style="font-family:Courier New">HTML5: Form API</h1>
+<h1>HTML5: Form API</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
@@ -6,7 +6,7 @@
 5. [兼容解决方案](#spec-solution)
 6. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="472" width="920">
 <tbody>
 <tr>
@@ -259,7 +259,7 @@
 </tbody>
 </table>
 
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **1.API SPEC：**
 
 * &lt;form/&gt;, &lt;fieldset/&gt;, &lt;legend/&gt;, &lt;label/&gt;:[http://www.w3.org/TR/html5/forms.html](http://www.w3.org/TR/html5/forms.html "http://www.w3.org/TR/html5/forms.html")
@@ -280,7 +280,7 @@
             </fieldset>
     <form>
 
-<table class="zeroBorder" style="margin-left:80px" height="202" width="755">
+<table class="zeroBorder" height="202" width="755">
 <tbody>
 <tr>
 <th style="text-align:left">新 Form 属性<br>
@@ -326,32 +326,32 @@
 </tbody>
 <tbody>
 <tr>
-<td style="text-align:left"><font face="Courier New">search</font></td>
+<td style="text-align:left">search</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#text-state-and-search-state" title="attr-input-type-search">Search</a></td>
 <td style="text-align:left"> 不换行的文本</td>
 <td style="text-align:left"> 搜索域 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">tel</font></td>
+<td style="text-align:left">tel</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#telephone-state" title="attr-input-type-tel">Telephone</a></td>
 <td style="text-align:left"> 不换行的文本</td>
 <td style="text-align:left"> 文本域</td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">url</font></td>
+<td style="text-align:left">url</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#url-state" title="attr-input-type-url">URL</a></td>
 <td style="text-align:left"> 一个绝对地址 </td>
 <td style="text-align:left"> 文本域<br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">email</font></td>
+<td style="text-align:left">email</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#e-mail-state" title="attr-input-type-email">E-mail</a></td>
 <td style="text-align:left">一个 e-mail 或 e-mail 列表&nbsp; </td>
 <td style="text-align:left"> 文本域</td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">datetime</font></td>
+<td style="text-align:left">datetime</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#date-and-time-state" title="attr-input-type-datetime">Date and Time</a></td>
 <td style="text-align:left">日期和时间<br>
 </td>
@@ -359,51 +359,51 @@
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">date</font></td>
+<td style="text-align:left">date</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#date-state" title="attr-input-type-date">Date</a></td>
 <td style="text-align:left"> 日期</td>
 <td style="text-align:left"> 日期控制栏 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">month</font></td>
+<td style="text-align:left">month</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#month-state" title="attr-input-type-month">Month</a></td>
 <td style="text-align:left">月份</td>
 <td style="text-align:left"> 月份控制栏 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">week</font></td>
+<td style="text-align:left">week</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#week-state" title="attr-input-type-week">Week</a></td>
 <td style="text-align:left">星期<br>
 </td>
 <td style="text-align:left"> 星期控制栏</td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">time</font></td>
+<td style="text-align:left">time</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#time-state" title="attr-input-type-time">Time</a></td>
 <td style="text-align:left"> 时间</td>
 <td style="text-align:left"> 时间控制栏</td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">datetime-local</font></td>
+<td style="text-align:left">datetime-local</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/states-of-the-type-attribute.html#local-date-and-time-state" title="attr-input-type-datetime-local">Local Date and Time</a></td>
 <td style="text-align:left"> 本地时间</td>
 <td style="text-align:left"> 日期和时间控制栏 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">number</font></td>
+<td style="text-align:left">number</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/number-state.html#number-state" title="attr-input-type-number">Number</a></td>
 <td style="text-align:left"> 数字</td>
 <td style="text-align:left"> 数据文本域&amp;控制栏 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">range</font></td>
+<td style="text-align:left">range</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/number-state.html#range-state" title="attr-input-type-range">Range</a></td>
 <td style="text-align:left"> 区间 </td>
 <td style="text-align:left"> 一个 slider 控制栏<br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">color</font></td>
+<td style="text-align:left">color</td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/html5/number-state.html#color-state" title="attr-input-type-color">Color</a></td>
 <td style="text-align:left"> 8-bit 的 sRGB 颜色</td>
 <td style="text-align:left"> 颜色控制栏<br>
@@ -446,12 +446,12 @@
 </td>
 <td style="text-align:left">看代码可以更直观：<br>
 <br>
-<font color="#999999">&lt;input type="email" <b style="color:#000000">list</b>="<b style="background-color:#ffffff;color:#000000">list-id</b>" /&gt;</font><br style="color:#999999">
+&lt;input type="email" <b style="color:#000000">list</b>="<b style="background-color:#ffffff;color:#000000">list-id</b>" /&gt;<br style="color:#999999">
 <br style="color:#999999">
-<font color="#999999">&lt;datalist id="<b><font color="#000000">list-id</font></b>"&gt;</font><br style="color:#999999">
-<font color="#999999">&nbsp;&nbsp;&nbsp; &lt;option value="a@alipay.com" /&gt;</font><br style="color:#999999">
-<font color="#999999">&nbsp;&nbsp;&nbsp; &lt;option value="i@sofish.de" /&gt;</font><br style="color:#999999">
-<font color="#999999">&lt;/datalist&gt;</font><br>
+&lt;datalist id="<b>list-id</b>"&gt;<br style="color:#999999">
+&nbsp;&nbsp;&nbsp; &lt;option value="a@alipay.com" /&gt;<br style="color:#999999">
+&nbsp;&nbsp;&nbsp; &lt;option value="i@sofish.de" /&gt;<br style="color:#999999">
+&lt;/datalist&gt;<br>
 <br>
 </td>
 </tr>
@@ -466,7 +466,7 @@
 </td>
 <td style="text-align:left">用于 input[type='range']，把区间分成 N（value）个颗粒，调动只能按颗粒来调动<br>
 <br style="color:#999999">
-<font color="#999999">如：&lt;input id="confidence" name="level" type="range" min="0" max="100" step="10" value="0"&gt;，只有0, 10, 20, 30 ... 100 这些数是调动点，而不能用 11 这样的数字。</font><br>
+如：&lt;input id="confidence" name="level" type="range" min="0" max="100" step="10" value="0"&gt;，只有0, 10, 20, 30 ... 100 这些数是调动点，而不能用 11 这样的数字。<br>
 </td>
 </tr>
 <tr>
@@ -494,7 +494,7 @@
 </tbody>
 </table>
 **3. Scripting API:**
-<table class="zeroBorder" style="margin-left:80px" height="139" width="755">
+<table class="zeroBorder" height="139" width="755">
 <tbody>
 <tr>
 <th style="text-align:left">Form 方法/属性<br>
@@ -518,7 +518,7 @@
 </td>
 </tr>
 <tr>
-<td style="text-align:left">form.<font face="Courier New">checkValidity()</font><br>
+<td style="text-align:left">form.checkValidity()<br>
 </td>
 <td style="text-align:left">检测表单项是否通过校验，返回 {Boolean}<br>
 </td>
@@ -526,22 +526,22 @@
 </tbody>
 </table>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 * [HTML5 Form](http://sofish.de/file/html5/form/ "HTML5 Form")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * HTML5 Form 的支持还非常差，并且一些 input type 的外观在各浏览器中表现不一致；
 * 把握 HTML5 Form 的关键是，它更注重的是功能和主义，而非外观。比较新的 input type，新的功能性属性；
 * 枚举类 HTML 属性，如果没有给出特定的值，通常都会有一个默认的值。比较 autocomplete, contenteditable。
 
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 目前的解法方案大多是用 JS 来实现表现上的模仿，用 CSS 实现外观的模仿。没有真正的解法方案。不过，值得注意的是，因为 Form 表单都采用了优雅降级的兼容方式，因此，我们可能逐步为未来做准备，比如：
 
 * 作用 placeholder 来做 input 的描述
 * 使用 pattern 来做正测自己定义的属性
 * 用 type='email' 这样的新 input 类型来做特定类型的标签，因为如果浏览器检测不到，默认会理解为 type="text"
 
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 * BOOK:《Pro HTML5 Programming》
 * [HTML5 SPEC：Forms](http://www.w3.org/TR/html5/forms.html#dom-form-nameditem "HTML5 SPEC：Forms")
 * [MDC: Forms in HTML5](https://developer.mozilla.org/en/HTML/HTML5/Forms_in_HTML5 "MDC: Forms in HTML5")

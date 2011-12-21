@@ -1,11 +1,11 @@
-<h1 style="font-family:Courier New">CSS3: Transition</h1>
+<h1>CSS3: Transition</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
@@ -71,7 +71,7 @@
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-transitions/](http://www.w3.org/TR/css3-transitions/ "http://www.w3.org/TR/css3-transitions/")<br/>
 **（2）CSS:**
 <table class="proptable zeroBorder" style="" height="369" width="920">
@@ -286,13 +286,13 @@
 </table>
 </div>
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 [CSS3 Transition](http://sofish.de/file/html5/transition/ "CSS3 Transition")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * Transition 的变化原理：[Animation of property types](http://www.w3.org/TR/css3-transitions/#animation-of-property-types-)
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * [CSS Transition Module Level3](http://www.w3.org/TR/css3-transitions/ "CSS Transition Module Level3")
 * [-moz-transition-timing-function](https://developer.mozilla.org/en/CSS/-moz-transition-timing-function "-moz-transition-timing-function")
 * [CSS Transition 101](http://www.webdesignerdepot.com/2010/01/css-transitions-101/ "CSS Transition 101")
