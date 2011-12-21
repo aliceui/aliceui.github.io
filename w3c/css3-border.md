@@ -351,5 +351,4 @@
 * [understanding-border-image](http://css-tricks.com/6883-understanding-border-image/ "http://css-tricks.com/6883-understanding-border-image/")
 * [css88](http://www.css88.com/book/css/ "http://www.css88.com/book/css/")
 * [css3中文手册](http://isd.tencent.com/css3/ "http://isd.tencent.com/css3/")
-</div>
 
