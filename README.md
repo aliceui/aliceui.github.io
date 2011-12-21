@@ -1,4 +1,3 @@
-官方网站：[http://aliceui.com]()
 
 ## 一、关于 Alice 的一些话：
 
@@ -14,7 +13,6 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
      |---- tpl/                 参考的模板文件
      |---- w3c/                 HTML5/CSS3 标准文档
      |---- base.css             Alice 的基础，所有样式均基于它
-     |---- cheat-sheet.html     提醒小抄 
      |---- readme.md     
 
 ## 三、想了解更多：
