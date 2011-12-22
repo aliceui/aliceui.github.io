@@ -5,10 +5,6 @@
 - 打开（重起）你的 vim, 打 `sl-rc`，然后按 `tab` 键试试
 - 快捷键参考：[https://github.com/sofish/Alice/tree/master/plugins#readme]()
 
-参考这个视频的做法：
+参考这个视频的做法：http://aliceui.com/images/video/sl-vim-intro/
 
 > 不能播放？下载此 mov 文件：[下载此文件](http://aliceui.com/images/video/sl-vim-intro/sl-vim-intro.mov)
-
-<video controls preload>
-    <source src="http://aliceui.com/images/video/sl-vim-intro/sl-vim-intro.mov" poster="http://aliceui.com/images/video/sl-vim-intro/sl-vim-intro.jpg" width=404 height=480></source>
-</video>
