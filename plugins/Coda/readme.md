@@ -13,3 +13,5 @@ cp -rf AliceSolution.mode ~/Library/Application\ Support/Coda/Modes/
 
 - 在文档中输入sl，如下图，选择需要的代码片段，按tab键完成补全。<br/>
  ![alt 补全提示](https://github.com/sofish/Alice/raw/master/plugins/Coda/preview.png?raw=true "补全提示")
+
+> 快捷键参考：[https://github.com/sofish/Alice/tree/master/solutions#readme]()

@@ -2,6 +2,8 @@
 
 这些编辑器插件一般都是输入 `sl-[SOlUTION NAME]` 这样的形式出现，具体使用方式见目录下在 `README.md`：
 
+快捷键参考：[https://github.com/sofish/Alice/tree/master/solutions#readme]()
+
 <pre>
 .
 ├── Coda            Coad 是 Mac 软件          
