@@ -6,7 +6,7 @@
 
 <pre>
 .
-├── Coda            Coad 是 Mac 软件           作者: [62mm](http://xinxin.li)          
+├── Coda         Coda是 Mac 软件           作者: [62mm](http://xinxin.li)          
 ├── Eclipse         Eclipse 插件              作者: [62mm](http://xinxin.li)
 ├── IntelliJ_IDEA   IntelliJ IDEA 插件        作者: [三桂](http://www.cnblogs.com/aNd1coder) 
 └── VIM             VIM 插件                  作者: [62mm](http://xinxin.li)
