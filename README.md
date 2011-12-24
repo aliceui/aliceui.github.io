@@ -35,6 +35,8 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
  
 ## 四、意见反馈：
 
+关于 Alice 的 FAQ: [https://github.com/sofish/Alice/wiki/FAQ---%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98]()
+
 任何批评、问题和意见等，都欢迎与我们联系：[admin@aliceui.com](mailto:admin@aliceui.com)
 
 ## 五、版权和许可
