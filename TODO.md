@@ -9,4 +9,7 @@
 - #3 issue 垂直居中里增加"单元素里包含未知宽高图片"的解决方案
 - 优化官网与 Github 同步问题
 - 各种编辑器插件
+- 兼容主流浏览器的 ajax 上传插件
+- colorcode.js 在 IE 的兼容性修复（@pizn)
+- 搭建 alice blog, 发布 alice 的相关讯息 (@pizn)
 
