@@ -1,8 +1,12 @@
 ## TODO & Feedbacks
 
-- 字体：文档字体可以更豪放一点（from @hotoo）
+这个文件将持续更新反馈，希望有兴趣的同学也可以 pull request 解决里面的问题：
+
 - 页面太长，可以加回到顶部按钮（form @子推）
-- copyright 公司名称
-- 我不是技术牛人，但也懂点，非常想体验团队协作和为alice作点贡献。
-  希望，sofish可以在TODO中指出点比较低层次的任务。这样我也可以更多的
-  参与了。之前fork了一些repos但是技术上搞不定，又都是国外的。(from @banxi)
+- 添加代码搭建演示 (@huacnlee)
+- 添加 sass 支持 (@diamondtin )
+- 搭建类似于 bootstrap 一样的演示直观站点 (@davidx_me)
+- #3 issue 垂直居中里增加"单元素里包含未知宽高图片"的解决方案
+- 优化官网与 Github 同步问题
+- 各种编辑器插件
+
