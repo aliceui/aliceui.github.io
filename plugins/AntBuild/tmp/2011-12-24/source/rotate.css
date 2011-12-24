@@ -1,0 +1,39 @@
+/*
+	@ 名称: 翻转90度
+	@ 用法: 添加 .sl-rotate, 默认为顺时针旋转90度, 逆时针翻转需添加 .sl-rotate-90ccw
+	@ 用法: 
+		
+		默认: <span class="sl-rotate sl-rotate-90">顺时针转一下</span>
+			<span class="sl-rotate sl-rotate-90cw">顺时针转一下</span>
+			<span class="sl-rotate sl-rotate-90ccw">逆时针转一下</span>
+		
+*/
+
+.sl-rotate{
+	zoom:1;
+}
+
+/* for inline elements */
+span.sl-rotate, em.sl-rotate, cite.sl-rotate, strong.sl-rotate, abbr.sl-rotate, li.sl-rotate{
+	display:inline-block;
+}
+
+/* 逆时针 */
+.sl-rotate-90ccw{
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotae(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; 
+	transform: rotate(-90deg);
+}
+
+/* 顺时针 */
+.sl-rotate-90cw, .sl-rotate-90{
+	-webkit-transform: rotate(90deg);   
+	-moz-transform: rotate(90deg);  
+	-o-transform: rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);  
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";  
+	transform: rotate(90deg);
+}

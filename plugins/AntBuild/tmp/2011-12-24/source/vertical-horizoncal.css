@@ -1,0 +1,45 @@
+/*	
+	名称: 垂直 水平 居中
+	用法:
+		1. [原理] 设定宽度和高度，父节点为 position:relative; CSS是这样写的:
+	
+	      position:absolute;left:50%;top:50%;
+	      margin-left:-元素自身宽度的一半;
+	      margin-top:-元素自身高度的一半;
+	
+		2. [原理] table, 用起来就更简单了, 只要添加:
+	
+	      text-algin:center;
+	      vertical-align:middle;
+	
+		3. [方法] 提供模板化的CSS class方法, 规则如下:
+	
+	      <div class="sl-hvalign" style="width:500px"> <!-- 记得加宽度, 不要写行内样式, 这里只是一个提示 -->
+	             <div class="sl-hvalign-cnt">
+	                     <div class="sl-hvalign-cnt-inner">
+	                           <!-- your code -->
+	                     </div>
+	             </div>
+	      </div> <!-- .sl-hvalign -->
+ */
+
+
+.sl-hvalign{
+	display:table;
+	overflow:hidden;
+	margin:0 auto;
+	height: 100%;
+	*position:relative;
+}
+
+.sl-hvalign-cnt{
+	display:table-cell;
+	vertical-align: middle;
+	*position:absolute;
+	top:50%;
+}
+
+.sl-hvalign-cnt-inner{
+	*position:relative;
+	*top:-50%;
+}

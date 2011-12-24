@@ -1,0 +1,21 @@
+/*
+	@ 名称: 去除虚线框
+	@ 描述: 去除作为焦点的按钮的虚线框
+	@ 用法: 把css引入到
+	@ 例子: IE 需要在标签中添加 hidefocus 属性，值可以为空，如:
+	
+		<input href="#" hidefocus value="alipay WD"  type="button" />
+		
+		<a /> 标签同理。
+*/
+
+
+/* hack for Firefox */
+input[type=submit]::-moz-focus-inner,input[type=button]::-moz-focus-inner{    
+	border : 0px; 
+}
+
+/* 不要随便去掉虚线框 */
+input[type=submit]:focus, input[type=button]:focus{      
+	outline : none;  
+}
