@@ -14,7 +14,7 @@
 	bottom:auto;
 	top:0;
 	_bottom:auto;
-	_top:expression(eval(document.documentElement.scrollTop));
+	_top:"expression(eval(document.documentElement.scrollTop))";
 }
 
 /* 相当于正常的 position:fixed;bottom:0px; */
@@ -23,7 +23,7 @@
 	bottom:0;
 	top:auto;
 	_bottom:auto;
-	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+	_top:"expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))";
 }
 
 /* 相当于正常的 position:fixed;left:0px; */
@@ -32,7 +32,7 @@
 	left:0;
 	_position:absolute;
 	right:auto;
-	_left:expression(eval(document.documentElement.scrollLeft));
+	_left:"expression(eval(document.documentElement.scrollLeft))";
 }
 
 /* 相当于正常的 position:fixed;right:0; */
@@ -41,7 +41,7 @@
 	right:0;
 	left:auto;
 	_right:auto;
-	_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));
+	_left:"expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0))";
 }
 
 /* 可以把 about:blank 设置成你的CSS文件地址 */

@@ -1,5 +1,3 @@
-@charset="utf-8";
-
 /*
 	@名称: float center 
 	@用法：
@@ -20,16 +18,18 @@
 
     /* 解决间隙问题 */
     font-size:0;
-}
-.sl-floatcenter-item{
-    display:inline-block;*display:inline;*zoom:1;
+	
+	.sl-floatcenter-item{
+		display:inline-block;*display:inline;*zoom:1;
 
-    /* 解决不能水平对齐问题 */
-    vertical-align:top;
+		/* 解决不能水平对齐问题 */
+		vertical-align:top;
 
-    /* 解决间隙问题后遗症解决 */
-    font-size:13px;
+		/* 解决间隙问题后遗症解决 */
+		font-size:13px;
+	}
 }
+
 
 /* 让 chrome 支持 12px 以下的字体 */
 @media screen and (-webkit-min-device-pixel-ratio:0){

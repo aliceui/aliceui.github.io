@@ -1,0 +1,21 @@
+/*
+	@ 名称: 强制换行
+	@ 用法: 
+			* 一般块级元素用：.sl-wrap
+			* table标签中需添加：.sl-wrap-table
+    @ 例子: 
+            <p class="sl-wrap">…</p>
+            
+            <table class="sl-wrap sl-wrap-table"></table>
+*/
+
+/* 一般 block-level 元素 */
+.sl-wrap, .sl-wrap td, .sl-wrap th{
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+/* table */
+.sl-wrap-table{
+	table-layout:fixed;
+}

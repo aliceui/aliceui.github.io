@@ -1,5 +1,3 @@
-﻿@charset="utf-8";
-
 /*
 	@ 名称: 自定义 input[type=file]
 	@ 用法: 添加 class .sl-custom-file
@@ -18,20 +16,23 @@
 	cursor:pointer;
 	overflow:hidden;
 	vertical-align:middle;
+	
+	/* 影响 .ui-input-file 的样式 */
+	.ui-input-file{
+		position:absolute;
+		right:0;
+		top:0;
+		_font-size:100px; /* overwrite*/
+		_font-size:12px;
+		_zoom:10; /* overwrite */
+		height:100%;
+		_height:auto;
+		opacity:0;
+		filter:alpha(opacity=0);
+		-ms-filter:"alpha(opacity=0)";
+		cursor:pointer;
+	}
 }
 
-/* 影响 .ui-input-file 的样式 */
-.sl-custom-file .ui-input-file{
-	position:absolute;
-	right:0;
-	top:0;
-	_font-size:100px; /* overwrite*/
-	_font-size:12px;
-	_zoom:10; /* overwrite */
-	height:100%;
-	_height:auto;
-	opacity:0;
-	filter:alpha(opacity=0);
-	-ms-filter:"alpha(opacity=0)";
-	cursor:pointer;
-}
+
+
