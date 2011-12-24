@@ -1,4 +1,9 @@
-### 使用方法(这里以WIN7为例)：
+插件作者：
+ 
+- EMail: [aNd1coder@gmail.com](mailto:aNd1coder@gmail.com)
+- Website: [http://www.cnblogs.com/aNd1coder]()
+
+## 使用方法(这里以WIN7为例)：
 
 - 将目录下的alice.xml拷贝到C:\Users\%username%\.IntelliJIdea11\config\templates。
 
@@ -10,7 +15,4 @@
 
   ![alt 补全提示](https://github.com/sofish/Alice/raw/master/plugins/IntelliJ_IDEA/preview/preview2.png?raw=true "补全提示")
   
-> 插件作者：
- 
- - EMail: [aNd1coder@gmail.com](mailto:aNd1coder@gmail.com)
- - Website: [http://www.cnblogs.com/aNd1coder]()
+
