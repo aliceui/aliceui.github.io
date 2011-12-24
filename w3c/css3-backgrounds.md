@@ -1,10 +1,3 @@
----
-title: CSS3 Backgrounds
-layout: doc
-categories:
-- css3
----
-
 # CSS3: Backgrounds
 
 1. [浏览器支持](#spec-browser)
@@ -13,7 +6,7 @@ categories:
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
 <tbody>
 <tr>
@@ -148,13 +141,13 @@ categories:
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 
 **（1）API SPEC:**[http://www.w3.org/TR/css3-background/](http://www.w3.org/TR/css3-background/#borders "http://www.w3.org/TR/css3-background/#borders")<br/>
 
 **（2）CSS:**
 
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -177,7 +170,7 @@ categories:
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#background-origin" id="o6zc" title="http://www.w3.org/TR/css3-background/#background-origin">Background-origin</a><br>
 </td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#ltboxgt">&lt;box&gt;</a> [ , <a href="http://www.w3.org/TR/css3-background/#ltboxgt">&lt;box&gt;</a> ]* <br>
-<font face="Courier New">&lt;box&gt; = border-box | padding-box | content-box</font><br>
+&lt;box&gt; = border-box | padding-box | content-box<br>
 <br>
 <div class="cont">
 <ul><li> padding-box：从padding区域（含padding）开始显示背景图像。</li>
@@ -201,9 +194,8 @@ categories:
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#background-clip" id="ibyx" title="http://www.w3.org/TR/css3-background/#background-clip">Background-clip</a><br>
 </td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#ltboxgt">&lt;box&gt;</a> [ , <a href="http://www.w3.org/TR/css3-background/#ltboxgt">&lt;box&gt;</a> ]* <br>
-<font face="Courier New">&lt;box&gt; = border-box | padding-box | content-box<br>
+&lt;box&gt; = border-box | padding-box | content-box<br>
 <br>
-</font>
 <ul><li>
 <div class="cont"> padding-box：从padding区域（不含padding）开始向外裁剪背景。</div>
 </li>
@@ -230,7 +222,7 @@ categories:
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#background-size" id="dek8" title="http://www.w3.org/TR/css3-background/#background-size">background-size</a><br>
 </td>
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-background/#ltbg-sizegt">&lt;bg-size&gt;</a> [ , <a href="http://www.w3.org/TR/css3-background/#ltbg-sizegt">&lt;bg-size&gt;</a> ]* <br>
-<font face="Courier New">&lt;bg-size&gt; = [ &lt;length&gt; | &lt;percentage&gt; | auto ]{1,2} | cover | contain</font><br>
+&lt;bg-size&gt; = [ &lt;length&gt; | &lt;percentage&gt; | auto ]{1,2} | cover | contain<br>
 <br>
 <div class="cont">&lt;length&gt;：用长度值指定背景图像大小。不允许负值。<br>
 &lt;percentage&gt;：用百分比指定背景图像大小。不允许负值。<br>
@@ -278,9 +270,9 @@ contain：将背景图像等比缩放到宽度或高度与容器的宽度或高�
 <br>
 <br>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 附件
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 
 * border-image的图片（如果有），是在background之上的。
 
@@ -290,10 +282,9 @@ contain：将背景图像等比缩放到宽度或高度与容器的宽度或高�
 
 * border-image&gt;background-image第1个参数的图片&gt;background-image第2个参数的图片&gt;.....&gt;background-color*
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 
 * [css3-background](http://www.w3.org/TR/css3-background "http://www.w3.org/TR/css3-background")
 * [https://developer.mozilla.org](http://www.w3.org/TR/css3-background "http://www.w3.org/TR/css3-background")
 * [css参考手册](http://www.css88.com/book/css/ "http://www.css88.com/book/css/")
 * [css3中文手册](http://isd.tencent.com/css3/ "http://isd.tencent.com/css3/")
-

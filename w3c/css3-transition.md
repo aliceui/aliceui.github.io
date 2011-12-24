@@ -1,18 +1,11 @@
----
-title: CSS3 Transition
-layout: doc
-categories:
-- css3
----
-
-<h1 style="font-family:Courier New">CSS3: Transition</h1>
+<h1>CSS3: Transition</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
+<h2 id="spec-browser">一、浏览器支持</h2>
 <table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
@@ -78,10 +71,10 @@ categories:
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-transitions/](http://www.w3.org/TR/css3-transitions/ "http://www.w3.org/TR/css3-transitions/")<br/>
 **（2）CSS:**
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -155,7 +148,7 @@ categories:
 </tbody>
 </table>
 <br>
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>transition-timing-function 的值<br>
@@ -167,7 +160,7 @@ categories:
 <td style="text-align:left">关于 timing function<br>
 </td>
 <td style="text-align:left">这个属性通过 <a href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves" id="h.yd" title="贝塞尔曲线">贝塞尔曲线</a> 来决定元素在视觉上的变化。像 photoshop 中的钢笔工具，通常通过来个控制点 p1, p2 来控制 p0, p3 这条线的外观。 
-<div id="qeqo" style="text-align:left"><img src="images/css3-transition.png" style="height:351px;width:379px"></div>
+<div id="qeqo" style="text-align:left"><img src="/images/css3-transition.png" style="height:351px;width:379px"></div>
 <br>
 </td>
 </tr>
@@ -204,7 +197,7 @@ categories:
 </tbody>
 </table>
 **（3）触发交互: 伪类** （JS-evnet-like?）
-<div style="margin-left:40px">&nbsp;&nbsp; &nbsp; 
+<div style="">&nbsp;&nbsp; &nbsp; 
 <table class="zeroBorder" border="0" cellpadding="3" height="159" width="920">
 <tbody>
 <tr>
@@ -293,13 +286,13 @@ categories:
 </table>
 </div>
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 [CSS3 Transition](http://sofish.de/file/html5/transition/ "CSS3 Transition")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * Transition 的变化原理：[Animation of property types](http://www.w3.org/TR/css3-transitions/#animation-of-property-types-)
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * [CSS Transition Module Level3](http://www.w3.org/TR/css3-transitions/ "CSS Transition Module Level3")
 * [-moz-transition-timing-function](https://developer.mozilla.org/en/CSS/-moz-transition-timing-function "-moz-transition-timing-function")
 * [CSS Transition 101](http://www.webdesignerdepot.com/2010/01/css-transitions-101/ "CSS Transition 101")

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Css 线性渐变</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="../1px-round-corner/1px-round-corner.css" />
+  <style type="text/css">
+    body{padding:30px;}
+    p{margin-bottom:15px;}
+    
+    #t span.sl-rc-cnt{
+      padding:0 10px;height:30px;line-height: 30px;color:#333;  
+      background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e3e3e3));
+      background: -moz-linear-gradient(top,  #f5f5f5,  #e3e3e3);
+      background: -o-linear-gradient(left, #f5f5f5, #e3e3e3);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#e3e3e3');
+      background: linear-gradient(left, #f5f5f5, #e3e3e3);
+    } 
+    #t a.sl-rc-wrap:hover{border-color:#d1d1d1;}
+    #t a.sl-rc-wrap:hover .sl-rc-cnt{
+      border-color: #d1d1d1;      
+      background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e3e3e3));
+      background: -moz-linear-gradient(top,  #fff,  #e3e3e3);
+      background: -o-linear-gradient(top, #fff, #e3e3e3);
+      filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e3e3e3');
+      background: linear-gradient(top, #fff, #e3e3e3);
+    }
+    
+    .linearbox{
+      background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f6));
+      background: -moz-linear-gradient(top,  #fff,  #f4f5f6);
+      background: -o-linear-gradient(top, #fff, #f4f5f6);
+      filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f5f6');
+      background: linear-gradient(top, #fff, #f4f5f6);
+    }
+    
+    .linearbox .sl-rc-cnt{
+      padding:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+        
+  <table id="t">
+    <tr>
+      <td width="120">
+        <a href="#" class="sl-rc">
+          <span class="sl-rc-cnt">button</span>
+        </a>
+      </td>
+      <td width="380">
+        <div class="linearbox sl-rc">
+          <div class="sl-rc-cnt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table><!-- #t -->
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

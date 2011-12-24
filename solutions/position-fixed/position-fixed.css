@@ -1,56 +1,56 @@
 /*
-	@ Ãû³Æ: 	position:fixed
-	@ ÓÃ·¨£ºÌí¼Óclass
-	@ ×¢Òâ:
-          * Èç¹ûĞèÒª¶à¸ö·½ÏòµÄ¹Ì¶¨Î»ÖÃ£¬±ÈÈç top + right£¬ĞèÒª¼ÓÁ½¸ö class
-          * Èç¹û¼ÓÁË.fixed-top, ÄÇÃ´¾Í±ğ¸øÕâ¸öÔªËØ¼Ó top ÊôĞÔµÄÖµ
-          * ÎªÁË²»³öÏÖÒì³££¬Õâ¸öÖ»×÷ÎªÌ×ÓÃ¡£±ÈÈçÒªtop:30px µÄÊ±ºò£¬ÇëÔÚ .fixed-top µÄ×ÓÔªËØÄÚÉèÖÃ
-          * ÓÉÓÚÎÒÃÇÓĞ´ò°ü£¬ËùÒÔ£¬¸ÄsolutionÊÇ¿ÉÒÔµÎ£¬µ«ÕâÊÇÇ¿ÁÒ²»ÍÆ¼öµÄ£¬ÒòÎª²»ÀûÓÚÎ¬»¤
+	@ åç§°: position:fixed
+	@ ç”¨æ³•ï¼šæ·»åŠ class
+	@ æ³¨æ„:
+          * å¦‚æœéœ€è¦å¤šä¸ªæ–¹å‘çš„å›ºå®šä½ç½®ï¼Œæ¯”å¦‚ top + rightï¼Œéœ€è¦åŠ ä¸¤ä¸ª class
+          * å¦‚æœåŠ äº†.sl-fixed-top, é‚£ä¹ˆå°±åˆ«ç»™è¿™ä¸ªå…ƒç´ åŠ  top å±æ€§çš„å€¼
+          * ä¸ºäº†ä¸å‡ºç°å¼‚å¸¸ï¼Œè¿™ä¸ªåªä½œä¸ºå¥—ç”¨ã€‚æ¯”å¦‚è¦top:30px çš„æ—¶å€™ï¼Œè¯·åœ¨ .sl-fixed-top çš„å­å…ƒç´ å†…è®¾ç½®
+          * ç”±äºæˆ‘ä»¬æœ‰æ‰“åŒ…ï¼Œæ‰€ä»¥ï¼Œæ”¹solutionæ˜¯å¯ä»¥çš„ï¼Œä½†è¿™æ˜¯å¼ºçƒˆä¸æ¨èçš„ï¼Œå› ä¸ºä¸åˆ©äºç»´æŠ¤
 */
 
-/* Ïàµ±ÓÚÕı³£µÄ position:fixed; top:0;  */
-.fixed-top {
-	position:fixed;
+.sl-fixed{
+    position:fixed;
+}
+
+/* ç›¸å½“äºæ­£å¸¸çš„ position:fixed; top:0;  */
+.sl-fixed-top {
 	bottom:auto;
 	top:0;
 	_bottom:auto;
 	_top:expression(eval(document.documentElement.scrollTop));
 }
 
-/* Ïàµ±ÓÚÕı³£µÄ position:fixed;bottom:0px; */
-.fixed-bottom {
-	position:fixed;
+/* ç›¸å½“äºæ­£å¸¸çš„ position:fixed;bottom:0px; */
+.sl-fixed-bottom {
 	bottom:0;
 	top:auto;
 	_bottom:auto;
 	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
 }
 
-/* Ïàµ±ÓÚÕı³£µÄ position:fixed;left:0px; */
-.fixed-left {
-	position:fixed;
+/* ç›¸å½“äºæ­£å¸¸çš„ position:fixed;left:0px; */
+.sl-fixed-left {
 	left:0;
 	_position:absolute;
 	right:auto;
 	_left:expression(eval(document.documentElement.scrollLeft));
 }
 
-/* Ïàµ±ÓÚÕı³£µÄ position:fixed;right:0; */
-.fixed-right {
-	position:fixed;
+/* ç›¸å½“äºæ­£å¸¸çš„ position:fixed;right:0; */
+.sl-fixed-right {
 	right:0;
 	left:auto;
 	_right:auto;
 	_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));
 }
 
-/* ¿ÉÒÔ°Ñ about:blank ÉèÖÃ³ÉÄãµÄCSSÎÄ¼şµØÖ· */
+/* å½“ä¸æ˜¯ https æ—¶ï¼Œå¯ä»¥æŠŠ # æ¢æˆ about:blank ä»¥æå‡æ•ˆç‡ */
 html,html body {
-	_background-image:url(about:blank);
+	_background-image:url(#);
 	_background-attachment:fixed;
 }
 
 /* hack for ie6 */
-.fixed-top,.fixed-right,.fixed-bottom,.fixed-left {
+.sl-fixed-top,.sl-fixed-right,.sl-fixed-bottom,.sl-fixed-left {
 	_position:absolute;
 }

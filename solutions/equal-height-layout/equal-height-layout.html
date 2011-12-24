@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>等高栏</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./equal-height-layout.css" />
+  <style type="text/css">
+  
+	body{padding:30px;}
+    p{margin-bottom:15px;}
+    h3{font-size:30px;margin:20px 0 10px;padding-bottom: 1px solid #eee;}
+  
+    #col2-1{width:600px;background: #f7f7f7;}
+    #col2-2{width:330px;background: #ffc;}
+    #col3-1{width:400px;margin-right: 20px;background: #f7f7f7;}
+    #col3-2{width:300px;background: #f7f7f7;}
+    #col3-3{width:200px;background: #ffc;}  
+  </style>
+</head>
+
+<body>
+
+<div id="wrapper" class="single">
+  
+    <h3>2 column width equal height</h3>
+      <div class="sl-equalheight">
+        <div id="col2-1" class="sl-equalheight-item fn-left">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="col2-2"  class="sl-equalheight-item fn-right">
+        Just another column floated to right
+        </div>
+      </div>
+
+      
+      <h3>3 column width equal height</h3>
+      <div class="sl-equalheight">
+        <div id="col3-1" class="fn-left sl-equalheight-item">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="col3-2" class="fn-left sl-equalheight-item">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div id="col3-3"  class="fn-right sl-equalheight-item">
+        Just another column floated to right
+        </div>
+      </div>
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

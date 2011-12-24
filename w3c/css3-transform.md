@@ -1,19 +1,12 @@
----
-title: CSS3 Transform
-layout: doc
-categories:
-- css3
----
-
-<h1 style="font-family:Courier New">CSS3: Transform</h1>
+<h1>CSS3: Transform</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="litmus-browser-support-results zeroBorder"  summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -90,8 +83,7 @@ categories:
 </tr>
 </tbody>
 </table>
-<br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 
 1. **API SPEC:**<br>
     **(1) transform 2D**[http://www.w3.org/TR/css3-2d-transforms](http://www.w3.org/TR/css3-2d-transforms/ "http://www.w3.org/TR/css3-2d-transforms/")<br>
@@ -99,7 +91,7 @@ categories:
 2. **CSS:**
     **(1) transform 2D**
 
-<table class="proptable zeroBorder" style="margin-left:40px;margin-right:auto;text-align:left" height="250" width="920">
+<table class="proptable zeroBorder" style=";margin-right:auto;text-align:left" height="250" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -136,7 +128,7 @@ categories:
 </tbody>
 </table>
 <br>
-<table class="proptable zeroBorder" style="margin-left:40px;margin-right:auto;text-align:left" height="118" width="946">
+<table class="proptable zeroBorder" style=";margin-right:auto;text-align:left" height="118" width="946">
 <tbody>
 <tr>
 <th>transform-fucntion<br>
@@ -149,12 +141,12 @@ categories:
 <br>
 matrix(a, c, b, d, tx, ty)<br>
 </td>
-<td style="text-align:left"><font face="Courier New"><br>
+<td style="text-align:left">
 ┌&nbsp;&nbsp;&nbsp;&nbsp; ┐&nbsp; <br>
- │ a b │&nbsp; <font face="Courier New">tx, ty 是 translate 的值。关于 matrix，还挺复杂的（I hate math）</font><a href="http://www.mathamazement.com/Lessons/Pre-Calculus/08_Matrices-and-Determinants/coordinate-transformation-matrices.html" id="ns_9" title="Coordinate Transformation Matrices"></a><br>
- │ c d │&nbsp; <font face="Courier New">可以看一下这个介绍 <a href="http://www.mathamazement.com/Lessons/Pre-Calculus/08_Matrices-and-Determinants/coordinate-transformation-matrices.html" id="n5gk" title="Coordinate Transformation Matrices">Coordinate Transformation Matrices</a></font><br>
+ │ a b │&nbsp;tx, ty 是 translate 的值。关于 matrix，还挺复杂的（I hate math）<a href="http://www.mathamazement.com/Lessons/Pre-Calculus/08_Matrices-and-Determinants/coordinate-transformation-matrices.html" id="ns_9" title="Coordinate Transformation Matrices"></a><br>
+ │ c d │&nbsp;可以看一下这个介绍 <a href="http://www.mathamazement.com/Lessons/Pre-Calculus/08_Matrices-and-Determinants/coordinate-transformation-matrices.html" id="n5gk" title="Coordinate Transformation Matrices">Coordinate Transformation Matrices</a><br>
  └&nbsp;&nbsp;&nbsp;&nbsp; ┘<br>
-</font><br>
+<br>
 </td>
 </tr>
 <tr valign="baseline">
@@ -221,7 +213,7 @@ angle, 角度。<br>
 </tbody>
 </table>
 <br>
-<table class="proptable zeroBorder" style="margin-left:40px;margin-right:auto;text-align:left" height="118" width="946">
+<table class="proptable zeroBorder" style=";margin-right:auto;text-align:left" height="118" width="946">
 <tbody>
 <tr>
 <th>transform-origin 的值<br>
@@ -244,14 +236,13 @@ angle, 角度。<br>
 <br>
 总述<br>
 </td>
-<td style="text-align:left"><font face="Courier New"><br>
+<td style="text-align:left">
 1. 坐标相对于元素原来的位置，调整 transform 的坐标原点，将会让 transform 的结果不同。<br>
 <br>
-</font>
-<div id="zvlp" style="text-align:left"><img src="images/css3-transform.png" style="height:210px;width:556px"></div>
+<div id="zvlp" style="text-align:left"><img src="/images/css3-transform.png" style="height:210px;width:556px"></div>
 <br>
 <br>
-<font face="Courier New">2. 接受1个或者2个值。</font><br>
+>2. 接受1个或者2个值。<br>
 <ul><li>当只有1个值是，这个值被作为水平位置上的值，垂直方向上被设置为 50%;</li>
 <li>当有2值时，分别应用到水平和垂直方向上；</li>
 <li>默认两个值是 50%， 50%。</li></ul>
@@ -333,18 +324,15 @@ angle, 角度。<br>
 
 Transform 3D 目前只有 safari 5 支持。大家自己瞄规范吧。
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 
 * Matrix:[https://developer.mozilla.org/en/CSS/-moz-transform#Live_Examples](https://developer.mozilla.org/en/CSS/-moz-transform#Live_Examples "https://developer.mozilla.org/en/CSS/-moz-transform#Live_Examples")
 * transform-function:[https://developer.mozilla.org/En/CSS/-moz-transform-origin#Live_Examples](https://developer.mozilla.org/En/CSS/-moz-transform-origin#Live_Examples "https://developer.mozilla.org/En/CSS/-moz-transform-origin#Live_Examples")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * matrix(a, c, b, d, tx, ty)，在 Firefox 中，tx, ty 允许是长度单位，而 webkit 只允许数字
-* 在 IE6～8 中，可以使用 Microsoft's[Matrix Filter](http://msdn.microsoft.com/en-us/library/ms533014%28VS.85,loband%29.aspx "http://msdn.microsoft.com/en-us/library/ms533014(VS.85,loband).aspx")
-
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+* 在 IE6～8 中，可以使用 Microsoft [Matrix Filter](http://msdn.microsoft.com/en-us/library/ms533014%28VS.85,loband%29.aspx "http://msdn.microsoft.com/en-us/library/ms533014(VS.85,loband).aspx") 
+<h2 id="spec-ref">五、参考文献</h2>
 * [CSS3 2D Transforms](http://www.w3.org/TR/css3-2d-transforms/ "http://www.w3.org/TR/css3-2d-transforms/#transform-origin-property")
 * [-moz-transform](https://developer.mozilla.org/en/CSS/-moz-transform#Live_Examples "-moz-transform")
 * [HTML5 & CSS3 Support, Web Design Tools & Support](http://www.findmebyip.com/litmus "HTML5 & CSS3 Support, Web Design Tools & Support")
-</div>
-

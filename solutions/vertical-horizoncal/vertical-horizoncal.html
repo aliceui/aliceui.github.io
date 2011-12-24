@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>水平+垂直居中</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./vertical-horizoncal.css" />
+  <style type="text/css" charset="utf-8">
+    body{padding:30px;}
+    p{margin-bottom:15px;}
+    h3{font-size:20px;}
+    .wrap{height: 200px;position: relative;border:1px solid #ddd;margin-bottom: 25px;}
+    .wrap-bg{background: url(./alipay_logo.gif) no-repeat center center;}
+    .sl-hv-align{position:absolute;left:50%;top:50%;width:200px;height:60px;line-height:60px;text-align:center;vertical-align:middle;margin-left:-100px;margin-top: -30px;background: #f30;color:#fff;}
+    
+    table{width:100%;height:200px;margin-bottom: 15px;}
+    table td{text-align: center;vertical-align: middle;border:1px dotted #a3a3a3;}
+  </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+  
+  <h3>水平&垂直居中的背景图片</h3>
+  <div class="wrap wrap-bg"></div>
+  
+    
+  <h3><code>&lt;table/&gt;</code>垂直居中</h3>
+  <table>
+    <tr>
+      <td><img src="./alipay_logo.gif" /></td>
+      <td>这是文字</td>
+    </tr>
+  </table>
+  
+  <h3>固定方法Demo: </h3>
+  <div style="height:500px;width:100%;border:1px solid #ddd">
+  
+      <div class="sl-hvalign" style="width:500px;">
+        <div class="sl-hvalign-cnt">
+          <div class="sl-hvalign-cnt-inner">
+            <p><img src="./alipay_logo.gif" alt="logo" /></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div> <!-- .sl-hvalign -->
+  
+  </div>
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

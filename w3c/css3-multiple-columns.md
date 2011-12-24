@@ -1,19 +1,12 @@
----
-title: CSS3 Multiple Columns
-layout: doc
-categories:
-- css3
----
-
-<h1 style="font-family:Courier New">CSS3:Multiple Columns</h1>
+<h1>CSS3:Multiple Columns</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -368,10 +361,10 @@ categories:
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-multicol](http://www.w3.org/TR/css3-multicol "http://www.w3.org/TR/css3-multicol")<br/>
 **（2）CSS:**
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -696,15 +689,15 @@ categories:
 <br>
 <br>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 附件
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * column-width，即使设置了每列的宽度，如果没有width的限制，则多列宽度自适应。
 * 如果设置了width，且width&gt;多列宽度的总和（包括 column-gap），宽度还是会自适应整个宽度。或者width&lt;多列宽度的总和，则列数会减小。
 * column-gap是指列之间的距离，包括了column-rule-width（貌似~~）,如果column-gap&lt; column-rule-width，那么，column-rule将不会显示出来。
 * 浏览器兼容性需要注意，而且某些东西在未来可能会变化。
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * [https://developer.mozilla.org](https://developer.mozilla.org "https://developer.mozilla.org")
 * [http://www.w3.org/TR/css3-multicol](http://www.w3.org/TR/css3-multicol "http://www.w3.org/TR/css3-multicol")
 * [http://www.w3schools.com/cssref](http://www.w3schools.com/cssref "http://www.w3schools.com/cssref")

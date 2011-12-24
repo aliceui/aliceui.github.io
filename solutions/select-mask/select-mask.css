@@ -1,0 +1,28 @@
+/*
+	@ 名称: 解决 <select /> z-index 太高问题
+	@ 描述: 浮层被 select 穿透，是最常见的 z-index bug
+	@ 例子：
+		 <div id="dd3" class="sl-selectmask" style="background:#FF3366;">
+			内容<br/>
+		<!--[if lte IE 6.5]><iframe src="javascript:'';"></iframe><![endif]-->
+		</div>
+*/
+
+.sl-selectmask {
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 10;
+	overflow: hidden;
+	width: 33em;
+}
+.sl-selectmask iframe {
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	z-index: -1;
+	border:none;
+	filter: mask();
+	width: 3000px; /* for any big value */
+	height: 3000px /* for any big value */
+}

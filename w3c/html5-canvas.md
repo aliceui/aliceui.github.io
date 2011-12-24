@@ -1,11 +1,4 @@
----
-title: HTML5 Canvas API
-layout: doc
-categories:
-- html5
----
-
-<h1 style="font-family:Courier New">HTML5: Canvas API</h1>
+<h1>HTML5: Canvas API</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
@@ -14,7 +7,7 @@ categories:
 6. [参考文献](#spec-ref)
 
 <h2>一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;margin-left:40px" summary="Browser support for HTML5 Graphics &amp; Embedded 
+<table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Graphics &amp; Embedded 
 Content" height="190" width="920">
 <tbody>
 <tr>
@@ -94,7 +87,7 @@ Content" height="190" width="920">
 </tbody>
 </table>
 
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html")
 
 * &lt;canvas&gt;
@@ -140,7 +133,7 @@ javascript
 
 **(2)Scripting API**
 Canvas: var canvas  = document.getElementById('canvas')<br>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">canvas 对象属性<br>
@@ -168,7 +161,7 @@ Canvas: var canvas  = document.getElementById('canvas')<br>
 Context: var ctx = canvas.getContext('2d');
 
 注：x, y 通常代指坐标点的 x 和 y轴<br>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">矩形<br>
@@ -205,9 +198,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:80px"><br>
-</div>
-<table class="zeroBorder" style="margin-left:80px" height="468" width="826">
+<table class="zeroBorder" height="468" width="826">
 <tbody>
 <tr>
 <th>绘制路径<br>
@@ -266,9 +257,9 @@ Context: var ctx = canvas.getContext('2d');
 </td>
 <td style="text-align:left">绘制弧形、圆形。x, y 是圆的中心坐标；radius 半径；startAngle, endAngle，圆形弧度的开始点和结束点，以X轴为准；anticlockwise，逆时针旋转，Boolean。<br>
 <br>
-<font color="#999999">注：Angle 是靠弧度来计算的，而不是以旋转的度数来计算。</font><br style="color:#999999">
-<font color="#999999">var var degree = 270, // 度数</font><br style="color:#999999">
-<font color="#999999">radians = (Math.PI/180)*degree; // 弧度</font><br>
+注：Angle 是靠弧度来计算的，而不是以旋转的度数来计算。<br style="color:#999999">
+var var degree = 270, // 度数<br style="color:#999999">
+radians = (Math.PI/180)*degree; // 弧度<br>
 </td>
 </tr>
 <tr>
@@ -276,8 +267,8 @@ Context: var ctx = canvas.getContext('2d');
 </td>
 <td rowspan="2" style="text-align:left">x, y 为结束点坐标；cp1x, cp1y 为第一个控制点的坐标;同上；cp2x, cp2y 为第二个控制点的坐标。<br>
 <br>
-<font color="#999999">注：quadratic curve 只有一个控制点，而bezier curve有两个控制点。所以，别把数字 1 写成字母 L 的小写。</font><br>
-<img src="images/HTML5-Canvas-bezierCurveTo.png" style="height:190px;width:190px"><br>
+注：quadratic curve 只有一个控制点，而bezier curve有两个控制点。所以，别把数字 1 写成字母 L 的小写。<br>
+<img src="/images/HTML5-Canvas-bezierCurveTo.png" style="height:190px;width:190px"><br>
 </td>
 </tr>
 <tr>
@@ -286,9 +277,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:80px"><br>
-</div>
-<table class="zeroBorder" style="margin-left:80px" height="85" width="598">
+<table class="zeroBorder" height="85" width="598">
 <tbody>
 <tr>
 <th>图片<br>
@@ -302,13 +291,13 @@ Context: var ctx = canvas.getContext('2d');
 <tr>
 <td style="text-align:left">drawImage(image, x, y [, width, height])<br>
 </td>
-<td style="text-align:left">1. imgage, 图片，或者我们的 canvas 对象。<font color="#999999">如 var img = new image(); </font><br>
+<td style="text-align:left">1. imgage, 图片，或者我们的 canvas 对象。如 var img = new image(); <br>
  2. x, y 在 canvas 中放置图片的坐标，想当于 CSS 的 top, left;<br>
  3. width, height，生成图片的宽高。<br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)</font><br>
+<td style="text-align:left">drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)<br>
 </td>
 <td style="text-align:left">1. image 同上；<br>
  2. 其他属性用图示比较容易理解：<br>
@@ -317,7 +306,7 @@ Context: var ctx = canvas.getContext('2d');
  &nbsp;&nbsp; swidth, sheight 想实现目标图片的大小；<br>
  &nbsp;&nbsp; dx, dy, 目标图片在画面中的位置坐标点；<br>
  &nbsp;&nbsp; dwidth, dheight 目标图片在画布中的大小。<br>
-<div id="bqa0" style="text-align:left"><img src="images/HTML5-Canvas-drawImage.jpg" style="height:290px;width:300px">&nbsp; &nbsp;&nbsp; <br>
+<div id="bqa0" style="text-align:left"><img src="/images/HTML5-Canvas-drawImage.jpg" style="height:290px;width:300px">&nbsp; &nbsp;&nbsp; <br>
 </div>
 </td>
 </tr>
@@ -330,9 +319,7 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:80px"><br>
-</div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th>颜色<br>
@@ -347,7 +334,7 @@ Context: var ctx = canvas.getContext('2d');
 <td style="text-align:left">fillStyle = color<br>
 </td>
 <td style="text-align:left">填充颜色<br>
-<font color="#999999">注：color 可以是 CSS 颜色中的任何一种。</font><a class="external" href="http://www.w3.org/TR/2003/CR-css3-color-20030514/#numerical" rel="external nofollow" style="color:#999999" target="_blank" title="http://www.w3.org/TR/2003/CR-css3-color-20030514/#numerical">CSS3 color values</a><br>
+注：color 可以是 CSS 颜色中的任何一种。<a class="external" href="http://www.w3.org/TR/2003/CR-css3-color-20030514/#numerical" rel="external nofollow" style="color:#999999" target="_blank" title="http://www.w3.org/TR/2003/CR-css3-color-20030514/#numerical">CSS3 color values</a><br>
 </td>
 </tr>
 <tr>
@@ -358,13 +345,11 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 <tr>
 <td style="text-align:left">globalAlpha = transparentcy value</td>
-<td style="text-align:left">transparency value 可以在 0.0 ~ 1.0 之间的值。表示 alpha 透明。<font color="#999999">类似于设置 CSS 的 opacity。</font></td>
+<td style="text-align:left">transparency value 可以在 0.0 ~ 1.0 之间的值。表示 alpha 透明。类似于设置 CSS 的 opacity。</td>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:80px"><br>
-</div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">线条<br>
@@ -385,15 +370,15 @@ Context: var ctx = canvas.getContext('2d');
 <td style="text-align:left">lineCap = type<br>
 </td>
 <td style="text-align:left">线条起始点模式。type 有 3 种：butt/round/square。默认为 butt。<br>
-<font color="#999999">注：butt 与 spuare 的区别是，spuare 的半个 spuare 在基准线给的两端突出。如图：</font><br>
-<div id="du53" style="text-align:left"><img src="images/HTML5-Canvas-lineCap.png" style="height:190px;width:190px"></div>
+注：butt 与 spuare 的区别是，spuare 的半个 spuare 在基准线给的两端突出。如图：<br>
+<div id="du53" style="text-align:left"><img src="/images/HTML5-Canvas-lineCap.png" style="height:190px;width:190px"></div>
 </td>
 </tr>
 <tr>
 <td style="text-align:left">lineJoin = type<br>
 </td>
 <td style="text-align:left">线组合模式。type 有 3 种：round/bevel/miter。默认为 miter。<br>
-<div id="muct" style="text-align:left"><img src="images/HTML5-Canvas-lineJoin.png" style="height:190px;width:190px"></div>
+<div id="muct" style="text-align:left"><img src="/images/HTML5-Canvas-lineJoin.png" style="height:190px;width:190px"></div>
 </td>
 </tr>
 <tr>
@@ -404,9 +389,9 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th>渐变<br>
@@ -434,16 +419,16 @@ Context: var ctx = canvas.getContext('2d');
 </td>
 <td style="text-align:left">添加渐变起始点或结束点的渐变颜色。position 的值是： 0.0~1.0; Color 为 CSS3 允许的颜色值。<br>
 <br>
-<font color="#999999">注：用于 gradient 上。</font><br style="color:#999999">
-<font color="#999999">var lGradient = ctx.createLinearGradient(0, 0, 0, 150);</font><br style="color:#999999">
-<font color="#999999">lGradient.addColorStop(0.6, 'red');</font><br>
+注：用于 gradient 上。<br style="color:#999999">
+var lGradient = ctx.createLinearGradient(0, 0, 0, 150);<br style="color:#999999">
+lGradient.addColorStop(0.6, 'red');<br>
 </td>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px">&nbsp; <br>
+<div style="">&nbsp; <br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">投影<br>
@@ -479,9 +464,9 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">存储<br>
@@ -506,9 +491,9 @@ Context: var ctx = canvas.getContext('2d');
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">变形<br>
@@ -523,14 +508,14 @@ Context: var ctx = canvas.getContext('2d');
 <td style="text-align:left">translate(x, y)<br>
 </td>
 <td style="text-align:left">把 canvas 的原点行动到 x, y 作为其新原点。<br>
-<div id="eapv" style="text-align:left"><img src="images/HTML5-Canvas-translate.png" style="height:220px;width:220px"></div>
+<div id="eapv" style="text-align:left"><img src="/images/HTML5-Canvas-translate.png" style="height:220px;width:220px"></div>
 </td>
 </tr>
 <tr>
 <td style="text-align:left">rotate(angle)<br>
 </td>
 <td style="text-align:left">&nbsp;顺时间旋转。angle 是指弧度，像 arc 的 startAngle 和 endAngle。<br>
-<div id="j90c" style="text-align:left"><img src="images/HTML5-Canvas-rotate.png" style="height:220px;width:220px"></div>
+<div id="j90c" style="text-align:left"><img src="/images/HTML5-Canvas-rotate.png" style="height:220px;width:220px"></div>
 </td>
 </tr>
 <tr>
@@ -543,20 +528,20 @@ Context: var ctx = canvas.getContext('2d');
 <td style="text-align:left">transform(m11, m12, m21, m22, dx, dy)<br>
 </td>
 <td style="text-align:left">变换矩阵（transformation matrix）。<br>
-<font color="#999999">官方 和 MDC 的描述都不是很清楚。大家用到的时候搜索一下。</font><br>
+官方 和 MDC 的描述都不是很清楚。大家用到的时候搜索一下。<br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="Courier New">setTransform(m11, m12, m21, m22, dx, dy)</font><br>
+<td style="text-align:left">setTransform(m11, m12, m21, m22, dx, dy)<br>
 </td>
 <td style="text-align:left">设置变形的值。参数同上。<br>
 </td>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">组合<br>
@@ -572,31 +557,31 @@ Context: var ctx = canvas.getContext('2d');
 </td>
 <td style="text-align:left"><br>
 共 12 种状态。有多层的状态下。会稍有不同。大家自己手写一下，印象会更深刻一点。分别如下图显示：<br>
-<br>
-<div id="arl7" style="text-align:left"><img src="images/HTML5-Canvas-globalCompositeOperation.png" style="height:492px;width:610px"></div>
+<br/>
+<div id="arl7" style="text-align:left"><img src="/images/HTML5-Canvas-globalCompositeOperation.png" style="height:492px;width:610px"></div>
 <br>
 </td>
 </tr>
 </tbody>
 </table>
 **4. Cheetsheet**
-<div id="b.g-" style="margin-left:40px;text-align:left"><img src="images/HTML5-Canvas-Cheetsheet.png" style="height:1027px;width:1388px"></div>
+<div id="b.g-" style=";text-align:left"><img src="/images/HTML5-Canvas-Cheetsheet.png" style="height:1027px;width:1388px"></div>
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 * [Deviant Art Muro](http://muro.deviantart.com/ "Deviant Art Muro")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * 创建的 Canvas 默认是不可见的，需要用 CSS 来样式化。
 * 如果不设置宽度，默认宽高分别是 300px 150px。
 * 目前 Context Type 只有 2D 是被支持的，因此检测其支持状态时，我们用的是 getContext('2D')。
 * 外观都是根据其 Context 来创建的，而非 Canvas 本身。
 * Canvas 绘制的是位图，而不是 SVG 那种矢量图。
 
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 * 目前比较好的兼容方案是，在 IE6-8 中使用开源的 Explore Canvas。
 * Open source on Google Code：[http://code.google.com/p/explorercanvas/](http://code.google.com/p/explorercanvas/ "http://code.google.com/p/explorercanvas/")
 
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 * BOOK:《Pro HTML5 Programming》
 * [Canvas tutorial](https://developer.mozilla.org/en/canvas_tutorial "Canvas tutorial")
 * [HTML5 Spec: the canvas element](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html "HTML5 Spec: the canvas element")

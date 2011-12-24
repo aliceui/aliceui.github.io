@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IE z-index bug</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <style type="text/css">
+    body{padding:30px;}
+    p{margin-bottom:15px;}
+    
+    #t{position:relative;height: 300px;}
+    #yellow{position:relative;}
+    #yellow p, #green{width:200px;height:200px;background-color:#9c0;;}
+    #yellow p{position:absolute;background-color:#FF0;z-index:10000000000;}
+    #green{position:absolute;top:90px;left:50px;z-index:10;}
+  </style>
+</head>
+
+<body>
+
+<div id="wrapper" class="single">
+    
+      <div id="t">  
+        <div id="yellow">
+          <p>#yellow p<br />应该是在上面的</p>
+        </div>
+        <div id="green">#green<br />IE6/7显示在上面，实际上应该在下面</div>
+      </div>
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

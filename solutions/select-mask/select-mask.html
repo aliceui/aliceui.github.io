@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>select 遮盖问题</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <link rel="stylesheet" charset="utf-8" href="./select-mask.css" />
+  <style type="text/css">
+  body{padding:30px;}
+  p{margin-bottom:15px;}
+  .sl-selectmask{
+    opacity:0.6;
+    filter: alpha(opacity=60);
+  }
+  .demo-cnt{position:relative;}
+  </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+    
+    <div class="demo-cnt">
+        <select></select><select></select><select></select>
+        <select></select><br />
+        <select></select>
+        <select></select><select></select>
+        <select></select><select></select><select></select>
+        <select></select><br /><select></select><select></select><select></select>
+        内容
+        <select></select><select></select><select></select>
+        内容
+        <select></select><br /><select></select><select></select><select></select>
+        内容
+        
+        
+        <div class="sl-selectmask" style="background:#09c;">
+          内容<br/>
+          内容<br/>
+          内容<br/>
+          内容<br/>
+          <!--[if lte IE 6.5]><iframe src="javascript:'';"></iframe><![endif]-->
+        </div>
+    </div>
+  
+</div><!-- #wrapper -->
+
+</body>
+</html>

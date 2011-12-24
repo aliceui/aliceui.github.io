@@ -1,20 +1,13 @@
----
-title: HTML5 Geolocation API
-layout: doc
-categories:
-- html5
----
-
-<h1 style="font-family:Courier New">HTML5: Geolocation API</h1>
-<ol style="font-family:Courier New"><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
+<h1>HTML5: Geolocation API</h1>
+<ol><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
 <li><a href="#spec-api" target="_self">API 参考</a></li>
 <li><a href="#spec-demo" target="_self">DEMO</a></li>
 <li><a href="#spec-caution" target="_self">注意事项</a></li>
 <li><a href="#spec-solution" target="_self">兼容解决方案</a></li>
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="font-family:Courier New;margin-left:40px" summary="Browser support for HTML5 
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 
 Web Applications" height="125" width="920">
 <tbody></tbody>
  
@@ -75,21 +68,19 @@ Web Applications" height="125" width="920">
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br style="font-family:Courier New">
+<h2 id="spec-api">二、API 参考</h2>
+<div style=""><b>1.</b> <b>API SPEC:</b> <a href="http://dev.w3.org/geo/api/spec-source.html" id="l8tt" title="http://dev.w3.org/geo/api/spec-source.html">http://dev.w3.org/geo/api/spec-source.html</a><br>
 </div>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1.</b> <b>API SPEC:</b> <a href="http://dev.w3.org/geo/api/spec-source.html" id="l8tt" title="http://dev.w3.org/geo/api/spec-source.html">http://dev.w3.org/geo/api/spec-source.html</a><br>
-</div>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 <b>2. Geoloation 数据来源：</b><br>
 <br>
  &nbsp;&nbsp;&nbsp; 注：Geolocation 获取的经纬度是数字格式的，如：Latitude: 39.17222, Longitude: -120.13778，而非 39°10'20'。<br>
  &nbsp;&nbsp; </div>
-<ul style="margin-left:40px"><li>IP address-based getlocation data<br>
+<ul style=""><li>IP address-based getlocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">Pros(优点)<br>
@@ -116,11 +107,11 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <br>
-<ul style="margin-left:40px"><li>GPS-based geolocation data<br>
+<ul style=""><li>GPS-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">Pros<br>
@@ -147,11 +138,11 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <br>
-<ul style="margin-left:40px"><li>Wi-Fi-based geolocation data<br>
+<ul style=""><li>Wi-Fi-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">Pros<br>
@@ -172,11 +163,11 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <br>
-<ul style="margin-left:40px"><li>Cell phone-based geolocation data<br>
+<ul style=""><li>Cell phone-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">Pros<br>
@@ -207,14 +198,14 @@ Web Applications" height="125" width="920">
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
 <br>
-<ul style="margin-left:40px"><li>User-Defined-based geolocation data<br>
+<ul style=""><li>User-Defined-based geolocation data<br>
 </li></ul>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table class="zeroBorder" style="margin-left:80px">
+<table class="zeroBorder">
 <tbody>
 <tr>
 <th style="text-align:left">Pros<br>
@@ -247,94 +238,92 @@ Web Applications" height="125" width="920">
 </table>
 <br>
 <b>&nbsp;&nbsp; &nbsp; <br>
- &nbsp;&nbsp; &nbsp; 3.</b><font face="courier new"><b>位置数据请问方式<br>
-</b></font><br>
-<table class="zeroBorder" style="margin-left:40px">
+ &nbsp;&nbsp; &nbsp; 3.</b><b>位置数据请问方式<br>
+</b><br>
+<table class="zeroBorder" style="">
 <tbody>
 <tr>
-<th style="text-align:left"><font face="courier new">方式<br>
-</font></th>
-<th style="text-align:left"><font face="courier new">描述<br>
-</font></th>
+<th style="text-align:left">方式<br>
+</th>
+<th style="text-align:left">描述<br>
+</th>
 </tr>
 </tbody>
  
 <tbody>
 <tr>
-<td style="text-align:left"><font face="courier new">One-shot<br>
-</font></td>
+<td style="text-align:left">One-shot<br>
+</td>
 <td style="text-align:left">数据只在请求时获取<br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="courier new">Repeated<br>
-</font></td>
-<td style="text-align:left"><font face="courier new">在请求后，会按一定频率返回数据。直到用户停止它。<br>
-</font></td>
+<td style="text-align:left">Repeated<br>
+</td>
+<td style="text-align:left">在请求后，会按一定频率返回数据。直到用户停止它。<br>
+</td>
 </tr>
 </tbody>
 </table>
 <br>
-<div style="margin-left:40px"><br>
-<b>4.</b><font face="courier new"><b>Script</b></font><br>
+<div style=""><br>
+<b>4.</b><b>Script</b><br>
 </div>
-<div style="margin-left:80px"> &nbsp;&nbsp;&nbsp; <br style="font-family:Courier New">
-<font face="courier new">var geoLocation = navigator.geolocation;</font><br>
+<div> &nbsp;&nbsp;&nbsp; <br>
+var geoLocation = navigator.geolocation;<br>
 </div>
-<div style="margin-left:40px"><br>
-<font face="courier new"><b> &nbsp;&nbsp;&nbsp; (1)浏览器检测</b></font><br>
+<div style=""><br>
+<b> &nbsp;&nbsp;&nbsp; (1)浏览器检测</b><br>
 <br>
 </div>
-<div style="margin-left:120px"><font face="courier new">var hasGeolocation</font> = !!(navigator.geolocation);<br>
+<div>var hasGeolocation = !!(navigator.geolocation);<br>
 <br>
 </div>
-<div style="margin-left:40px"><font face="courier new"><b>&nbsp;&nbsp; &nbsp;(2)Scripting API<br>
+<div style=""><b>&nbsp;&nbsp; &nbsp;(2)Scripting API<br>
  &nbsp;&nbsp;&nbsp; <br>
-</b></font></div>
-<font face="courier new"><b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</b>&nbsp;&nbsp; &nbsp; &lt;1&gt; 获取 geolocation 数据模式：</font><br>
+</b></div>
+<b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</b>&nbsp;&nbsp; &nbsp; &lt;1&gt; 获取 geolocation 数据模式：<br>
 <br>
-<table class="zeroBorder" style="margin-left:120px">
+<table class="zeroBorder">
 <tbody>
 <tr>
-<th style="text-align:left"><font face="courier 
-new">方式</font><br>
+<th style="text-align:left">方式<br>
 </th>
-<th style="text-align:left"><font face="courier
- new">描述</font><br>
+<th style="text-align:left">描述<br>
 </th>
 </tr>
 </tbody>
  
 <tbody>
 <tr>
-<td style="text-align:left"><font face="courier new">One-shot</font><br>
+<td style="text-align:left">One-shot<br>
 </td>
-<td style="text-align:left"><font face="courier new">数据只在请求时获取</font><br>
+<td style="text-align:left">数据只在请求时获取<br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="courier new">Repeated</font><br>
+<td style="text-align:left">Repeated<br>
 </td>
-<td style="text-align:left"><font face="courier new">在请求后，会按一定频率返回数据。直到用户停止它(clearWatch(watchPositionHandler))。</font><br>
+<td style="text-align:left">在请求后，会按一定频率返回数据。直到用户停止它(clearWatch(watchPositionHandler))。<br>
 </td>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<div style="margin-left:80px"><b>&nbsp;</b>&nbsp; &nbsp; <br>
-&nbsp;&nbsp; &nbsp; &lt;2&gt; <font face="courier new">navigator.geolocation</font> 方法:<br>
+<div><b>&nbsp;</b>&nbsp; &nbsp; <br>
+&nbsp;&nbsp; &nbsp; &lt;2&gt; navigator.geolocation 方法:<br>
 <br>
 </div>
-<table class="zeroBorder" style="margin-left:120px">
+<table class="zeroBorder">
 <tbody>
 <tr>
-<th style="text-align:left"><font face="courier new">用于<br>
-</font></th>
-<th><font face="courier new">&nbsp;方法</font><br>
+<th style="text-align:left">用于<br>
 </th>
-<th style="text-align:left"><font face="courier new">参数描述<br>
-</font></th>
+<th>&nbsp;方法<br>
+</th>
+<th style="text-align:left">参数描述<br>
+</th>
 </tr>
 </tbody>
  
@@ -365,18 +354,15 @@ new">方式</font><br>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:80px"><br>
-<br>
-</div>
  &nbsp;&nbsp; &nbsp; <b>&nbsp;&nbsp; </b>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;3&gt; 方法参数解释：<br>
 <br>
-<table class="zeroBorder" style="margin-left:120px">
+<table class="zeroBorder">
 <tbody>
 <tr>
-<th style="text-align:left"><font face="courier new">successCallback(position)<br>
-</font></th>
-<th style="text-align:left"><font face="courier new">描述<br>
-</font></th>
+<th style="text-align:left">successCallback(position)<br>
+</th>
+<th style="text-align:left">描述<br>
+</th>
 </tr>
 </tbody>
  
@@ -388,10 +374,10 @@ new">方式</font><br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="courier new">position.coords.latitude<br>
-</font></td>
-<td style="text-align:left"><font face="courier new">纬度，return {Number}<br>
-</font></td>
+<td style="text-align:left">position.coords.latitude<br>
+</td>
+<td style="text-align:left">纬度，return {Number}<br>
+</td>
 </tr>
 <tr>
 <td style="text-align:left">position.coords.longitude<br>
@@ -426,20 +412,20 @@ new">方式</font><br>
 </table>
 <div style="margin-left:80px"><br>
 </div>
-<table class="zeroBorder" style="margin-left:120px">
+<table class="zeroBorder">
 <tbody>
 <tr>
-<th style="text-align:left"><font face="courier new">errorCallback(error)<br>
-</font></th>
-<th style="text-align:left"><font face="courier new">描述<br>
-</font></th>
+<th style="text-align:left">errorCallback(error)<br>
+</th>
+<th style="text-align:left">描述<br>
+</th>
 </tr>
 </tbody>
  
 <tbody>
 <tr>
-<td style="text-align:left"><font face="courier new">error.code<br>
-</font></td>
+<td style="text-align:left">error.code<br>
+</td>
 <td style="text-align:left">返回 4 种类型的错误, return {Number}：<br>
 <ul><li>0, UNKNOWN_ERROR<br>
 </li>
@@ -452,21 +438,19 @@ new">方式</font><br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="courier new">error.message<br>
-</font></td>
-<td style="text-align:left"><font face="courier new">error code 对应的错误信息。return {String}。在 Firefox 3.6 似乎运行有问题。</font></td>
+<td style="text-align:left">error.message<br>
+</td>
+<td style="text-align:left">error code 对应的错误信息。return {String}。在 Firefox 3.6 似乎运行有问题。</td>
 </tr>
 </tbody>
 </table>
-<div style="margin-left:80px"><br>
-</div>
-<table class="zeroBorder" style="margin-left:120px">
+<table class="zeroBorder">
 <tbody>
 <tr>
-<th style="text-align:left"><font face="courier new">positionOptions Object<br>
-</font></th>
-<th style="text-align:left"><font face="courier new">描述<br>
-</font></th>
+<th style="text-align:left">positionOptions Object<br>
+</th>
+<th style="text-align:left">描述<br>
+</th>
 </tr>
 </tbody>
  
@@ -478,10 +462,10 @@ new">方式</font><br>
 </td>
 </tr>
 <tr>
-<td style="text-align:left"><font face="courier new">timeout = {milliseconds}<br>
-</font></td>
-<td style="text-align:left"><font face="courier new">请求超时的时间，单位为毫秒。默认为不限制时间。<br>
-</font></td>
+<td style="text-align:left">timeout = {milliseconds}<br>
+</td>
+<td style="text-align:left">请求超时的时间，单位为毫秒。默认为不限制时间。<br>
+</td>
 </tr>
 <tr>
 <td style="text-align:left">maximumAge = {milliseconds}<br>
@@ -492,14 +476,14 @@ new">方式</font><br>
 </tbody>
 </table>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 &nbsp;&nbsp;&nbsp; <a href="http://sofish.de/file/html5/geolocation/" id="uylx" title="HTML5 Geolocation">HTML5 Geolocation</a><br>
 &nbsp;&nbsp; &nbsp;<a href="http://www.ip2location.com/html5geolocationapi.aspx" id="sx3t" title="Using the traditional Geolocation via IP address">Using the traditional Geolocation via IP address</a><br>
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 <ul><li>Geolocation 涉及到用户隐私。在用的时候应该慎重。在获取 Geolocation 的时候，一定要征求用户的意思。这是规范中设定的。这就是为什么很多服务都会问你要不要分享自己的位置时有一个Checkbox选项。比较 twitpic.com。在发送用户隐私的时候，可能需要做加密。在隐藏保护的架构上：</li></ul>
-<div id="tw2n" style="margin-left:40px;text-align:left">&nbsp;&nbsp;&nbsp; <img src="images/HTML5-Geolocation.png" style="height:286px;width:558px"><br>
+<div id="tw2n" style=";text-align:left">&nbsp;&nbsp;&nbsp; <img src="/images/HTML5-Geolocation.png" style="height:286px;width:558px"><br>
 </div>
-<div id="tw2n" style="margin-left:40px;text-align:left">
+<div id="tw2n" style=";text-align:left">
 <ol><li>Geolocation Application 是不能直接访问设备的，只能通过请求浏览器来访问设备；</li>
 <li>网站页面下载 后，Geolocation Application 调用请求，浏览器截取之，将请求用户的意见；</li>
 <li>浏览器内部包含通过 IP 地址、Wi-Fi、GPS 获取坐标的功能；</li>
@@ -507,10 +491,10 @@ new">方式</font><br>
 </ol>
 <br>
 </div>
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 &nbsp;&nbsp;&nbsp; Geolocation 目前没有比较好的前端兼容解决方案。可能 IP 地址配对的后端方法可以与之结合。不过，Geolocation 可能将来会大部分应用在手持设备上，像 android 和 iOS 的 webkit 都是已经支持的了。<br>
 <br>
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 <ul><li>BOOK:《Pro HTML5 Programming》</li>
 <li><a href="http://dev.w3.org/geo/api/spec-source.html#timestamp" id="wmdp" title="HTML5 Geolocation API">HTML5 Geolocation API</a><br>
 </li>

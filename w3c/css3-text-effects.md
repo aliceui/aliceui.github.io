@@ -1,19 +1,12 @@
----
-title: CSS3 Text Effects
-layout: doc
-categories:
-- css3
----
-
-<h1 style="font-family:Courier New">CSS3: Text Effects</h1>
+<h1>CSS3: Text Effects</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
 4. [注意事项](#spec-caution)
 5. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="197" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -147,10 +140,10 @@ categories:
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**[http://www.w3.org/TR/css3-background/](http://www.w3.org/TR/css3-background/#borders "http://www.w3.org/TR/css3-background/#borders")<br/>
 **（2）CSS:**
-<table class="proptable zeroBorder" style="margin-left:40px" height="369" width="920">
+<table class="proptable zeroBorder" style="" height="369" width="920">
 <tbody>
 <tr>
 <th>属性<br>
@@ -173,7 +166,7 @@ categories:
 <td style="text-align:left"><a href="http://www.w3.org/TR/css3-text/#text-shadow" id="y4ru" title="http://www.w3.org/TR/css3-text/#text-shadow">text-shadow</a><br>
 </td>
 <td style="text-align:left">none | [<a href="http://www.w3.org/TR/css3-text/#ltshadowgt">&lt;shadow&gt;</a>, ] * <a href="http://www.w3.org/TR/css3-text/#ltshadowgt">&lt;shadow&gt;</a><br>
-<font face="Courier New">&lt;shadow&gt; = [ &lt;length&gt;{2,3} &amp;&amp; <a href="http://www.w3.org/TR/css3-background/#ltcolorgt">&lt;color&gt;</a>? ]</font><br>
+&lt;shadow&gt; = [ &lt;length&gt;{2,3} &amp;&amp; <a href="http://www.w3.org/TR/css3-background/#ltcolorgt">&lt;color&gt;</a>? ]<br>
 <br>
 <div class="cont"> none：无阴影<br>
  &lt;length&gt;①：第1个长度值用来设置对象的阴影水平偏移值。可以为负值<br>
@@ -270,18 +263,17 @@ categories:
 <br>
 <br>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 附件
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * firefox不支持text-overflow
 * word-wrap, line-break, word-break 这几个属性都是 MS 的独立实现，随后其他浏览器也不同程度地实现了其中的某些，之后，这几个属性都被吸纳为 CSS3 标准。
 * 现有的都是一些css3的草案，之后可能会发生变化。
 
-<h2 id="spec-ref" style="font-family:Courier New">五、参考文献</h2>
+<h2 id="spec-ref">五、参考文献</h2>
 * [https://developer.mozilla.org](https://developer.mozilla.org "https://developer.mozilla.org")
 * [css参考手册](http://www.css88.com/book/css/ "http://www.css88.com/book/css/")
 * [css3中文手册](http://isd.tencent.com/css3/ "http://isd.tencent.com/css3/")
 * [http://www.w3schools.com/cssref](http://www.w3schools.com/cssref "http://www.w3schools.com/cssref")
 * [word-wrap解惑](http://ued.taobao.com/blog/2010/10/14/research-of-word-wrap/ "http://ued.taobao.com/blog/2010/10/14/research-of-word-wrap/")
 * [http://www.w3.org/TR/2010/WD-css3-text-20101005/](http://www.w3.org/TR/2010/WD-css3-text-20101005/ "http://www.w3.org/TR/2010/WD-css3-text-20101005/")
-

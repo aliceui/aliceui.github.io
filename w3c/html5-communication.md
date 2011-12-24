@@ -1,11 +1,4 @@
----
-title: HTML5 Communication API
-layout: doc
-categories:
-- html5
----
-
-<h1 style="font-family:Courier New">HTML5: Communication API</h1>
+<h1>HTML5: Communication API</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
@@ -13,8 +6,8 @@ categories:
 5. [兼容解决方案](#spec-solution)
 6. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="zeroBorder" style="font-family:Courier New;margin-left:40px" height="178" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="zeroBorder" height="178" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -112,7 +105,7 @@ categories:
 </tr>
 </tbody>
 </table>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **（1）API SPEC:**
 
 * Post Message:[http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html](http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html "http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html")
@@ -151,11 +144,11 @@ javascript
     }, true)
 
 
-<div style="margin-left:80px">
-<table id="j4ex" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="622">
+<div>
+<table id="j4ex" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="622">
 <tbody>
 <tr>
-<th><font face="Courier New">postMessage(message, targetOrigin, [, ports]);</font><br>
+<th>postMessage(message, targetOrigin, [, ports]);<br>
 </th>
 <th>描述<br>
 </th>
@@ -180,9 +173,9 @@ javascript
 </tr>
 </tbody>
 </table>
-<div style="margin-left:40px"><br>
+<div style=""><br>
 </div>
-<table id="gqid" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="623">
+<table id="gqid" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="132" width="623">
 <tbody>
 <tr>
 <th>message 事件<br>
@@ -231,7 +224,7 @@ javascript
 
 XMLHttpRequest
 
-<table id="v_as" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="352" width="621">
+<table id="v_as" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="352" width="621">
 <tbody>
 <tr>
 <th>New XMLHttpRequest Level 2 <a href="http://www.w3.org/TR/2010/WD-XMLHttpRequest2-20100907/#event-xhr-loadstart" id="m6ve" title="progress event">progress event</a> names<br>
@@ -261,14 +254,14 @@ XMLHttpRequest
 <td style="text-align:left" align="left">error<br>
 </td>
 <td style="text-align:left" align="left">请求失败<br>
-<font color="#999999">注：我们可以用它来替换 onreadystatechange 来检测错误</font><font color="#999999">状态</font><br>
+注：我们可以用它来替换 onreadystatechange 来检测错误状态<br>
 </td>
 </tr>
 <tr>
 <td style="text-align:left" align="left">load<br>
 </td>
 <td style="text-align:left" align="left">请求成功<br>
-<font color="#999999">注：我们可以用它来替换 onreadystatechange 来检测成功状态</font><br>
+注：我们可以用它来替换 onreadystatechange 来检测成功状态<br>
 </td>
 </tr>
 <tr>
@@ -288,7 +281,7 @@ XMLHttpRequest
 <br>
 </div>
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 **(1) Post Message**<br>
  注：新建一个 HTML 文件，本地运行吧
 
@@ -324,7 +317,7 @@ XMLHttpRequest
 
 **(2) XMLHttpRequest Level 2：**[DEMO](http://arunranga.com/examples/access-control/ "DEMO")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * 即使 PostMessage 的数据是来源于可信站点，也要隐患，因为这些数据可能是这篡改的，一些最佳实践：
 * 不要轻易执行第三数提供的字符串。在自己的程序中，应避免使用 eval 来处理某些字符串，相反，可以使用 JSON, JSON parser 会把它变得安全；
 * 不要直接把接收的数据作为页面结构直接使用 element.innerHTML = e.data, 我们可以先让接收的数据变成文本 element.textContent = e.data。
@@ -333,11 +326,11 @@ XMLHttpRequest
 * [cross-site xmlhttprequest with CORS](http://hacks.mozilla.org/2009/07/cross-site-xmlhttprequest-with-cors/ "cross-site xmlhttprequest with CORS")
 * [Http Access Control](https://developer.mozilla.org/En/HTTP_Access_Control "Http Access Control")
 
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 * [Alice Solution: 跨域](http://arale.alipay.net/alice/solution/killIframe/killIframe.php "Alice Solution: 跨域")
 * [IE8 XDomainRequest object](http://msdn.microsoft.com/en-us/library/cc288060%28VS.85%29.aspx "IE8 XDomainRequest object")
 
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 * BOOK:《Pro HTML5 Programming》
 * [HTML5: Communication](http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#dom-messageevent-lasteventid "HTML5: Communication")
 * [Cross-Window Messaging](http://ejohn.org/blog/cross-window-messaging/ "Cross-Window Messaging")

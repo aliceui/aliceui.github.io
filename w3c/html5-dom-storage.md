@@ -1,11 +1,4 @@
----
-title: HTML5 Dom Storage API
-layout: doc
-categories:
-- html5
----
-
-<h1 style="font-family:Courier New">HTML5: DOM Storage API</h1>
+<h1>HTML5: DOM Storage API</h1>
 1. [浏览器支持](#spec-browser)
 2. [规范 API](#spec-api)
 3. [DEMO](#spec-demo)
@@ -13,8 +6,8 @@ categories:
 5. [兼容解决方案](#spec-solution)
 6. [参考文献](#spec-ref)
 
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:40px" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="litmus-browser-support-results zeroBorder" style="" summary="Browser support for HTML5 Forms Inputs" height="162" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -78,9 +71,9 @@ categories:
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
+<h2 id="spec-api">二、API 参考</h2>
 **1. localStorage vs sessionStorage**
-<table class="litmus-browser-support-results zeroBorder" style="margin-left:80px" summary="Browser support for HTML5 Forms Inputs" height="62" width="481">
+<table class="litmus-browser-support-results zeroBorder" summary="Browser support for HTML5 Forms Inputs" height="62" width="481">
 <tbody>
 <tr>
 <th class="tertiary-heading" scope="col"><br>
@@ -117,7 +110,7 @@ categories:
 </tbody>
 </table>
 **2. 存储大小对比**
-<table class="zeroBorder" style="margin-left:80px" height="115" width="478">
+<table class="zeroBorder" height="115" width="478">
 <tbody>
 <tr>
 <th style="text-align:left">方式<br>
@@ -158,7 +151,7 @@ javascript
                  hasLocalStorage = !!(window.localStorage);
 
 (2) Storage 对象公用 API
-<table class="zeroBorder" style="margin-left:80px" height="326" width="716">
+<table class="zeroBorder" height="326" width="716">
 <tbody>
 <tr>
 <th style="text-align:left">API<br>
@@ -215,7 +208,7 @@ javascript
 
 注: 在目前的所有浏览器中测试，都失败 (2010.12.23)
 
-<table class="zeroBorder" style="margin-left:80px" height="252" width="728">
+<table class="zeroBorder" height="252" width="728">
 <tbody>
 <tr>
 <th style="text-align:left">API<br>
@@ -268,14 +261,14 @@ javascript
 </tbody>
 </table>
 
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
 * [LocalStorage vs IE-userData](http://sofish.de/file/html5/localStorage/ "LocalStorage vs IE-userData")
 
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 * localStorage 在 Firefox 中，需要服务器支持。本地调试可能出现异常；
 * 注意安全问题。因为 localStorage 在没有被清除的状况下，会一直存在。
 
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 **1. 在 IE6-7 中使用 userData**
  使用参考：[http://msdn.microsoft.com/en-us/library/ms531424%28v=vs.85%29.aspx](http://msdn.microsoft.com/en-us/library/ms531424%28v=vs.85%29.aspx "http://msdn.microsoft.com/en-us/library/ms531424%28v=vs.85%29.aspx")<br>
  userData 相比 localStorage 更简单。它的工作就是下载 DOM attribute。我们可以 setAttribute --&gt; save() --&gt; load() --&gt; setAttribute 这样的流程来例其工作。而要这样做的前提是在要 set attribute 的 DOM Element 中添加 CSS behavior。示例如下：
@@ -302,7 +295,7 @@ javascript
 
 **2. 使用** [Flash Local Storage](http://www.macromedia.com/support/documentation/en/flashplayer/help/help02.html "http://www.macromedia.com/support/documentation/en/flashplayer/help/help02.html") **(淘宝首页手机充值使用 flash 来存储)，优点是跨浏览器，但需要 flash plugin 支持**
 
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 * BOOK:《Pro HTML5 Programming》
 * [HTML5 Spec: DOM storage](http://dev.w3.org/html5/webstorage/#storage-0 "HTML5 Spec: DOM storage")
 * [DOM Storage](https://developer.mozilla.org/en/dom/storage "DOM Storage")

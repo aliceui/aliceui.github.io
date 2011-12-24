@@ -20,7 +20,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
-/* 要注意表单元素并不继续父级 font 的问题 */
+/* 要注意表单元素并不继承父级 font 的问题 */
 body,button,input,select,textarea{
 	font:12px/1.5 tahoma,arial,\5b8b\4f53;
 }
@@ -96,7 +96,7 @@ a:hover {
 	text-decoration:underline;
 }
 
-/* 默认显示下划线，保持页面简洁 */
+/* 默认不显示下划线，保持页面简洁 */
 ins,a {
 	text-decoration:none;
 }

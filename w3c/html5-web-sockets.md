@@ -1,20 +1,13 @@
----
-title: HTML5 Web Sockets API
-layout: doc
-categories:
-- html5
----
-
-<h1 style="font-family:Courier New">HTML5: Web Sockets API</h1>
-<ol style="font-family:Courier New"><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
+<h1>HTML5: Web Sockets API</h1>
+<ol><li><a href="#spec-browser" target="_self">浏览器支持</a></li>
 <li><a href="#spec-api" target="_self">API 参考</a></li>
 <li><a href="#spec-demo" target="_self">DEMO</a></li>
 <li><a href="#spec-caution" target="_self">注意事项</a></li>
 <li><a href="#spec-solution" target="_self">兼容解决方案</a></li>
 <li><a href="#spec-ref" target="_self">参考文献</a></li>
 </ol>
-<h2 id="spec-browser" style="font-family:Courier New">一、浏览器支持</h2>
-<table class="zeroBorder" style="font-family:Courier New;margin-left:40px" height="166" width="920">
+<h2 id="spec-browser">一、浏览器支持</h2>
+<table class="zeroBorder" height="166" width="920">
 <tbody>
 <tr>
 <th class="primary-heading" scope="row"><span class="offScreen">Platform</span></th>
@@ -83,20 +76,20 @@ categories:
 </tbody>
 </table>
 <br>
-<h2 id="spec-api" style="font-family:Courier New">二、API 参考</h2>
-<div style="margin-left:40px"><b>1. API SPEC</b>: <a href="http://dev.w3.org/html5/websockets/" id="ve.m" title="http://dev.w3.org/html5/websockets/">http://dev.w3.org/html5/websockets/</a><br>
+<h2 id="spec-api">二、API 参考</h2>
+<div style=""><b>1. API SPEC</b>: <a href="http://dev.w3.org/html5/websockets/" id="ve.m" title="http://dev.w3.org/html5/websockets/">http://dev.w3.org/html5/websockets/</a><br>
 <br>
 <b>2. SCRIPT</b><br>
 </div>
-<div style="margin-left:80px"><br>
-<font face="Courier New">var socket = new <b>WebSocket</b>('ws://game.example.com:12010/updates');<br>
+<div><br>
+var socket = new <b>WebSocket</b>('ws://game.example.com:12010/updates');<br>
 <br>
 socket.onopen = function () {<br>
 &nbsp;&nbsp; &nbsp;setInterval(function() {<br>
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;if (socket.<b>bufferedAmount</b> == 0)<br>
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;socket.<b>send</b>(getUpdateData());<br>
 &nbsp;&nbsp; &nbsp;}, 50);<br>
-};</font><br>
+};<br>
 <br>
 <b>(1) 浏览器检测:</b><br>
  &nbsp;&nbsp;&nbsp; <br>
@@ -104,7 +97,7 @@ socket.onopen = function () {<br>
 <br>
 <b>(2) Scripting API:</b><br>
 <br>
-<table id="m:6l" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="311" width="920">
+<table id="m:6l" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="311" width="920">
 <tbody>
 <tr>
 <th style="text-align:left">API<br>
@@ -155,7 +148,7 @@ socket.onopen = function () {<br>
 </tbody>
 </table>
 <br>
-<table id="rnih" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="181" width="678">
+<table id="rnih" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="181" width="678">
 <tbody>
 <tr>
 <th>WebSocket 事件<br>
@@ -190,7 +183,7 @@ socket.onopen = function () {<br>
 </tbody>
 </table>
 <br>
-<table id="m:6l" style="margin-left:40px" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="175" width="530">
+<table id="m:6l" style="" border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="175" width="530">
 <tbody>
 <tr>
 <th>readyState 状态码<br>
@@ -239,21 +232,21 @@ socket.onopen = function () {<br>
 </table>
 </div>
 <br>
-<h2 id="spec-demo" style="font-family:Courier New">三、DEMO</h2>
+<h2 id="spec-demo">三、DEMO</h2>
  &nbsp;&nbsp;&nbsp; Kaazing 的 demo: <a href="http://kaazing.me/" id="bo1r" title="http://kaazing.me/">http://kaazing.me/</a><br>
-<h2 id="spec-caution" style="font-family:Courier New">四、注意事项</h2>
+<h2 id="spec-caution">四、注意事项</h2>
 <ul><li>WebSocket 仍存在<a href="http://www.ietf.org/mail-archive/web/hybi/current/msg04744.html" id="vqi2" title="一些问题">一些问题</a>，Firefox 4 默认并没有打开。如要打开，需要在 about:config 中把下面两项设置为true：</li>
-<ul><li><font face="Courier New">network.websocket.enabled</font></li>
-<li><font face="Courier New">network.websocket.override-security-block</font></li></ul>
+<ul><li>network.websocket.enabled</li>
+<li>network.websocket.override-security-block</li></ul>
 <li>使用它，更多的是关注后端的应该，前端方面只是简单的事件处理<br>
 </li></ul>
 <br>
-<h2 id="spec-solution" style="font-family:Courier New">五、兼容解决方案</h2>
+<h2 id="spec-solution">五、兼容解决方案</h2>
 <ul><li><a href="http://kaazing.com/" id="l..o" title="Kaazing WebSocket Gateway">Kaazing WebSocket Gateway</a> - 一个 Java 的解决方案，不依赖 Native WebSockets，兼容所有浏览器。支付宝刚好可以用上，但用上的可能性还是比较小的。因为跟一般的 XHR 不同，so... 大公司不好折腾。</li>
 <li style="text-align:right"><a href="http://jwebsocket.org/" id="x1lm" title="jWebSocket">jWebSocket</a> - 一个纯 Java/Javascript 的解决方案。包括 Server/clients/flash 等支持。</li>
 <li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/start-using-html5-websockets-today/" id="isc6" title="Start Using HTML5 WebSockets Today">Start Using HTML5 WebSockets Today</a> - PHP solution。<br>
 </li></ul>
-<h2 id="spec-ref" style="font-family:Courier New">六、参考文献</h2>
+<h2 id="spec-ref">六、参考文献</h2>
 <ul><li>BOOK:《Pro HTML5 Programming》</li>
 <li><a href="http://dev.w3.org/html5/websockets/" id="mh3w" title="HTML5 SPEC: WebSockets">HTML5 SPEC: WebSockets</a><br>
 </li>

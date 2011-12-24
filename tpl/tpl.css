@@ -1,0 +1,186 @@
+/*
+ * @name: 导航
+ * @overview: 一般导航
+ * @require: null
+ */                                                                   
+.ui-nav{}
+.ui-nav-item{}
+.ui-nav-item-current{}
+.ui-nav-item-child{}
+.ui-nav-item-active-child{}
+
+/*
+ * @name: 标题
+ * @overview: 有其他内容包含在内的标题
+ * @require: null;
+ */
+.ui-title{}
+.ui-title-cnt{}
+.ui-title-subcnt{}
+
+/*
+ * @name: 步骤
+ * @overview: 用户操作步骤
+ * @require: null
+ */
+.ui-step{}
+.ui-step-item{}
+.ui-step-current{}
+
+/* 可能还会需要 */
+.ui-step-item-first{}
+.ui-step-item-last{}
+
+/*
+ * @name: 列表
+ * @overview: 一般列表样式
+ * @require: null;
+ */
+.ui-list{}
+.ui-list-item{}
+.ui-list-item-hover{}
+
+/*
+ * @name: 重复元素
+ * @overview: 重复出现的元素，我们通常用这种方法来写，这样也会方便JS操作
+ * @require: null
+ */
+.ui-repeater{}
+.ui-repeater-item{}
+.ui-repeater-current{}
+
+/* 
+ * @name: ui-dropdown 
+ * @overview: 通用下拉框
+ * @require: null
+ */
+.ui-dropdown {}
+.ui-dropdown-header {}
+.ui-dropdown-container {}
+
+/* status */
+.ui-dropdown-active .ui-dropdown-header  {}
+.ui-dropdown-active .ui-dropdown-container {}
+
+/*
+ * @name: 分页
+ * @overview: 页面分页
+ * @require: null
+ */
+.ui-page{}
+.ui-page-item{}
+.ui-page-item-current{}
+
+/* 可能还会用到的 */
+.ui-page-item-info{}
+.ui-page-item-first{}
+.ui-page-item-last{}
+.ui-page-item-prev{}
+.ui-page-item-next{}
+
+/* 
+ * @name: ui-tip 
+ * @overview: 通用对话框, 通常是 position:absolute 的
+ * @require: null
+ */
+.ui-tip {}
+.ui-tip-cnt {}
+
+/* 
+ * @name: ui-message 
+ * @overview: 通用提示,通用对话框, 通常是 position: relative 的
+ * @require: null
+ */
+.ui-message {}
+.ui-message-cnt {}
+
+/* status */
+.ui-message-error {}
+.ui-message-warn {}
+.ui-message-success {}
+
+/* 
+ * @name: ui-button
+ * @overview: 通用按钮
+ * @require: null
+ */
+.ui-button {}
+.ui-button-text {}
+.ui-button .ui-icon {}
+
+.ui-button-icon-left {}
+.ui-button-icon-left .ui-icon-rarr {}
+.ui-button-icon-left .ui-button-text {}
+
+.ui-button-icon-right {}
+.ui-button-icon-right .ui-icon-rarr {}
+.ui-button-icon-right .ui-button-text {}
+
+/* status */
+.ui-button-hover {}
+.ui-button-disabled {}
+.ui-state-selected {}
+
+
+/* 
+ * @name: 表单项 
+ * @overview: 通用文本输入框
+ * @require: null
+ */
+.ui-input {}
+/* status */
+.ui-input-hover {}
+.ui-input-focus {}
+.ui-input-disabled {}
+
+.ui-label {}
+/* status */
+.ui-label-hover {}
+.ui-label-focus {}
+
+.ui-textarea {}
+/* status */
+.ui-textarea-hover {}
+.ui-textarea-disabled {}
+
+/* 
+ * @name: ui-form 
+ * @overview: 通用表单
+ * @require: ui-input,ui-button
+ */
+
+.ui-form {}
+.ui-form legend {}
+
+.ui-form-item{}
+.ui-form-required {}
+.ui-form-explain {}
+
+/* status */
+.ui-form-hover {}
+.ui-form-focus {}
+.ui-form-error {}
+.ui-form-success {}
+.ui-form-warn {}
+.ui-form-loading {}
+
+/* 
+ * @name: ui-tab 
+ * @overview: 通用tab
+ * @require: null
+ */
+.ui-tab {}
+.ui-tab-trigger {}
+.ui-tab-trigger-item {}
+.ui-tab-trigger-item-current{}
+
+.ui-tab-cnt {}
+.ui-tab-cnt-item {}
+.ui-tab-cnt-item-current {}
+
+/*
+ * @name: 表格
+ * @overview: 通用列表
+ * @require: null;
+*/
+.ui-table {}

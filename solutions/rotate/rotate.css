@@ -3,7 +3,7 @@
 	@ 用法: 添加 .sl-rotate, 默认为顺时针旋转90度, 逆时针翻转需添加 .sl-rotate-90ccw
 	@ 用法: 
 		
-		默认: <span class="sl-rotate .sl-rotate-90">顺时针转一下</span>
+		默认: <span class="sl-rotate sl-rotate-90">顺时针转一下</span>
 			<span class="sl-rotate sl-rotate-90cw">顺时针转一下</span>
 			<span class="sl-rotate sl-rotate-90ccw">逆时针转一下</span>
 		
