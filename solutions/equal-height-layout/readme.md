@@ -3,7 +3,7 @@
 - 用法：
  
  等高栏的容器添加 .sl-equalheight <br />
- 子元素添加 .sl-equalheight 可以实现等高
+ 子元素添加 .sl-equalheight-item 可以实现等高
 
 - 布局
 
