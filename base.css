@@ -39,7 +39,7 @@ th{
 }
 
 /* 去除默认边框 */
-fieldset,img,a img{
+fieldset,img{
 	border:0;
 }
 
