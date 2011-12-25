@@ -9,9 +9,9 @@ Alice 是支付宝前端样式解决方案小组的项目代称。她包括构�
     
     ---
      |---- plugins/             浏览器兼容解决方案对应的编辑器插件
-     |---- solutions/           浏览器兼容解决方案
+     |---- solutions/           浏览器兼容解决方案（支持 Less CSS)
      |---- tpl/                 参考的模板文件
-     |---- w3c/                 HTML5/CSS3 标准文档
+     |---- w3c/                 HTML5/CSS3 标准文档 (支持 Less CSS)
      |---- base.css             Alice 的基础，所有样式均基于它
      |---- readme.md     
 

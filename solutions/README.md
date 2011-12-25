@@ -5,7 +5,14 @@
 - 浏览器 bug 兼容问题的解决方案
 - HTML5/CSS3 的跨浏览器解决方案
 
-## 二、现有 solutions 目录结构
+## 二、Solutions 支持
+
+目前 Solutions 支持原生 CSS 和 Less CSS。分为是目录下的：
+
+ - SOLUTION-NAME.css
+ - SOLUTION-NAME.less
+
+## 三、现有 solutions 目录结构
 
     ----文件名---------------------|插件快捷键--------|说明-------------------------
     .
@@ -30,4 +37,8 @@
     ├── rotate                  sl-rotate        跨浏览器旋转
     ├── select-mask             sl-selectmask    IE6 浮层遮盖 select
     └── vertical-horizoncal     sl-hvalign       垂直+水平居中
+    
+## 四、开发者
+
+Solutions 的 Less CSS 版本支持作者：[元彦](https://github.com/yuanyan/)
 
