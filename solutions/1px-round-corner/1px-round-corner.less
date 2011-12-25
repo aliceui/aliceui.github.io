@@ -1,0 +1,39 @@
+/*
+  @ 名称: 1像素圆角
+  @ 描述: 需要自己设置宽度，或者高度，否则会随内容自适应
+  @ 用法: 
+    最外层：.sl-rc 
+    内容层：.sl-rc-cnt
+    鼠标经过：.sl-rc-hover
+*/
+
+/* base */
+.sl-rc {
+	display:inline-block;
+	vertical-align: middle;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;  /* 可重设 */
+	
+	/* 
+	不要直接给 BOTTON | INPUT[type=submit[button]] 添加边框
+	这会引发 IE 的 1px 的黑边 bug
+	Note: 一般不要把 input 作为.sl-rc-cnt 层 
+	*/
+	.sl-rc-cnt {
+		float:left;position: relative;
+		border-top: 1px solid #ddd;border-bottom:1px solid #ddd; /* 可重设 */
+		margin:-1px 0;
+	}
+	
+	/* 鼠标经过 */
+	&:hover, &:hover .sl-rc-cnt {
+		border-color: #aaa; /* 可重设 */
+		text-decoration: none;
+	}
+}
+
+/* HACK for ie6 7 */
+div.sl-rc, p.sl-rc, h2.sl-rc, h3.sl-rc, h4.sl-rc, h5.sl-rc, h6.sl-rc, ul.sl-rc, ol.sl-rc{
+	*display: inline;
+}
+

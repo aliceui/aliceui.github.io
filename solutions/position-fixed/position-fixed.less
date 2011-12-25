@@ -1,0 +1,56 @@
+/*
+	@ 名称: 	position:fixed
+	@ 用法：添加class
+	@ 注意:
+          * 如果需要多个方向的固定位置，比如 top + right，需要加两个 class
+          * 如果加了.fixed-top, 那么就别给这个元素加 top 属性的值
+          * 为了不出现异常，这个只作为套用。比如要top:30px 的时候，请在 .fixed-top 的子元素内设置
+          * 由于我们有打包，所以，改solution是可以滴，但这是强烈不推荐的，因为不利于维护
+*/
+
+/* 相当于正常的 position:fixed; top:0;  */
+.fixed-top {
+	position:fixed;
+	bottom:auto;
+	top:0;
+	_bottom:auto;
+	_top:"expression(eval(document.documentElement.scrollTop))";
+}
+
+/* 相当于正常的 position:fixed;bottom:0px; */
+.fixed-bottom {
+	position:fixed;
+	bottom:0;
+	top:auto;
+	_bottom:auto;
+	_top:"expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))";
+}
+
+/* 相当于正常的 position:fixed;left:0px; */
+.fixed-left {
+	position:fixed;
+	left:0;
+	_position:absolute;
+	right:auto;
+	_left:"expression(eval(document.documentElement.scrollLeft))";
+}
+
+/* 相当于正常的 position:fixed;right:0; */
+.fixed-right {
+	position:fixed;
+	right:0;
+	left:auto;
+	_right:auto;
+	_left:"expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0))";
+}
+
+/* 可以把 about:blank 设置成你的CSS文件地址 */
+html,html body {
+	_background-image:url(about:blank);
+	_background-attachment:fixed;
+}
+
+/* hack for ie6 */
+.fixed-top,.fixed-right,.fixed-bottom,.fixed-left {
+	_position:absolute;
+}

@@ -1,0 +1,38 @@
+/*
+	@ 名称: 自定义 input[type=file]
+	@ 用法: 添加 class .sl-custom-file
+	@ 例子：
+		 <span class="sl-custom-file">
+			<input type="button" value="点击选择图片" />
+			<input type="file" exts="png|jpg|bmp" class="ui-input-file" />
+		</span>
+*/
+
+/* 基础样式 */
+.sl-custom-file{
+	position:relative;
+	display:inline-block;
+	zoom:1;
+	cursor:pointer;
+	overflow:hidden;
+	vertical-align:middle;
+	
+	/* 影响 .ui-input-file 的样式 */
+	.ui-input-file{
+		position:absolute;
+		right:0;
+		top:0;
+		_font-size:100px; /* overwrite*/
+		_font-size:12px;
+		_zoom:10; /* overwrite */
+		height:100%;
+		_height:auto;
+		opacity:0;
+		filter:alpha(opacity=0);
+		-ms-filter:"alpha(opacity=0)";
+		cursor:pointer;
+	}
+}
+
+
+
