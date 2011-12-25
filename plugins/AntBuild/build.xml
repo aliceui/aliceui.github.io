@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--anthor:richieliu blog:http://www.iamued.com twitter:https://twitter.com/#!/iamued-->
 <!-- 对指定目录下的所有css进行压缩，放入指定位置 -->
 <project name="cssbuild" default="build">
 	<property name="lib" location="lib" />
