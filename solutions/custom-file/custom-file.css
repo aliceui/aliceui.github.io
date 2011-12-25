@@ -4,7 +4,7 @@
 	@ 例子：
 		 <span class="sl-file">
 			<input type="button" value="点击选择图片" />
-			<input type="file" exts="png|jpg|bmp" class=".sl-file-input" />
+			<input type="file" exts="png|jpg|bmp" class="sl-file-input" />
 		</span>
 */
 
