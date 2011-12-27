@@ -40,7 +40,7 @@ th{
 
 /* 去除默认边框 */
 fieldset,img,a img{
-	border:0;
+	border:0 none;
 }
 
 /* ie6 7 8(q) bug 显示为行内表现 */
