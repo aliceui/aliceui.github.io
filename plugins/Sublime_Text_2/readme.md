@@ -1,3 +1,9 @@
+### 作者信息：
+
+个人网站：[http://devilalbum.com/]()<br>
+Github 项目: [https://github.com/yun77op]()
+
+
 ### 使用方法：
 
 1. 选择 Preferences > Browse Packages 进入Sublime的包目录

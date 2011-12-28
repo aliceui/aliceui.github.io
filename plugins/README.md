@@ -9,8 +9,9 @@
 ├── Coda            自动完成插件          作者: [62mm](http://xinxin.li)          
 ├── Eclipse         自动完成插件          作者: [62mm](http://xinxin.li)
 ├── VIM             自动完成插件          作者: [62mm](http://xinxin.li) 
-├── IntelliJ_IDEA   自动完成插件          作者: [三桂](http://www.cnblogs.com/aNd1coder) 
-└── AntBuild        合并+压缩插件         作者: [iamued](http://www.iamued.com)
+├── IntelliJ_IDEA   自动完成插件          作者: [三桂](http://www.cnblogs.com/aNd1coder)
+├── AntBuild        合并+压缩插件         作者: [iamued](http://www.iamued.com)
+└── Sublime_Text_2  自动完成插件          作者: [yun77op](http://devilalbum.com/)
 </pre>
 
     
