@@ -12,7 +12,6 @@
 - 兼容主流浏览器的 ajax 上传插件
 - colorcode.js 在 IE 的兼容性修复（@pizn)
 - 搭建 alice blog, 发布 alice 的相关讯息 (@pizn)
-- float-center chrome 下 1px 白线问题 (@为之)
 - 测试：建议去测试 base.css 重设中的div，它在浏览器也是默认没有 padding 的（@为之）
 - 增加 Grid solution (@sofish)
 - 页面太长，色调太淡（@chudong_zheng11）
