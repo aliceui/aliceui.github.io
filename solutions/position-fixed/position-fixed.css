@@ -46,7 +46,7 @@
 
 /* 当不是 https 时，可以把 # 换成 about:blank 以提升效率 */
 html,html body {
-	_background-image:url(#);
+	_background-image:url('about:blank');
 	_background-attachment:fixed;
 }
 

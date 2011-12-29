@@ -14,7 +14,6 @@
 - 搭建 alice blog, 发布 alice 的相关讯息 (@pizn)
 - 测试：建议去测试 base.css 重设中的div，它在浏览器也是默认没有 padding 的（@为之）
 - 增加 Grid solution (@sofish)
-- 页面太长，色调太淡（@chudong_zheng11）
 - 自动化与notepad++插件（@zjhiphop）
 
  http://aliceui.com/getting-start/#comment-393971227
