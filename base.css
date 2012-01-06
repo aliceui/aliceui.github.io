@@ -5,9 +5,11 @@
 	@功能: 重设浏览器默认样式
 */
 
-/* 防止用户自定义背景颜色对网页的影响 */
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html{
 	color:#000;background:#fff;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
@@ -18,6 +20,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 /* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
     display:block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
 }
 
 /* 要注意表单元素并不继承父级 font 的问题 */
@@ -84,12 +91,13 @@ q:before,q:after {
 }
 
 /* 统一上标和下标 */
-sup {
-	vertical-align:text-top;
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
 }
-sub {
-	vertical-align:text-bottom;
-}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+
 
 /* 让链接在 hover 状态下显示下划线 */
 a:hover {
