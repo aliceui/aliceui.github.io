@@ -25,6 +25,7 @@
     ├── float-center            sl-floatcenter   自适应宽度居中
     ├── font-face                                @font-face 用法
     ├── force-wrap              sl-break         强制换行
+    ├── geolocation             [js]             获取地理位置          
     ├── ie-z-index-bug                           IE6/7 z-Index Bug 解决
     ├── ime-disabled            sl-ime-disabled  强制非IME(中文、日本等)输入法
     ├── linear-gradient                          跨浏览器渐变
