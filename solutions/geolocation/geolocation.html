@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>HTML5 Geolocation + SOSO Map API</title>
+	<style rel="stylesheet">
+    html, body{padding:0;margin:0;font-family:consolas;}
+    html, body, #map{height:100%;}
+    #msg{text-align:center;line-height:36px;position:absolute;z-index:9999;background:#fff;background:rgba(255,255,255,0.8);width:100%;}
+	</style>
+</head>
+<body>
+
+<div id="map">
+    <div id="msg">Loading…</div>
+</div> <!-- #map -->
+
+<!-- use the google map api
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+-->
+<script charset="utf-8" src="http://api.map.soso.com/v1.0/main.js"></script>
+<script type="text/javascript" src="./geolocation.js"></script>
+<script type="text/javascript">
+
+var doc = document,
+    mapContainer = doc.getElementById('map'),
+    mapMessage = doc.getElementById('msg');
+
+// get the position and pass it to the google map API
+function initPosition(coords){
+        
+    /* The Google Map API
+    var myOptions = {
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    
+    // create a map
+    map = new google.maps.Map(mapContainer, myOptions),
+    pos = new google.maps.LatLng(coords.latitude, coords.longitude),
+    infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: '<p>Hi there, I\'m <a href="http://sofish.de">sofish.</a> Say hello form the <a href="https://github.com/sofish">My Github Repo</a>. Your current location is:</p><ul><li>Latitude: '+coords.latitude + '</li><li>Longitude: ' + coords.longitude + '</li></ul>'
+    });
+    
+    // init map view
+    map.setCenter(pos);
+    
+    */ // end the Google Map API
+    
+    // Using the QQ Map API
+    // create the map
+    var center = new soso.maps.LatLng(coords.latitude, coords.longitude);
+    var map = new soso.maps.Map(mapContainer, {
+        center: center,
+        zoomLevel: 16
+    }),
+    
+    // set data
+    path = [
+        new soso.maps.LatLng(30.286624, 120.1256251),
+        center
+    ],
+    
+    // calculate the distance
+    polyline = new soso.maps.Polyline({
+        map: map,
+        strokeColor: "#f00",
+        strokeWeight: 2,
+        path: path
+    });    
+    
+    mapMessage.innerHTML = 'You\'re ' + map.getDistance(path[0],path[1]).toFixed()/1000 + 'km away form <a href="http://sofish.de">sofish</a>';    
+}
+
+
+// handle error
+function renderError(err){
+    mapMessage.innerHTML = 'Error Message: ' + err;
+}
+
+// init the google map
+window.onload = function(){
+    new Geo(initPosition, renderError);
+};
+
+</script>
+
+</body>
+</html>
