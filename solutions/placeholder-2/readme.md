@@ -1,10 +1,10 @@
 ### 跨浏览器 Placeholder 2：
 
-- 适用场景：
+-   适用场景：
 
- - 登陆页的文本框 [http://mail.qq.com/cgi-bin/loginpage]()
- - 搜索框 [http://getk2.com]()
- - 。。。
+    -   登陆页的文本框 [http://mail.qq.com/cgi-bin/loginpage]()
+    -   搜索框 [http://getk2.com]()
+    -   。。。
 
 -   使用方法：
 
