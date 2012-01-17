@@ -7,12 +7,14 @@
  - 。。。
 
 - 使用方法：
+
     <div class="sl-placeholder">
       <label class="sl-placeholder-label" for="username" data-placeholder="username">username</label>
       <input type="text" class="sl-placeholder-input" id="username" size="30" />
     </div>
 
 - 实现代码：
+
     function placeholder(el) {
       el = $(el);
       var label = $('.sl-placeholder-label', el);
