@@ -1,4 +1,4 @@
-### 跨浏览器 Placeholder 2：
+### 跨浏览器 Placeholder 2
 
 -   适用场景：
 
