@@ -11,7 +11,6 @@
 .sl-rc {
   display: inline-block;
   vertical-align: middle;
-  border-left: 1px solid #ddd;
   // 可重设
   border: {
     left: 1px solid #ddd; 
@@ -36,12 +35,18 @@
 }
 
 /* HACK for ie6 7 */
-div.sl-rc, p.sl-rc, h2.sl-rc, h3.sl-rc, h4.sl-rc, h5.sl-rc, h6.sl-rc, ul.sl-rc, ol.sl-rc {
+div.sl-rc {
   *display: inline;
+}
+@each $tag in p, h2, h3, h4, h5, h6, ul, ol {
+  #{$tag}.sl-rc {
+    @extend div.sl-rc;
+  }
 }
 
 /* 鼠标经过 */
-.sl-rc-hover, .sl-rc-hover .sl-rc-cnt, .sl-rc:hover, .sl-rc:hover .sl-rc-cnt {
+.sl-rc-hover, .sl-rc-hover .sl-rc-cnt,
+.sl-rc:hover, .sl-rc:hover .sl-rc-cnt {
   // 可重设
   border-color: #aaa;
   text-decoration: none;

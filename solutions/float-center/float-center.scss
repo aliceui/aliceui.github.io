@@ -14,26 +14,26 @@
 */
 
 .sl-floatcenter {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 
-    /* 解决间隙问题 */
-    font-size: 0;
+  /* 解决间隙问题 */
+  font-size: 0;
 }
 .sl-floatcenter-item {
-    display: inline-block;
-    @include ie7-inline-block;
+  display: inline-block;
+  @include ie7-inline-block;
 
-    /* 解决不能水平对齐问题 */
-    vertical-align: top;
+  /* 解决不能水平对齐问题 */
+  vertical-align: top;
 
-    /* 解决间隙问题后遗症解决 */
-    font-size: 13px;
+  /* 解决间隙问题后遗症解决 */
+  font-size: 13px;
 }
 
 /* 让 chrome 支持 12px 以下的字体 */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .sl-floatcenter {
-      -webkit-text-size-adjust: none;
-    }
+  .sl-floatcenter {
+    -webkit-text-size-adjust: none;
+  }
 }

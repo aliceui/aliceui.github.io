@@ -9,25 +9,36 @@
     
 */
 
+@mixin ms-rotate($n: 1) {
+  $DXIT: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$n})';
+
+  filter: unquote($DXIT);
+  -ms-filter: $DXIT;
+}
+
+
 .sl-rotate {
   zoom: 1;
 }
 
 /* for inline elements */
-span.sl-rotate, em.sl-rotate, cite.sl-rotate, strong.sl-rotate, abbr.sl-rotate, li.sl-rotate {
+em.sl-rotate {
   display: inline-block;
+}
+@each $tag in span, cite, strong, abbr, li {
+  #{$tag}.sl-rotate {
+    @extend em.sl-rotate;
+  }
 }
 
 /* 逆时针 */
 .sl-rotate-90ccw {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; 
+  @include ms-rotate(3);
   @include transform(rotate(-90deg));
 }
 
 /* 顺时针 */
 .sl-rotate-90cw, .sl-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);  
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";  
+  @include ms-rotate;
   @include transform(rotate(90deg));
 }
