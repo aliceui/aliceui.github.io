@@ -23,7 +23,6 @@
     z-index: -1;
     border: none;
     filter: mask();
-    width: 3000px; /* for any big value */
-    height: 3000px /* for any big value */
+    @include square(3000px); /* for any big value */
   }
 }

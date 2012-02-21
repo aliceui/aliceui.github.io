@@ -11,11 +11,16 @@
 
 
 /* hack for Firefox */
-input[type=submit]::-moz-focus-inner, input[type=button]::-moz-focus-inner {    
-  border: 0; 
+.rm-outline {
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &:focus {
+    outline: none;
+  }
 }
-
-/* 不要随便去掉虚线框 */
-input[type=submit]:focus, input[type=button]:focus {      
-  outline: none;  
+@each $type in 'submit', 'button' {
+  input[type='#{$type}'] {
+    @extend .rm-outline;
+  }
 }
