@@ -1,4 +1,4 @@
-### We use the CSS3 mixins of [Compass](http://beta.compass-style.org/).
+### We use the CSS3 mixins of [Compass](http://compass-style.org/reference/compass/css3/).
 ---
 
 ## CompassRails

@@ -5,6 +5,7 @@
 // We just use the CSS3 mixins of Compass
 @import 'compass/css3';
 
+
 // Clearfix
 @mixin clearfix {
   *zoom: 1;
@@ -17,17 +18,13 @@
   }
 }
 
-// ie6 alpha background-image
-@mixin ie6-alpha-bg($img) {
-  _background: none;
-  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{image_path($img)}', sizingMethod='crop');
-}
 
 // ie7 inline-block hack
 @mixin ie7-inline-block {
   *display: inline;
   *zoom: 1;
 }
+
 
 // Sizing shortcuts
 @mixin size($width: 1px, $height: 1px, $radius: false) {
@@ -41,6 +38,25 @@
   @include size($size, $size, $radius);
 }
 
+
+// Text overflow
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// Webkit-style focus
+@mixin tab-focus {
+  // Default
+  outline: thin dotted $gray-dark;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
 // Set color for the placeholder text
 @mixin placeholder($color: #999) {
   :-moz-placeholder {
@@ -51,6 +67,7 @@
   }
 }
 
+
 // Set background-color for the selected text
 @mixin selection($f-color: inherit, $b-color: #b4d5fe) {
   @each $prefix in '-moz-', '' {
@@ -59,5 +76,13 @@
       color: $f-color;
       text-shadow: none;
     }
+  }
+}
+
+
+// Set text-size-adjust property for mobile devices
+@mixin text-size-adjust($value: 100%) {
+  @each $prefix in 'webkit', 'moz', 'ms' {
+    -#{$prefix}-text-size-adjust: $value;
   }
 }

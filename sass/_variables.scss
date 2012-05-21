@@ -9,9 +9,15 @@ $support-for-original-webkit-gradients: true !default;
 $experimental-support-for-webkit:       true !default;
 $experimental-support-for-mozilla:      true !default;
 $experimental-support-for-opera:        true !default;
-$experimental-support-for-microsoft:    false !default;
-$experimental-support-for-khtml:        false !default;
+$experimental-support-for-microsoft:   false !default;
+$experimental-support-for-khtml:       false !default;
 
-// Links
-$link-color:        #08c !default;
-$link-color-hover:  lighten($link-color, 5%) !default;
+// Typography
+$text-color:       #000 !default;
+$base-font-size:   12px !default;
+$base-line-height:  1.5 !default;
+$base-font-family: tahoma, arial, \5b8b\4f53 !default;
+
+// Hyperlinks
+$link-color:       #08c !default;
+$link-color-hover: lighten($link-color, 5%) !default;
