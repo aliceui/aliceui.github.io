@@ -4,10 +4,9 @@
 
 // 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体
 html {
-  color: #000;
+  color: $text-color;
   background: #fff;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  @include text-size-adjust;
 }
 
 // 内外边距通常让各个浏览器样式的表现位置不同
@@ -33,7 +32,7 @@ audio,canvas,video {
 
 // 要注意表单元素并不继承父级 font 的问题
 body,button,input,select,textarea {
-  font: 12px/1.5 tahoma,arial,\5b8b\4f53;
+  font: #{$base-font-size}/#{$base-line-height} #{$base-font-family};
 }
 input,select,textarea{
   font-size: 100%;
