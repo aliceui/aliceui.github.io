@@ -1,10 +1,3 @@
-* {
-    margin:0;
-    padding:0;
-}
-body {
-    font: 12px/1.5 tahoma,arial,宋体;
-}
 .sl-linear-light {
     background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
     background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
@@ -270,5 +263,18 @@ div.ui-button, p.ui-button, span.ui-button {
 }
 .ui-confirmBox-close:hover {
     color: #808080;
+}
+
+.ui-confirmBox-message {
+    background-color: #DEF9A5;
+    border: 1px solid #9EDF8A;
+    font-size:14px;
+}
+.ui-confirmBox-message .ui-confirmBox-container {
+    margin:10px 20px;  
+}
+.ui-confirmBox-message .ui-confirmBox-content {
+    margin:0;
+    text-align:center;
 }
 
