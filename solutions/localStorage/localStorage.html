@@ -30,108 +30,78 @@
     
         <script type="text/javascript">
         /**
-         * @ NAME: Cross-browser TextStorage
-         * @ DESC: text storage solution for your pages
-         * @ COPY: sofish, http://sofish.de/1872
-         */
-        
-        typeof window.localStorage == 'undefined' && ~function(){
-        
-            var localStorage = window.localStorage = {},
-                prefix = 'data-userdata',
-                doc = document,
-                attrSrc = doc.body,
-                html = doc.documentElement,
-                
-                // save attributeNames to <html>'s
-                // data-userdata attribute
-                mark = function(key, isRemove, temp, reg){
-                
-                    html.load(prefix);
-                    temp = html.getAttribute(prefix);
-                    reg = RegExp('\\b' + key + '\\b,?', 'i');
-                    
-                    hasKey = reg.test(temp) ? 1 : 0;
-                        
-                    temp = isRemove ? temp.replace(reg, '').replace(',', '') : 
-                            hasKey ? temp : temp === '' ? key :
-                                temp.split(',').concat(key).join(',');
-                            
-                
-                    html.setAttribute(prefix, temp);
-                    html.save(prefix);
-
-                };
-                
-            // add IE behavior support
-            attrSrc.addBehavior('#default#userData');
-            html.addBehavior('#default#userData');
-                
-            // 
-            localStorage.getItem = function(key){
-                attrSrc.load(key);
-                return attrSrc.getAttribute(key);
-            };
-            
-            localStorage.setItem = function(key, value){
-                attrSrc.setAttribute(key, value);
-                attrSrc.save(key);
-                mark(key);
-            };
-            
-            localStorage.removeItem = function(key){
-                attrSrc.removeAttribute(key);
-                attrSrc.save(key);
-                mark(key, 1);
-            };
-            
-            // clear all attributes on <body> that using for textStorage 
-            // and clearing them from the 'data-userdata' attribute's value of <html>
-            localStorage.clear = function(){
-            
-                html.load(prefix);
-            
-                var attrs = html.getAttribute(prefix).split(','),
-                    len = attrs.length;
-                    
-                for(var i=0;i<len;i++){
-                    attrSrc.removeAttribute(attrs[i]);
-                    attrSrc.save(attrs[i]);
-                };
-                
-                html.setAttribute(prefix,'');
-                html.save(prefix);
-                
-            };
-                      
-        }(); 
-        
-        
-    var doc = document,
-        $ = function(id){
-                return doc.getElementById(id);
-            },
-            s = $('storeIt'),
-      r = $('restoreIt'),
-      c = $('clearIt'),
-      v = $('theValue'),
-      m = $('removeIt');
-    
-      
-    s.onclick = function(){
-      localStorage.setItem('store', v.value);
-    };
-    r.onclick = function(){
-      v.value = localStorage.getItem('store');
-    };
-    c.onclick = function(){
-      v.value = '';
-      localStorage.clear();
-    };
-    
-    m.onclick = function(){
-      localStorage.removeItem('store');
-    };
+	 * @ NAME: Cross-browser TextStorage
+	 * @ DESC: text storage solution for your pages
+	 * @ COPY: sofish, http://sofish.de
+	 */
+	typeof window.localStorage == 'undefined' && ~function () {
+	
+	    var localStorage = window.localStorage = {},
+	        prefix = 'data-userdata',
+	        doc = document,
+	        attrSrc = doc.body,
+	
+	        // save attributeNames to <body>'s `data-userdata` attribute
+	        mark = function (key, isRemove, temp, reg) {
+	
+	            attrSrc.load(prefix);
+	            temp = attrSrc.getAttribute(prefix) || '';
+	            reg = RegExp('\\b' + key + '\\b,?', 'i');
+	
+	            var hasKey = reg.test(temp) ? 1 : 0;
+	
+	            temp = isRemove ? temp.replace(reg, '') : hasKey ? temp : temp === '' ? key : temp.split(',').concat(key).join(',');
+	
+	            alert(temp);
+	
+	            attrSrc.setAttribute(prefix, temp);
+	            attrSrc.save(prefix);
+	
+	        };
+	
+	    // add IE behavior support
+	    attrSrc.addBehavior('#default#userData');
+	
+	    localStorage.getItem = function (key) {
+	        attrSrc.load(key);
+	        return attrSrc.getAttribute(key);
+	    };
+	
+	    localStorage.setItem = function (key, value) {
+	        attrSrc.setAttribute(key, value);
+	        attrSrc.save(key);
+	        mark(key);
+	    };
+	
+	    localStorage.removeItem = function (key) {
+	        attrSrc.removeAttribute(key);
+	        attrSrc.save(key);
+	        mark(key, 1);
+	    };
+	
+	    // clear all attributes on <body> tag that using for textStorage 
+	    // and clearing them from the 
+	    // 'data-userdata' attribute's value of <body> tag
+	    localStorage.clear = function () {
+	
+	        attrSrc.load(prefix);
+	
+	        var attrs = attrSrc.getAttribute(prefix).split(','),
+	            len = attrs.length;
+	
+	        if (attrs[0] === '') return;
+	
+	        for (var i = 0; i < len; i++) {
+	            attrSrc.removeAttribute(attrs[i]);
+	            attrSrc.save(attrs[i]);
+	        };
+	
+	        attrSrc.setAttribute(prefix, '');
+	        attrSrc.save(prefix);
+	
+	    };
+	
+	}();
 
     </script>
   
