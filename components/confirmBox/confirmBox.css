@@ -208,6 +208,8 @@ div.ui-button, p.ui-button, span.ui-button {
 
 .ui-confirmBox {
     zoom:1;
+    font-size:12px;
+    line-height:1.5;
 }
 
 .ui-confirmBox-title {
@@ -218,7 +220,7 @@ div.ui-button, p.ui-button, span.ui-button {
 }
 
 .ui-confirmBox-title h2 {
-    margin-left:20px;
+    margin:0 0 0 20px;
     font-size:14px;
     font-family:'微软雅黑','黑体',Arial;
 }
@@ -263,6 +265,7 @@ div.ui-button, p.ui-button, span.ui-button {
 }
 .ui-confirmBox-close:hover {
     color: #808080;
+    text-decoration:none;
 }
 
 .ui-confirmBox-message {
