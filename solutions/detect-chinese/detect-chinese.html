@@ -1,42 +1,43 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>localStorage</title>
-  <style type="text/css">
-		body{padding:30px;}
-        p{margin-bottom:15px;}
-	  	#tips small{font-size:12px;color:#999;}
-  </style>
+    <meta charset="utf-8">
+    <title>localStorage</title>
+    <style type="text/css">
+        body {padding: 30px;}
+        p {margin-bottom: 15px;}
+        #tips small {font-size: 12px;color: #999;}
+    </style>
 </head>
 
 <body>
 
-<div id="wrapper" class="single">  
-      
+<div id="wrapper" class="single">
+
     <h3>是否为中文？</h3>
     <input id="words" placeholder="请输入中文字符">
-	<p id="tips"></p>
+    <p id="tips"></p>
 
-	<script type="text/javascript">
-		var words = document.getElementById('words'),
-			tips = document.getElementById('tips'),
-			isChinese = function(word) {
-				return /[\u4E00-\uFA29]+|[\uE7C7-\uE7F3]+/.test(word)
-			}
+    <script type="text/javascript">
+        var words = document.getElementById('words'),
+            tips = document.getElementById('tips'),
+            isChinese = function (word) {
+                return /[\u4E00-\uFA29]+|[\uE7C7-\uE7F3]+/.test(word)
+            }
 
-		words.onkeyup = function(){
-			var arr = [], msg = [],
-				input = words.value
-			for(var i=0,len=input.length;i<len;i++) arr.push(input[i])
-			for(var i=0,len=arr.length;i<len;i++){
-				!isChinese(arr[i]) && msg.push((i+1) + '<small>(' + arr[i] + ')</small>')
-			}
-			if(msg.length) tips.innerHTML = '第' + msg.join('、') + '个字不是中文';
-		}
-	</script>
-  
-</div><!-- #wrapper -->
+        words.onkeyup = function () {
+            var arr = [], msg = [],
+                input = words.value
+            for (var i = 0, len = input.length; i < len; i++) arr.push(input[i])
+            for (var i = 0, len = arr.length; i < len; i++) {
+                !isChinese(arr[i]) && msg.push((i + 1) + '<small>(' + arr[i] + ')</small>')
+            }
+            if (msg.length) tips.innerHTML = '第' + msg.join('、') + '个字不是中文';
+        }
+    </script>
+
+</div>
+<!-- #wrapper -->
 
 </body>
 </html>
