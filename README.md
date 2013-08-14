@@ -64,7 +64,7 @@ Alice 是 Arale 的子集，是原有的 Arale 体系中对样式的补充。
 
 ## 加入我们
 
-Alice 的前身是 [http://github.com/alipay/alice](http://github.com/alipay/alice)，
+Alice 的前身是 [http://github.com/sofish/alice](http://github.com/sofish/alice)，
 新方案是在此基础上结合了 cmd 生态圈的特性和这一年来对实际需求的总结而产出的。
 感谢 [@小鱼](http://sofish.de/) [@展新](http://www.zhanxin.info/) @欣欣 同学过去的工作成果，也感谢社区对我们的关注和贡献。
 
