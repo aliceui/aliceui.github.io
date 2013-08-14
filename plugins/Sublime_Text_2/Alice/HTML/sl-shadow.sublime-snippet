@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<div class="sl-shadow">
-	${1:content here.}
-</div><!-- .sl-shadow -->$0]]></content>
-	<tabTrigger>sl-shadow</tabTrigger>
-	<scope>source.html</scope>
-	<description>Shadow</description>
-</snippet>

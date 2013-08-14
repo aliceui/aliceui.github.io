@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[<input type="button" hidefocus value="${1:提交}" />$0]]></content>
-	<tabTrigger>sl-outline-input</tabTrigger>
-	<scope>source.html</scope>
-	<description>Outline Input</description>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<span class="sl-rotate sl-rotate-90ccw">${1:逆时针转一下}</span>$0]]></content>
-	<tabTrigger>sl-rotate-90ccw</tabTrigger>
-	<scope>source.html</scope>
-	<description>Rotate Counterclockwise</description>
-</snippet>

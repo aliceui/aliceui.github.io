@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[<a href="${1:#}" hidefocus>${2}</a>$0]]></content>
-	<tabTrigger>sl-outline-a</tabTrigger>
-	<scope>source.html</scope>
-	<description>Outline Link</description>
-</snippet>
