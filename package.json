@@ -14,7 +14,7 @@
   },
   "spm": {
       "alias": {
-        "box": "alice/box/1.0.0/box.css",
+        "box": "alice/box/1.1.0/box.css",
         "button": "alice/button/1.1.1/button.css",
         "button-dropdown": "alice/button-dropdown/1.1.1/button-dropdown.css",
         "form": "alice/form/1.0.1/form.css",
