@@ -104,6 +104,20 @@ seajs.use('arale/switchable/0.9.15/tabs', function(Tabs) {
 });
 ````
 
+## [Calendar](http://aralejs.org/calendar)
+
+Arale 的通用日历模块。
+
+````html
+<input id="date-nothing" type="text" />
+````
+
+````js
+seajs.use('arale/calendar/0.9.0/calendar', function(Calendar) {
+    new Calendar({trigger: '#date-nothing'});
+});
+````
+
 ## AutoComplete
 
 [AutoComplete](http://aralejs.org/autocomplete) 是自动完成组件，
@@ -199,7 +213,7 @@ require('alice/poptip/1.1.0/poptip.css');
     padding: 3px 5px;
 }
 </style>
-
+sp
 ````js
 seajs.use(['arale/tip/1.1.4/atip'], function(Atip) {
     new Atip({
@@ -228,20 +242,6 @@ seajs.use(['arale/dialog/1.1.3/confirmbox'], function(ConfirmBox) {
         title: '您好~',
         message: '啊哦，您打开了一个对话框！'
     });
-});
-````
-
-## [Calendar](http://aralejs.org/calendar)
-
-Arale 的通用日历模块。
-
-````html
-<input id="date-nothing" type="text" />
-````
-
-````js
-seajs.use('arale/calendar/0.9.0/calendar', function(Calendar) {
-    new Calendar({trigger: '#date-nothing'});
 });
 ````
 
