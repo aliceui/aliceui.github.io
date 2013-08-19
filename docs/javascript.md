@@ -104,12 +104,12 @@ seajs.use('arale/switchable/0.9.15/tabs', function(Tabs) {
 });
 ````
 
-## [Calendar](http://aralejs.org/calendar)
+## Calendar
 
-Arale 的通用日历模块。
+[Calendar](http://aralejs.org/calendar) 是 Arale 的通用日历模块。
 
 ````html
-<input id="date-nothing" type="text" />
+<input id="date-nothing" type="text" placeholder="选择日期" />
 ````
 
 ````html
