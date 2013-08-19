@@ -26,7 +26,7 @@
         "table": "alice/table/1.0.1/table.css",
         "tipbox": "alice/tipbox/1.1.0/tipbox.css",
         "tiptext": "alice/tiptext/1.1.0/tiptext.css",
-        "select": "alice/select/1.0.0/select.css",
+        "select": "alice/select/1.0.1/select.css",
         "loading": "alice/loading/1.0.0/loading.css",
         "step": "alice/step/1.0.3/step.css"
       }
