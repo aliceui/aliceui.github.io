@@ -231,6 +231,20 @@ seajs.use(['arale/dialog/1.1.3/confirmbox'], function(ConfirmBox) {
 });
 ````
 
+## [Calendar](http://aralejs.org/calendar)
+
+Arale 的通用日历模块。
+
+````html
+<input id="date-nothing" type="text" />
+````
+
+````js
+seajs.use('arale/calendar/0.9.0/calendar', function(Calendar) {
+    new Calendar({trigger: '#date-nothing'});
+});
+````
+
 ## 更多功能
 
 上面几个示例是常见的 Arale 模块的使用范例，
