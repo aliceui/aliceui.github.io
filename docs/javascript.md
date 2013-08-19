@@ -112,7 +112,7 @@ Arale 的通用日历模块。
 <input id="date-nothing" type="text" />
 ````
 
-````css
+````html
 <link rel="stylesheet" href="https://a.alipayobjects.com/arale/calendar/0.9.0/calendar.css" />
 ````
 
