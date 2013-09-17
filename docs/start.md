@@ -21,7 +21,7 @@
     <head>
     <meta charset="UTF-8">
     <title>Alice 的简单例子</title>
-    <link media="all" href="https://a.alipayobjects.com/alice/one/1.1.0/one.css" rel="stylesheet">
+    <link media="all" href="https://a.alipayobjects.com/alice/one/1.2.0/one.css" rel="stylesheet">
     <style>
         .wrapper {
             width: 990px;
@@ -132,7 +132,7 @@
 
 1. 可以直接使用上面的 css 文件，这里提供一个未压缩的版本。
 
-    [https://a.alipayobjects.com/alice/one/1.1.0/one-debug.css](https://a.alipayobjects.com/alice/one/1.1.0/one-debug.css)
+    [https://a.alipayobjects.com/alice/one/1.2.0/one-debug.css](https://a.alipayobjects.com/alice/one/1.2.0/one-debug.css)
 
     这个文件来自于 [aliceui/one](https://github.com/aliceui/one)，可以自行 clone 到本地并构建之。
 
@@ -149,7 +149,7 @@
 4. 利用支付宝的 cdn 和 combo 服务。
 
     ```html
-    <link media="all" href="https://a.alipayobjects.com/??alice/base/1.0.0/base.css&alice/button/1.0.0/button.css&alice/grid/1.0.0/grid.css" rel="stylesheet">
+    <link media="all" href="https://a.alipayobjects.com/??alice/base/1.0.1/base.css&alice/button/1.1.1/button.css&alice/grid/1.0.0/grid.css" rel="stylesheet">
     ```
 
 

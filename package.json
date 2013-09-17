@@ -17,7 +17,7 @@
         "box": "alice/box/1.1.0/box.css",
         "button": "alice/button/1.1.1/button.css",
         "button-dropdown": "alice/button-dropdown/1.1.1/button-dropdown.css",
-        "form": "alice/form/1.0.1/form.css",
+        "form": "alice/form/1.0.2/form.css",
         "list": "alice/list/1.0.1/list.css",
         "nav": "alice/nav/1.0.0/nav.css",
         "paging": "alice/paging/1.0.1/paging.css",
@@ -26,7 +26,7 @@
         "table": "alice/table/1.0.1/table.css",
         "tipbox": "alice/tipbox/1.1.0/tipbox.css",
         "tiptext": "alice/tiptext/1.1.0/tiptext.css",
-        "select": "alice/select/1.0.1/select.css",
+        "select": "alice/select/1.0.2/select.css",
         "loading": "alice/loading/1.0.0/loading.css",
         "step": "alice/step/1.0.3/step.css"
       }
