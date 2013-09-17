@@ -45,7 +45,7 @@ Alice 是 Arale 整个前端解决方案的子集，有些简单页面使用 Ali
 
     适合场景：需要 CSS 辅助的 JS 组件，比如 Calendar 日历组件，以及其他的应用型页面。
 
-    在 Arale 的模块中，可以直接 `require('alice/poptip/1.0.0/poptip.css')` 来调用 Alice 模块。
+    在 Arale 的模块中，可以直接 `require('alice/poptip/1.1.1/poptip.css')` 来调用 Alice 模块。
     这样 Arale 模块就依赖了 Alice 的样式模块，无须再去单独打包引用样式。
 
 
@@ -83,10 +83,10 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 </div>
 
 <ul class="panels">
-    <li class="panel">面板一的内容</li>  
-    <li class="panel">面板二的内容</li>  
-    <li class="panel">面板三的内容</li>  
-    <li class="panel">面板四的内容</li>  
+    <li class="panel">面板一的内容</li>
+    <li class="panel">面板二的内容</li>
+    <li class="panel">面板三的内容</li>
+    <li class="panel">面板四的内容</li>
 </ul>
 ````
 
@@ -128,7 +128,7 @@ seajs.use('arale/calendar/0.9.0/calendar', function(Calendar) {
 可以和 [alice.select](http://aliceui.org/select/) 进行配合。
 
 ````html
-<link href="http://assets.spmjs.org/alice/select/1.0.0/select.css" rel="stylesheet">
+<link href="http://assets.spmjs.org/alice/select/1.0.2/select.css" rel="stylesheet">
 <input type="text" id="input" placeholder="请输入 a">
 
 <script id="template" type="text/x-handlebars-template">
@@ -186,7 +186,7 @@ seajs.use(['$', 'arale/autocomplete/1.2.2/autocomplete'], function($, AutoComple
 ````
 
 ````js
-seajs.use(['arale/popup/1.1.2/popup'], function(Popup) {
+seajs.use(['arale/popup/1.1.5/popup'], function(Popup) {
     new Popup({
         trigger: '#popup-trigger',
         element: '#popup-element'
@@ -198,30 +198,30 @@ seajs.use(['arale/popup/1.1.2/popup'], function(Popup) {
 
 [Tip](http://aralejs.org/tip) 是典型的应用型组件，样式可以使用 JS 来进行载入。
 
-在 [arale/tip/1.1.4/atip](https://github.com/aralejs/tip/blob/master/dist/atip-debug.js#L5) 的代码中有这样的调用：
+在 [arale/tip](https://github.com/aralejs/tip/blob/master/src/tip.js#L7) 的代码中有这样的调用：
 
 ```js
-require('alice/poptip/1.1.0/poptip.css');
+require('./poptip.css');
 ```
 
-使得 atip 不用再单独引用相关的样式，使用起来非常方便。
+使得 tip 不用需要单独引用相关的样式，使用起来非常方便。
 
 ````html
-<div id="atip">Please hover me!!!</div>
+<div id="tip-element">Please hover me!!!</div>
 ````
 
 <style>
-#atip {
+#tip-element {
     background:rgb(255, 223, 176);
     display:inline-block;
     padding: 3px 5px;
 }
 </style>
-sp
+
 ````js
-seajs.use(['arale/tip/1.1.4/atip'], function(Atip) {
+seajs.use(['arale/tip/1.2.0/tip'], function(Atip) {
     new Atip({
-        trigger: '#atip',
+        trigger: '#tip-element',
         content: '我是 Tip 的内容'
     });
 });
@@ -240,7 +240,7 @@ seajs.use(['arale/tip/1.1.4/atip'], function(Atip) {
 ````
 
 ````js
-seajs.use(['arale/dialog/1.1.3/confirmbox'], function(ConfirmBox) {
+seajs.use(['arale/dialog/1.2.2/confirmbox'], function(ConfirmBox) {
     new ConfirmBox({
         trigger: '#confirmbox',
         title: '您好~',
