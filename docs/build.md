@@ -192,7 +192,7 @@ $ spm doc publish
 在 Alice 中，一切样式皆模块，所以这个 myalipay 其实和上面的 box 没有本质区别，
 只不过它是直接用在页面上的。
 
-> 注意在支付宝内部，family 一般填写对应的`{{系统名}}-css`，比如 `memberprod-css`。
+> 注意在支付宝内部，family 一般填写对应的`{{系统名}}`，比如 `memberprod`。
 
 生成目录后，我们打开 myalipay/package.json 文件，编辑其中的 spm.alias 字段。假设我们需要
 用到 alice.box、alice.nav、alice.button 三个模块。
