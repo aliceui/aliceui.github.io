@@ -23,6 +23,8 @@
 $ npm install apm -g
 ```
 
+推荐已经安装过 apm 的同学也跑一下，更新到最新的版本。
+
 安装问题参考 apm 的 [文档](https://github.com/spmjs/apm/)。
 遇到 `sudo` 的问题请参考[这里](http://aralejs.org/docs/installation.html#%E5%8E%BB%E9%99%A4-sudo)。
 
@@ -41,18 +43,6 @@ $ npm install spm-deploy -g
 $ npm install spm-doc -g
 ```
 
-安装 spm-init 的 alice 模板：
-
-```
-$ git clone git://github.com/aralejs/template-alice.git ~/.spm/init/alice
-```
-
-安装 Alice 所对应的 nico [主题](https://github.com/aliceui/nico-alice/)。
-
-```
-$ curl https://raw.github.com/aliceui/nico-alice/master/bootstrap.sh | sh
-```
-
 ## 开发一个样式模块
 
 我们的页面中总是存在的各式各样的模块化的 DOM 结构，
@@ -65,20 +55,20 @@ $ curl https://raw.github.com/aliceui/nico-alice/master/bootstrap.sh | sh
 ```
 $ mkdir box
 $ cd box
-$ spm init alice
+$ spm init
 ```
 
 ```
 Please answer the following:
-[?] Project name (box)   
-[?] your CMD family (alice) 
-[?] Version (1.0.0) 
-[?] Description (The best jQuery plugin ever.) The box module.            
-[?] Project git repository (git://github.com/afc163/box.git) 
-[?] Project homepage (https://github.com/afc163/box) 
-[?] Project issues tracker (https://github.com/afc163/box/issues) 
-[?] Licenses (MIT) 
-[?] Do you need to make any changes to the above before continuing? (y/N) 
+[?] Project name (box)
+[?] your CMD family (alice)
+[?] Version (1.0.0)
+[?] Description (The best jQuery plugin ever.) The box module.
+[?] Project git repository (git://github.com/afc163/box.git)
+[?] Project homepage (https://github.com/afc163/box)
+[?] Project issues tracker (https://github.com/afc163/box/issues)
+[?] Licenses (MIT)
+[?] Do you need to make any changes to the above before continuing? (y/N)
 ```
 
 这时程序会让你输入相关的信息，
