@@ -79,3 +79,7 @@ Alice 的前身是 [http://github.com/sofish/alice](http://github.com/sofish/ali
 [Arale 官网](http://aralejs.org)
 
 [支付宝样式集(内网)](http://site.alipay.im/styles)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aliceui/aliceui.org/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
