@@ -205,6 +205,8 @@ http://jsfiddle.net/FdE3c/show
 
 支付宝员工请直接访问 [site.alipay.im/rei/](http://site.alipay.im/rei/) 来获取字体代码。
 
+外网用户还可以访问 http://iconfont.cn 来自己定制需要的字体图标。
+
 ## Grid 栅格
 
 Alice 的布局是 990px 定宽 25 栅格，这是依托于支付宝实际需求的栅格系统，
