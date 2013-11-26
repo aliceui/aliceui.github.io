@@ -205,7 +205,7 @@ http://jsfiddle.net/FdE3c/show
 
 支付宝员工请直接访问 [site.alipay.im/rei/](http://site.alipay.im/rei/) 来获取字体代码。
 
-外网用户还可以访问 http://iconfont.cn 来自己定制需要的字体图标。
+外网用户强烈推荐访问 [阿里巴巴矢量图标库](http://iconfont.cn) 的公共服务来定制需要的字体图标。
 
 ## Grid 栅格
 
@@ -234,7 +234,7 @@ Alice 引入了一个优秀的 CSS3 [动画库](http://aliceui.org/animate) 。
     display: inline-block;
 }
 #test2 {
-    background: #5FC161;    
+    background: #5FC161;
 }
 </style>
 
