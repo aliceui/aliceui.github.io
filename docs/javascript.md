@@ -45,7 +45,7 @@ Alice 是 Arale 整个前端解决方案的子集，有些简单页面使用 Ali
 
     适合场景：需要 CSS 辅助的 JS 组件，比如 Calendar 日历组件，以及其他的应用型页面。
 
-    在 Arale 的模块中，可以直接 `require('alice/poptip/1.1.1/poptip.css')` 来调用 Alice 模块。
+    在 Arale 的模块中，可以直接 `require('alice/poptip/1.2.0/poptip.css')` 来调用 Alice 模块。
     这样 Arale 模块就依赖了 Alice 的样式模块，无须再去单独打包引用样式。
 
 
@@ -58,7 +58,7 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 
 
 ````html
-<link href="http://assets.spmjs.org/alice/tab/1.0.0/tab.css" rel="stylesheet">
+<link href="http://assets.spmjs.org/alice/tab/1.0.1/tab.css" rel="stylesheet">
 <style>
 .panel {
     display: none;
@@ -93,7 +93,7 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 上面是 DOM 结构和样式文件。然后加上 Switchable 的代码。更多使用方式请访问 [文档](http://aralejs.org/switchable) 。
 
 ````js
-seajs.use('arale/switchable/0.9.15/tabs', function(Tabs) {
+seajs.use('arale/switchable/1.0.0/tabs', function(Tabs) {
     new Tabs({
         element: '.ui-tab',
         triggers: '.ui-tab-item',
@@ -113,11 +113,11 @@ seajs.use('arale/switchable/0.9.15/tabs', function(Tabs) {
 ````
 
 ````html
-<link rel="stylesheet" href="https://a.alipayobjects.com/arale/calendar/0.9.0/calendar.css" />
+<link rel="stylesheet" href="http://assets.spmjs.org/arale/calendar/1.0.0/calendar.css" />
 ````
 
 ````js
-seajs.use('arale/calendar/0.9.0/calendar', function(Calendar) {
+seajs.use('arale/calendar/1.0.0/calendar', function(Calendar) {
     new Calendar({trigger: '#date-nothing'});
 });
 ````
@@ -147,7 +147,7 @@ seajs.use('arale/calendar/0.9.0/calendar', function(Calendar) {
 ````
 
 ````js
-seajs.use(['$', 'arale/autocomplete/1.2.2/autocomplete'], function($, AutoComplete) {
+seajs.use(['$', 'arale/autocomplete/1.2.3/autocomplete'], function($, AutoComplete) {
     new AutoComplete({
         trigger: '#input',
         template: $('#template').html(),
@@ -160,7 +160,7 @@ seajs.use(['$', 'arale/autocomplete/1.2.2/autocomplete'], function($, AutoComple
 
 ## Popup
 
-[Popup](http://aralejs.org/popup) 的职责是有触发元素的浮层交互，可以和 `alice.button-dropdown` 配合使用。
+[Popup](http://aralejs.org/popup) 的职责是有触发元素的浮层交互，可以和 [alice/button-dropdown](http://aliceui.org/button-dropdown/) 配合使用。
 
 ````html
 <div class="ui-button-dropdown">
@@ -174,7 +174,7 @@ seajs.use(['$', 'arale/autocomplete/1.2.2/autocomplete'], function($, AutoComple
         </li>
         <li class="ui-button-dropdown-item">
             <a href="#">标为已缴</a>
-        </li>   
+        </li>
     </ul>
 </div>
 
@@ -186,7 +186,7 @@ seajs.use(['$', 'arale/autocomplete/1.2.2/autocomplete'], function($, AutoComple
 ````
 
 ````js
-seajs.use(['arale/popup/1.1.5/popup'], function(Popup) {
+seajs.use(['arale/popup/1.1.6/popup'], function(Popup) {
     new Popup({
         trigger: '#popup-trigger',
         element: '#popup-element'
@@ -219,7 +219,7 @@ require('./poptip.css');
 </style>
 
 ````js
-seajs.use(['arale/tip/1.2.0/tip'], function(Atip) {
+seajs.use(['arale/tip/1.2.1/tip'], function(Atip) {
     new Atip({
         trigger: '#tip-element',
         content: '我是 Tip 的内容'
@@ -240,7 +240,7 @@ seajs.use(['arale/tip/1.2.0/tip'], function(Atip) {
 ````
 
 ````js
-seajs.use(['arale/dialog/1.2.2/confirmbox'], function(ConfirmBox) {
+seajs.use(['arale/dialog/1.2.5/confirmbox'], function(ConfirmBox) {
     new ConfirmBox({
         trigger: '#confirmbox',
         title: '您好~',
