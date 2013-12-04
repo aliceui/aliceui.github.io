@@ -90,6 +90,8 @@ Alice 默认支持 stylus 和 less 文件的预编译，
 
 [stylus 主页](http://learnboost.github.com/stylus/)
 
+只有在 package.json 里的 `spm.output` 里指定的 `.styl` 和 `.less` 文件（一般写为同名的 `.css` 文件）才会被编译。
+
 ## Stylib - 样式库搭建工具
 
 Stylib 是快速构建 [这样](http://aliceui.org/stylib) 的样式库的工具，
