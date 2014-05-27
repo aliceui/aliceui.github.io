@@ -31,7 +31,7 @@ $ npm install apm -g
 ### 安装 spm
 
 ```
-$ npm install spm -g
+$ npm install spm@2.x -g
 ```
 
 安装 spm-build、spm-init、spm-deploy、spm-doc 等插件。
