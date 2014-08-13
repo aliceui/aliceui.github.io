@@ -15,7 +15,7 @@
 
 ## Base 重设
 
-base.css 是 Alice 的浏览器重设样式。
+[base.css](http://aliceui.org/base/) 是 Alice 的浏览器重设样式。
 
 它扫除了浏览器默认样式的基本兼容性问题，像建筑的地基一样，让开发者在平地上放心的建造大楼。
 Alice 的 base.css 是结合支付宝开发经验，借鉴 [normalize.css](http://necolas.github.com/normalize.css/) 等业界优秀模块，并加上一些常用 className 而产出的一套重设样式。
@@ -27,7 +27,7 @@ Alice 的 base.css 是结合支付宝开发经验，借鉴 [normalize.css](http:
 
 ### 字体
 
-`alice.base` 采用了 12 像素，1.5 的行高，并且兼容 Mac 和 Window 的字体配置，非常适合国内的网站样式。
+[alice/base](http://aliceui.org/base/) 采用了 12 像素，1.5 的行高，并且兼容 Mac 和 Window 的字体配置，非常适合国内的网站样式。
 
 ```css
 body,button,input,select,textarea {
