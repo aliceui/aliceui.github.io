@@ -117,7 +117,7 @@
 </html>
 ```
 
-把上述代码复制到一个新的 html 文件中，然后用浏览器打开；或者可以直接访问 [jsfiddle 演示](http://jsfiddle.net/Ltye2/)。
+把上述代码复制到一个新的 html 文件中，然后用浏览器打开；或者可以直接访问 [jsfiddle 演示](http://jsfiddle.net/Ltye2/111/)。
 
 你会看到一个使用了 grid、box、nav 和 tipbox 四个模块的页面。
 
