@@ -93,8 +93,8 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 上面是 DOM 结构和样式文件。然后加上 Switchable 的代码。更多使用方式请访问 [文档](http://aralejs.org/switchable) 。
 
 ````js
-seajs.use('arale/switchable/1.0.0/tabs', function(Tabs) {
-    new Tabs({
+seajs.use('arale-switchable', function(Switchable) {
+    new Switchable.Tabs({
         element: '.ui-tab',
         triggers: '.ui-tab-item',
         panels: '.panel',
@@ -117,7 +117,7 @@ seajs.use('arale/switchable/1.0.0/tabs', function(Tabs) {
 ````
 
 ````js
-seajs.use('arale/calendar/1.0.0/calendar', function(Calendar) {
+seajs.use('arale-calendar', function(Calendar) {
     new Calendar({trigger: '#date-nothing'});
 });
 ````
@@ -147,7 +147,7 @@ seajs.use('arale/calendar/1.0.0/calendar', function(Calendar) {
 ````
 
 ````js
-seajs.use(['$', 'arale/autocomplete/1.2.3/autocomplete'], function($, AutoComplete) {
+seajs.use(['jquery', 'arale-autocomplete'], function($, AutoComplete) {
     new AutoComplete({
         trigger: '#input',
         template: $('#template').html(),
@@ -186,7 +186,7 @@ seajs.use(['$', 'arale/autocomplete/1.2.3/autocomplete'], function($, AutoComple
 ````
 
 ````js
-seajs.use(['arale/popup/1.1.6/popup'], function(Popup) {
+seajs.use(['arale-popup'], function(Popup) {
     new Popup({
         trigger: '#popup-trigger',
         element: '#popup-element'
@@ -219,7 +219,7 @@ require('./poptip.css');
 </style>
 
 ````js
-seajs.use(['arale/tip/1.2.1/tip'], function(Atip) {
+seajs.use(['arale-tip'], function(Atip) {
     new Atip({
         trigger: '#tip-element',
         content: '我是 Tip 的内容'
@@ -240,8 +240,8 @@ seajs.use(['arale/tip/1.2.1/tip'], function(Atip) {
 ````
 
 ````js
-seajs.use(['arale/dialog/1.2.5/confirmbox'], function(ConfirmBox) {
-    new ConfirmBox({
+seajs.use(['arale-dialog'], function(Dialog) {
+    new Dialog.ConfirmBox({
         trigger: '#confirmbox',
         title: '您好~',
         message: '啊哦，您打开了一个对话框！'

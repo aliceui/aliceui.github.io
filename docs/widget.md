@@ -137,7 +137,7 @@ a {
 <div class="alice-modules"></div>
 
 <script type="text/javascript">
-seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'], function($, _, Popup) {
+seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
 
     $('.alice-modules').on('mouseenter', '.alice-module-demo', function() {
         $(this).find('.alice-module-sourcecode').fadeIn(200);
@@ -167,22 +167,18 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
         }
     });
 
-    $.getJSON('../package.json', function(data) {
+    $.getJSON('../package.json?nowrap', function(data) {
+        console.log(data);
         var alias;
-        if (data.spm && data.spm.alias) {
-            alias = data.spm.alias;
+        if (data.spm && data.spm.dependencies) {
+            alias = data.spm.dependencies;
         } else {
             alias = data.dependencies;
         }
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
-            var reg = /(.*)\/(.*)\/(.*)\/(.*)\.css/i;
-            var match = dep[1].match(reg);
-
-            // 解析 name 和 family
-            var family = match[1];
-            var name = match[2];
-            var version = match[3];
+            var name = dep[0];
+            var version = dep[1];
 
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')

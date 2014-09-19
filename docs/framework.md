@@ -243,7 +243,7 @@ Alice 引入了一个优秀的 CSS3 [动画库](http://aliceui.org/animate) 。
 <div id="test2" class="animate-demo">点击我</div>
 
 <script>
-seajs.use(['$'], function($) {
+seajs.use(['jquery'], function($) {
     $('#test1').click(function() {
         $(this).addClass('animated bounceOutLeft');
     });
