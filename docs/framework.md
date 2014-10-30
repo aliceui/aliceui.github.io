@@ -254,4 +254,4 @@ seajs.use(['jquery'], function($) {
 </script>
 ````
 
-所有的动画效果请点击 [daneden.me/animate](http://daneden.me/animate/) 查看。
+所有的动画效果请点击 [daneden.me/animate](http://daneden.github.io/animate.css/) 查看。
