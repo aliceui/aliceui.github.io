@@ -48,20 +48,6 @@ Nico 是一个 JavaScript 的静态文档生成工具，在 CMD 生态圈中被�
 
 在 Arale & Alice 整体方案中我们封装了 nico 到 `spm doc` 中。
 
-## Peaches - 雪碧图
-
-虽然 Alice 中不推荐在通用模块中使用图片背景，但是在业务线的开发中不能避免的会碰到需要图片才能实现的需求。
-痛苦的合成雪碧图技术就成了前端必不可少的技能之一，所以我们有了 Peaches 这样的工具来帮助我们。
-
-Peaches 是支付宝前端工程师 @蔡伦 同学开发的，是一个 CSS 雪碧图编译工具。
-
-Peaches 通过分析 CSS 样式规则，提取背景图片，自动合并成雪碧图，
-并自动更新背景定位。免去了手动合并图片和定位的麻烦，而且也大大提升后续修改样式的效率。
-
-更多功能请访问 [Peaches](http://peaches.io/) 主页：
-
-[![](https://raw.github.com/slowhost/upload/1362839444253/peaches.png)](http://peaches.io/)
-
 
 ## 样式预编译
 
