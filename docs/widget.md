@@ -142,7 +142,7 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
     $('.alice-modules').on('mouseenter', '.alice-module-demo', function() {
         $(this).find('.alice-module-sourcecode').fadeIn(200);
     }).on('mouseleave', '.alice-module-demo', function() {
-        $(this).find('.alice-module-sourcecode').fadeOut(200);         
+        $(this).find('.alice-module-sourcecode').fadeOut(200);
     });
 
     new Popup({
@@ -204,10 +204,8 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
                         if (item.prev()[0].tagName !== 'H3' || !subtitle) {
                             subtitle = '默认';
                         }
-                        
                         demoNode.find('.alice-module-subtitle').html(subtitle);
                         demoNode.find('.alice-module-dom').html(item.html());
-                        
                         // 直接使用目标页面生成的高亮代码，不再动态渲染
                         var codeHtml = item.next('.highlight').find('pre').html();
                         demoNode.find('.alice-module-code').html(codeHtml);
@@ -227,10 +225,10 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
             });
         });
         seajs.use('/static/side', function(side) {
-            side.init();        
-        });        
+            side.init();
+        });
     });
-    
+
     function substractTitle(item) {
         $('.side-loading').remove();
         item = item.find('a');

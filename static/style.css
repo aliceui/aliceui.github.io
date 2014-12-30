@@ -211,6 +211,7 @@ hr {
     width: 220px;
     background: #fff;
     border-bottom: 1px solid #ddd;
+    float: left;
 }
 
 .side-area ul {

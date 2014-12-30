@@ -7,7 +7,7 @@
 
 ## Alice 是什么
 
-Alice 是漫游仙境的童话女神，是支付宝的样式解决方案，是一套精选的基于 [`CMD`](https://spmjs.org/alice/) 生态圈的样式模块集合，是 Arale 的子集，也是一套模块化的样式命名和组织规范，是写 `CSS` 的更好方式。
+Alice 是漫游仙境的童话女神，是支付宝的样式解决方案，是一套精选的基于 [spm](http://spmjs.io/search?q=alice) 生态圈的样式模块集合，是 Arale 的子集，也是一套模块化的样式命名和组织规范，是写 `CSS` 的更好方式。
 
 她包括了一套通用样式模块库，一个模块化样式构建规范，一组帮助书写和组织样式的工具，以及产出更多 Alice 模块和样式库的完善方案。
 
@@ -19,7 +19,7 @@ Alice 是漫游仙境的童话女神，是支付宝的样式解决方案，是�
 
 1. 模块化的命名和组织方式。
 
-    基于 `CMD` 生态圈，使用了Alice 命名规范，以模块的方式组织样式。
+    基于 `spm` 生态圈，使用了Alice 命名规范，以模块的方式组织样式。
 
 2. 强大的工具支持。
 
@@ -77,9 +77,3 @@ Alice 的前身是 [http://github.com/sofish/alice](http://github.com/sofish/ali
 [Github 组织](https://github.com/aliceui/)
 
 [Arale 官网](http://aralejs.org)
-
-[支付宝样式集(内网)](http://site.alipay.im/styles)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aliceui/aliceui.org/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
