@@ -45,7 +45,7 @@ Alice 是 Arale 整个前端解决方案的子集，有些简单页面使用 Ali
 
     适合场景：需要 CSS 辅助的 JS 组件，比如 Calendar 日历组件，以及其他的应用型页面。
 
-    在 Arale 的模块中，可以直接 `require('alice/poptip/1.2.0/poptip.css')` 来调用 Alice 模块。
+    在 Arale 的模块中，可以直接 `require('alice-poptip')` 来调用 Alice 模块。
     这样 Arale 模块就依赖了 Alice 的样式模块，无须再去单独打包引用样式。
 
 
@@ -58,7 +58,7 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 
 
 ````html
-<link href="http://assets.spmjs.org/alice/tab/1.0.1/tab.css" rel="stylesheet">
+<link href="/alice-tab/1.1.0/index.css" rel="stylesheet">
 <style>
 .panel {
     display: none;
@@ -93,33 +93,15 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 上面是 DOM 结构和样式文件。然后加上 Switchable 的代码。更多使用方式请访问 [文档](http://aralejs.org/switchable) 。
 
 ````js
-seajs.use('arale-switchable', function(Switchable) {
-    new Switchable.Tabs({
-        element: '.ui-tab',
-        triggers: '.ui-tab-item',
-        panels: '.panel',
-        triggerType: 'click',
-        activeTriggerClass: 'ui-tab-item-current'
-    }).render();
-});
-````
+var Switchable = require('arale-switchable');
 
-## Calendar
-
-[Calendar](http://aralejs.org/calendar) 是 Arale 的通用日历模块。
-
-````html
-<input id="date-nothing" type="text" placeholder="选择日期" />
-````
-
-````html
-<link rel="stylesheet" href="http://assets.spmjs.org/arale/calendar/1.0.0/calendar.css" />
-````
-
-````js
-seajs.use('arale-calendar', function(Calendar) {
-    new Calendar({trigger: '#date-nothing'});
-});
+new Switchable.Tabs({
+    element: '.ui-tab',
+    triggers: '.ui-tab-item',
+    panels: '.panel',
+    triggerType: 'click',
+    activeTriggerClass: 'ui-tab-item-current'
+}).render();
 ````
 
 ## AutoComplete
@@ -128,34 +110,18 @@ seajs.use('arale-calendar', function(Calendar) {
 可以和 [alice.select](http://aliceui.org/select/) 进行配合。
 
 ````html
-<link href="http://assets.spmjs.org/alice/select/1.0.2/select.css" rel="stylesheet">
+<link href="/alice-select/1.1.0/dist/select.css" rel="stylesheet">
 <input type="text" id="input" placeholder="请输入 a">
-
-<script id="template" type="text/x-handlebars-template">
-<div class="ui-select">
-  <ul class="ui-select-content" data-role="items">
-    {{#if items}}
-    {{#each items}}
-    <li data-role="item" class="ui-select-item" data-value="{{matchKey}}">
-        <a href="#">{{matchKey}}</a>
-    </li>
-    {{/each}}
-    {{/if}}
-  </ul>
-</div>
-</script>
 ````
 
 ````js
-seajs.use(['jquery', 'arale-autocomplete'], function($, AutoComplete) {
-    new AutoComplete({
-        trigger: '#input',
-        template: $('#template').html(),
-        dataSource: ['abc', 'abd', 'abe', 'acd'],
-        width: 182,
-        classPrefix: 'ui-select'
-    }).render();
-});
+var $ = require('jquery');
+var AutoComplete = require('arale-autocomplete');
+new AutoComplete({
+    trigger: '#input',
+    dataSource: ['abc', 'abd', 'abe', 'acd'],
+    width: 230
+}).render();
 ````
 
 ## Popup
@@ -163,6 +129,8 @@ seajs.use(['jquery', 'arale-autocomplete'], function($, AutoComplete) {
 [Popup](http://aralejs.org/popup) 的职责是有触发元素的浮层交互，可以和 [alice/button-dropdown](http://aliceui.org/button-dropdown/) 配合使用。
 
 ````html
+<link href="/alice-button-dropdown/1.3.0/index.css" rel="stylesheet">
+
 <div class="ui-button-dropdown">
     <a class="ui-button ui-button-lorange ui-dbutton ui-dbutton-orange" id="popup-trigger">
         <span class="ui-dbutton-self">下拉菜单</span>
@@ -186,11 +154,10 @@ seajs.use(['jquery', 'arale-autocomplete'], function($, AutoComplete) {
 ````
 
 ````js
-seajs.use(['arale-popup'], function(Popup) {
-    new Popup({
-        trigger: '#popup-trigger',
-        element: '#popup-element'
-    });
+var Popup = require('arale-popup');
+new Popup({
+    trigger: '#popup-trigger',
+    element: '#popup-element'
 });
 ````
 
@@ -219,11 +186,11 @@ require('./poptip.css');
 </style>
 
 ````js
-seajs.use(['arale-tip'], function(Atip) {
-    new Atip({
-        trigger: '#tip-element',
-        content: '我是 Tip 的内容'
-    });
+var Tip = require('arale-tip);
+
+new Tip({
+    trigger: '#tip-element',
+    content: '我是 Tip 的内容'
 });
 ````
 
@@ -237,15 +204,16 @@ seajs.use(['arale-tip'], function(Atip) {
 
 ````html
 <button id="confirmbox">Please click me!!!</button>
+<link href="/arale-dialog/1.4.0/src/dialog.css" rel="stylesheet">
 ````
 
 ````js
-seajs.use(['arale-dialog'], function(Dialog) {
-    new Dialog.ConfirmBox({
-        trigger: '#confirmbox',
-        title: '您好~',
-        message: '啊哦，您打开了一个对话框！'
-    });
+var Dialog = require('arale-dialog');
+
+new Dialog.ConfirmBox({
+    trigger: '#confirmbox',
+    title: '您好~',
+    message: '啊哦，您打开了一个对话框！'
 });
 ````
 

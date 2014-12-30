@@ -113,22 +113,22 @@ ui-box 模块能够嵌到页面上任何一个位置，box 内部也能够嵌入
     尽量让人看到名字就能知道是什么模块，比如 ui-tab， ui-nav 这样的命名。（反例：`ui-shit`）
     用 HTML ENTRY 来引用，不要写空标签，应使用 HTML ENTRY 来替代，以达到语义化的要求。
     HTML ENTRY 请参考这个文档：https://docs.google.com/Doc?docid=0AWiI12yCmwaoZGNiemJqOGpfMTVmaHZtOWNkeg
-    
+
 - 模块整体状态 = 模块名 + 状态
 
     `常用状态`有：hover, current, selected, disabled, focus, blur, checked, success, error 等。通常你的命名应该看起来像 .ui-name-hover, .ui-name-error 这样。
-    
+
 - 子模块 = 模块名 + 子模块名
 
     常用模块名有：cnt(content)，hd(header)，text(txt)，img(images/pic)，title，item，cell 等，
     只要词义表达了组件要实现的功能或者要表现出来的的外观就可以了。
-    
+
 - 子模块状态 = 模块名 + 子模块名 + 状态
 
     参照常用状态。
 
 命名注意：
-    
+
 - 模块嵌套：大模块可有子模块命名。
 
     拿支付宝某项目中的的 .ui-nav 为例，如果有多级，可以这样命名：
@@ -216,4 +216,11 @@ ui-box 模块能够嵌到页面上任何一个位置，box 内部也能够嵌入
     transform: rotate(90deg);
     ```
 
-4. 欢迎补充 ...
+4. 用 transform: scale(xx%) 解决 chrome 的中文字体限制问题。
+
+    ```css
+    font-size: 12px;
+    -webkit-transform: scale(75%); /* 相当于 9px */
+    transform: scale(75%);
+    ```
+

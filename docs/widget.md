@@ -40,7 +40,7 @@
 
 <style>
 .alice-module {
-    border-bottom: 1px solid #eee;    
+    border-bottom: 1px solid #eee;
     padding: 0;
     margin-top: 20px;
     margin-bottom: 50px;

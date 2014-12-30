@@ -53,7 +53,7 @@ body,button,input,select,textarea {
 
 - `fn-rmb` 金额样式 <span class="fn-rmb">￥23.67</span>
 
-- `fn-webkit-adjust` 用于修复 webkit 下小于 10px 的中文字体
+- `fn-webkit-adjust` 用于修复 webkit 下小于 10px 的中文字体 `应该已失效`
 
 我们使用 `fn-` 前缀表示一些常用的工具类名，灵活使用这些类会大大提高样式开发效率，请点击 [演示页面](http://aliceui.org/base) 和 [代码](https://github.com/aliceui/base/blob/master/src/base.css) 查看详情。
 
