@@ -1,8 +1,7 @@
 {
   "name": "aliceui.org",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "title": "Alice",
-  "family": "alice",
   "description": "写样式的更好方式",
   "homepage": "http://aliceui.org",
   "repository": {

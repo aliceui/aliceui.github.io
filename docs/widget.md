@@ -167,30 +167,24 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
         }
     });
 
-    $.getJSON('../package.json?nowrap', function(data) {
-        console.log(data);
-        var alias;
-        if (data.spm && data.spm.dependencies) {
-            alias = data.spm.dependencies;
-        } else {
-            alias = data.dependencies;
-        }
+    $.getJSON('/static/widgets.json?nowrap', function(data) {
+        var alias = data || {};
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
-            var name = dep[0];
+            var name = dep[0].replace('alice-', '');
             var version = dep[1];
 
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')
-                .attr('href', '/' + dep[0])
-                .attr('id', 'modules-' + dep[0])
+                .attr('href', '/' + name)
+                .attr('id', 'modules-' + name)
                 .html(dep[0]);
             moduleNode.find('.alice-module-version').html(version);
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: '/' + dep[0],
+                url: '/' + name,
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
