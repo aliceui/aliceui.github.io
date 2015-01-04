@@ -200,7 +200,8 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
                     data.find('.nico-insert-code').each(function(index, item) {
                         var demoNode = $($('#alice-module-demo').html());
                         item = $(item);
-                        if (item.children()[0].tagName === 'LINK') {
+                        if (item.children()[0].tagName === 'LINK' ||
+                            item.children()[0].tagName === 'STYLE') {
                           return;
                         }
                         var subtitle = item.prev().html();
