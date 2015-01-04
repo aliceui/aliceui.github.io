@@ -15,7 +15,7 @@
     "dependencies": {
       "alice-box": "1.2.0",
       "alice-button-dropdown": "1.3.0",
-      "alice-form": "1.1.0",
+      "alice-form": "1.1.1",
       "alice-button": "1.3.0",
       "alice-list": "1.1.0",
       "alice-nav": "1.1.0",
@@ -27,7 +27,7 @@
       "alice-tiptext": "1.3.0",
       "alice-select": "1.1.0",
       "alice-loading": "1.1.0",
-      "alice-step": "1.1.0"
+      "alice-step": "1.1.1"
     },
     "devDependencies": {
       "jquery": "1.7.2",

@@ -5,7 +5,7 @@
 
 ---
 
-> Life is like a box of chocolate. 
+> Life is like a box of chocolate.
 *「 Forrest Gump 」1994*
 
 这里是一套按照 [Alice 规范](/docs/rule.html) 和支付宝视觉规范搭建的的通用样式模块库。
@@ -16,6 +16,8 @@
 ---
 
 `````html
+<link rel="stylesheet" href="/docs/widget.css">
+
 <script type="text/template" id="alice-module">
     <div class="alice-module">
         <div class="alice-module-head">
@@ -167,7 +169,7 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
         }
     });
 
-    $.getJSON('/static/widgets.json?nowrap', function(data) {
+    $.getJSON('/docs/widgets.json?nowrap', function(data) {
         var alias = data || {};
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
@@ -179,12 +181,16 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
                 .attr('href', '/' + name)
                 .attr('id', 'modules-' + name)
                 .html(dep[0]);
-            moduleNode.find('.alice-module-version').html(version);
+            moduleNode.find('.alice-module-version').html(
+              '<a href="http://spmjs.io/package/alice-' + name + '" target="_blank">' +
+                '<img src="http://spmjs.io/badge/alice-' + name + '">' +
+              '</a>'
+            );
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: '/' + name,
+                url: 'http://spmjs.io/docs/alice-' + name + '/latest/',
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
@@ -194,6 +200,9 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
                     data.find('.nico-insert-code').each(function(index, item) {
                         var demoNode = $($('#alice-module-demo').html());
                         item = $(item);
+                        if (item.children()[0].tagName === 'LINK') {
+                          return;
+                        }
                         var subtitle = item.prev().html();
                         if (item.prev()[0].tagName !== 'H3' || !subtitle) {
                             subtitle = '默认';
