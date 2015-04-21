@@ -186,7 +186,7 @@ require('./poptip.css');
 </style>
 
 ````js
-var Tip = require('arale-tip);
+var Tip = require('arale-tip');
 
 new Tip({
     trigger: '#tip-element',

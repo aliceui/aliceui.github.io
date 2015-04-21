@@ -464,3 +464,6 @@ body .fn-hide {
     visibility: visible;
 }
 
+.spm-doc-textarea {
+    display: none;
+}
