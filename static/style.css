@@ -455,6 +455,9 @@ body .fn-hide {
         margin-left: 0;
         width: auto;
     }
+    #github-btn {
+        display: none;
+    }
 }
 
 .content-area h1 a.anchor,
