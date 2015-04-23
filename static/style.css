@@ -444,7 +444,8 @@ body .fn-hide {
         display: inline-block;
     }
     .content-area h1:before,
-    .content-area h1:after {
+    .content-area h1:after,
+    .head-area iframe {
         display: none;
     }
     .side-area a {
@@ -454,9 +455,6 @@ body .fn-hide {
     .comment-area {
         margin-left: 0;
         width: auto;
-    }
-    #github-btn {
-        display: none;
     }
 }
 
