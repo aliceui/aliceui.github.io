@@ -203,7 +203,7 @@ new Tip({
 这里演示一下 Dialog 下的 Confirmbox 模块的使用。
 
 ````html
-<button id="confirmbox">Please click me!!!</button>
+<button class="ui-button ui-button-lorange" id="confirmbox">Please click me!!!</button>
 <link href="/arale-dialog/1.4.0/src/dialog.css" rel="stylesheet">
 ````
 
