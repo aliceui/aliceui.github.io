@@ -441,7 +441,11 @@ body .fn-hide {
         border: none;
     }
     .side-area li {
-       display: inline-block;
+        display: inline-block;
+    }
+    .content-area h1:before,
+    .content-area h1:after {
+        display: none;
     }
     .side-area a {
         border: none;
