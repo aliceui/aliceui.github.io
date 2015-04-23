@@ -434,8 +434,17 @@ body .fn-hide {
     .side-area {
         position: relative!important;
         top: 0!important;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: auto;
+        float: none;
+        text-align: center;
+        border: none;
+    }
+    .side-area li {
+       display: inline-block;
+    }
+    .side-area a {
+        border: none;
     }
     .content-area,
     .comment-area {
