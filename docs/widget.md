@@ -180,7 +180,7 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
             moduleNode.find('.alice-module-title a')
                 .attr('href', '/' + name)
                 .attr('id', 'modules-' + name)
-                .html(dep[0]);
+                .html(name);
             moduleNode.find('.alice-module-version').html(
               '<a href="http://spmjs.io/package/alice-' + name + '" target="_blank">' +
                 '<img src="http://spmjs.io/badge/alice-' + name + '">' +
@@ -220,8 +220,7 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
 
                     // 中文关键词，一般放在 keywords 数组的第一个
                     // 在这里写到左边索引栏中
-                    moduleNode.find('.alice-module-version')
-                    var keywords = data.find('#sidebar-wrapper .keywords').html();
+                    var keywords = data.find('.sidebar-wrapper .sidebar-description').data('keyword');
                     if (keywords) {
                         list.find('i').html(keywords);
                     }

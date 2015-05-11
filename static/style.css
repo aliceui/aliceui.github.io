@@ -210,7 +210,6 @@ hr {
     top: 0;
     width: 220px;
     background: #fff;
-    border-bottom: 1px solid #ddd;
     float: left;
 }
 
@@ -219,6 +218,8 @@ hr {
     margin: 0;
     list-style: none;
     line-height: normal;
+    border: 1px solid #eee;
+    border-radius: 4px;
 }
 
 .side-area ul li ul {
@@ -229,7 +230,6 @@ hr {
     background: #FBFFD7;
     text-shadow: none;
     font-weight: bold;
-    transition: background-color 0.8s ease-out;
 }
 
 .side-area .side-highlight a:hover {
@@ -248,11 +248,11 @@ hr {
     font-size: 14px;
     display: block;
     padding: 8px 15px;
-    border: 1px solid #ddd;
     border-bottom: none;
     position: relative;
     text-shadow: 0 1px 2px #eee;
     color: #7CAE23;
+    transition: background 0.5s ease-out;
 }
 
 .side-area a .iconfont {
