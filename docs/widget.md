@@ -190,7 +190,7 @@ seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: 'http://spmjs.io/docs/alice-' + name + '/latest/',
+                url: 'http://docs.spmjs.io/alice-' + name + '/latest/',
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
