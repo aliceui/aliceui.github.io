@@ -21,3 +21,4 @@ _site
 sea-modules
 .cache
 spm_modules
+node_modules

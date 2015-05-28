@@ -242,16 +242,16 @@ Alice 引入了一个优秀的 CSS3 [动画库](http://aliceui.org/animate) 。
 <div id="test1" class="animate-demo">点击我</div>
 <div id="test2" class="animate-demo">点击我</div>
 
-<script>
-seajs.use(['jquery'], function($) {
-    $('#test1').click(function() {
-        $(this).addClass('animated bounceOutLeft');
-    });
-    $('#test2').click(function() {
-        $(this).addClass('animated rotateInUpRight');
-    });
+````
+
+````javascript
+var $ = require('jquery');
+$('#test1').click(function() {
+    $(this).addClass('animated bounceOutLeft');
 });
-</script>
+$('#test2').click(function() {
+    $(this).addClass('animated rotateInUpRight');
+});
 ````
 
 所有的动画效果请点击 [daneden.me/animate](http://daneden.github.io/animate.css/) 查看。
