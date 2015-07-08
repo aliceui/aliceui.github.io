@@ -55,25 +55,17 @@
         <script src="{{static_url('js/sea.js?nowrap')}}"></script>
         {%- endif %}
 
-        <script>
-          seajs.config({
-            base: "{{content_url('')}}",
-            alias: {{deps|json_encode}}
-          });
-        </script>
         <!--[if lt IE 9]>
         <script src="{{static_url('js/html5shiv.js')}}"></script>
         <![endif]-->
         {%- endblock %}
         {%- block afterstyle %}{% endblock %}
-        <script>
-        seajs.use(['arale-sticky', '/static/side'], function(Sticky, side) {
-            Sticky('.side-area', 20);
-            side.init();
-        });
-        </script>
+
     </head>
     <body>
+
+        <script src="{{content_url('')}}dist/bundle.js?nowrap"></script>
+        
         <div id="body-wrapper">
             <div class="head-area">
                 <div class="title-area">
@@ -142,6 +134,9 @@
             </p>
             </footer>
         </div>
+        <script>
+          window['aliceui.org'].init();
+        </script>
     </body>
 </html>
 

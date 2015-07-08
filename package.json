@@ -12,9 +12,16 @@
     "url": "https://github.com/aliceui/aliceui.org/issues"
   },
   "spm": {
+    "main": "static/side.js",
+    "build": {
+      "loader": {
+        ".handlebars": "spmhandlebars-loader"
+      }
+    },
     "dependencies": {
+      "jquery": "1.7.2",
       "alice-box": "1.2.0",
-      "alice-button-dropdown": "1.3.0",
+      "alice-button-dropdown": "1.4.0",
       "alice-form": "1.1.1",
       "alice-button": "1.4.0",
       "alice-list": "1.1.0",
@@ -27,18 +34,20 @@
       "alice-tiptext": "1.3.0",
       "alice-select": "1.1.0",
       "alice-loading": "1.1.0",
-      "alice-step": "1.1.1"
+      "alice-step": "1.2.0"
     },
     "devDependencies": {
-      "jquery": "1.7.2",
       "arale-popup": "1.2.0",
       "underscore": "1.6.0",
       "arale-sticky": "1.4.0",
       "arale-switchable": "1.1.0",
       "arale-calendar": "1.1.0",
       "arale-autocomplete": "1.4.1",
-      "arale-tip": "1.3.0",
+      "arale-tip": "1.4.1",
       "arale-dialog": "1.4.0"
     }
+  },
+  "dependencies": {
+    "spmhandlebars-loader": "~0.1.0"
   }
 }

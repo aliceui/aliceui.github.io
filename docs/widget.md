@@ -16,7 +16,9 @@
 ---
 
 `````html
-<link rel="stylesheet" href="/docs/widget.css">
+<script type="text/spm">
+    require('./widget.css');
+</script>
 
 <script type="text/template" id="alice-module">
     <div class="alice-module">
@@ -138,110 +140,107 @@ a {
 
 <div class="alice-modules"></div>
 
-<script type="text/javascript">
-seajs.use(['jquery', 'underscore', 'arale-popup'], function($, _, Popup) {
+<script type="text/spm">
+var $ = require('jquery');
+var _ = require('underscore');
+var Popup = require('arale-popup');
 
-    $('.alice-modules').on('mouseenter', '.alice-module-demo', function() {
-        $(this).find('.alice-module-sourcecode').fadeIn(200);
-    }).on('mouseleave', '.alice-module-demo', function() {
-        $(this).find('.alice-module-sourcecode').fadeOut(200);
-    });
-
-    new Popup({
-        trigger: '.alice-module-sourcecode',
-        template: '<div class="black">源码在下方</div>',
-        delay: -1,
-        delegateNode: '.alice-modules'
-    });
-
-    $('.alice-modules').on('click', '.alice-module-sourcecode', function() {
-        var code = $(this).parent().find('.alice-module-code');
-        if (code.is(':hidden')) {
-            code.animate({
-                opacity: 1,
-                height: 'toggle'
-            }, 200);
-        } else {
-            code.animate({
-                opacity: 0,
-                height: 'toggle'
-            }, 200);
-        }
-    });
-
-    $.getJSON('/docs/widgets.json?nowrap', function(data) {
-        var alias = data || {};
-        var deps = _.pairs(alias);
-        _.each(deps, function(dep) {
-            var name = dep[0].replace('alice-', '');
-            var version = dep[1];
-
-            var moduleNode = $($('#alice-module').html());
-            moduleNode.find('.alice-module-title a')
-                .attr('href', '/' + name)
-                .attr('id', 'modules-' + name)
-                .html(name);
-            moduleNode.find('.alice-module-version').html(
-              '<a href="http://spmjs.io/package/alice-' + name + '" target="_blank">' +
-                '<img src="http://spmjs.io/badge/alice-' + name + '">' +
-              '</a>'
-            );
-            moduleNode.appendTo('.alice-modules');
-            var list = substractTitle(moduleNode.find('h2'));
-
-            $.ajax({
-                url: 'http://docs.spmjs.io/alice-' + name + '/latest/',
-                dataType: 'html',
-                success: function(data) {
-                    data = $(data);
-                    moduleNode.find('.alice-module-description')
-                        .html(data.find('.entry-content > p:first-child').html());
-
-                    data.find('.nico-insert-code').each(function(index, item) {
-                        var demoNode = $($('#alice-module-demo').html());
-                        item = $(item);
-                        if (item.children()[0].tagName === 'LINK' ||
-                            item.children()[0].tagName === 'STYLE') {
-                          return;
-                        }
-                        var subtitle = item.prev().html();
-                        if (item.prev()[0].tagName !== 'H3' || !subtitle) {
-                            subtitle = '默认';
-                        }
-                        demoNode.find('.alice-module-subtitle').html(subtitle);
-                        demoNode.find('.alice-module-dom').html(item.html());
-                        // 直接使用目标页面生成的高亮代码，不再动态渲染
-                        var codeHtml = item.next('.highlight').find('pre').html();
-                        demoNode.find('.alice-module-code').html(codeHtml);
-
-                        moduleNode.find('.alice-loading').remove();
-                        demoNode.appendTo(moduleNode);
-                    });
-
-                    // 中文关键词，一般放在 keywords 数组的第一个
-                    // 在这里写到左边索引栏中
-                    var keywords = data.find('.sidebar-wrapper .sidebar-description').data('keyword');
-                    if (keywords) {
-                        list.find('i').html(keywords);
-                    }
-                }
-            });
-        });
-        seajs.use('/static/side', function(side) {
-            side.init();
-        });
-    });
-
-    function substractTitle(item) {
-        $('.side-loading').remove();
-        item = item.find('a');
-        var list = $($('#list-template').html());
-        list.find('a').html(item.html() + list.find('a').html());
-        list.find('a').attr('href', '#' + item.attr('id'));
-        list.appendTo('.side-area ul');
-        return list;
-    }
-
+$('.alice-modules').on('mouseenter', '.alice-module-demo', function() {
+    $(this).find('.alice-module-sourcecode').fadeIn(200);
+}).on('mouseleave', '.alice-module-demo', function() {
+    $(this).find('.alice-module-sourcecode').fadeOut(200);
 });
+
+new Popup({
+    trigger: '.alice-module-sourcecode',
+    template: '<div class="black">源码在下方</div>',
+    delay: -1,
+    delegateNode: '.alice-modules'
+});
+
+$('.alice-modules').on('click', '.alice-module-sourcecode', function() {
+    var code = $(this).parent().find('.alice-module-code');
+    if (code.is(':hidden')) {
+        code.animate({
+            opacity: 1,
+            height: 'toggle'
+        }, 200);
+    } else {
+        code.animate({
+            opacity: 0,
+            height: 'toggle'
+        }, 200);
+    }
+});
+
+$.getJSON('/docs/widgets.json?nowrap', function(data) {
+    var alias = data || {};
+    var deps = _.pairs(alias);
+    _.each(deps, function(dep) {
+        var name = dep[0].replace('alice-', '');
+        var version = dep[1];
+
+        var moduleNode = $($('#alice-module').html());
+        moduleNode.find('.alice-module-title a')
+            .attr('href', '/' + name)
+            .attr('id', 'modules-' + name)
+            .html(name);
+        moduleNode.find('.alice-module-version').html(
+          '<a href="http://spmjs.io/package/alice-' + name + '" target="_blank">' +
+            '<img src="http://spmjs.io/badge/alice-' + name + '">' +
+          '</a>'
+        );
+        moduleNode.appendTo('.alice-modules');
+        var list = substractTitle(moduleNode.find('h2'));
+
+        $.ajax({
+            url: 'http://docs.spmjs.io/alice-' + name + '/latest/',
+            dataType: 'html',
+            success: function(data) {
+                data = $(data);
+                moduleNode.find('.alice-module-description')
+                    .html(data.find('.entry-content > p:first-child').html());
+
+                data.find('.nico-insert-code').each(function(index, item) {
+                    var demoNode = $($('#alice-module-demo').html());
+                    item = $(item);
+                    if (item.children()[0].tagName === 'LINK' ||
+                        item.children()[0].tagName === 'STYLE') {
+                      return;
+                    }
+                    var subtitle = item.prev().html();
+                    if (item.prev()[0].tagName !== 'H3' || !subtitle) {
+                        subtitle = '默认';
+                    }
+                    demoNode.find('.alice-module-subtitle').html(subtitle);
+                    demoNode.find('.alice-module-dom').html(item.html());
+                    // 直接使用目标页面生成的高亮代码，不再动态渲染
+                    var codeHtml = item.next('.highlight').find('pre').html();
+                    demoNode.find('.alice-module-code').html(codeHtml);
+
+                    moduleNode.find('.alice-loading').remove();
+                    demoNode.appendTo(moduleNode);
+                });
+
+                // 中文关键词，一般放在 keywords 数组的第一个
+                // 在这里写到左边索引栏中
+                var keywords = data.find('.sidebar-wrapper .sidebar-description').data('keyword');
+                if (keywords) {
+                    list.find('i').html(keywords);
+                }
+            }
+        });
+    });
+});
+
+function substractTitle(item) {
+    $('.side-loading').remove();
+    item = item.find('a');
+    var list = $($('#list-template').html());
+    list.find('a').html(item.html() + list.find('a').html());
+    list.find('a').attr('href', '#' + item.attr('id'));
+    list.appendTo('.side-area ul');
+    return list;
+}
 </script>
 `````

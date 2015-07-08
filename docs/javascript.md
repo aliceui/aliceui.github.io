@@ -58,7 +58,6 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 
 
 ````html
-<link href="/alice-tab/1.1.0/index.css" rel="stylesheet">
 <style>
 .panel {
     display: none;
@@ -93,6 +92,7 @@ Alice 中的 tab 模块就非常适合和 Switchable 进行配合。
 上面是 DOM 结构和样式文件。然后加上 Switchable 的代码。更多使用方式请访问 [文档](http://aralejs.org/switchable) 。
 
 ````js
+require('alice-tab');
 var Switchable = require('arale-switchable');
 
 new Switchable.Tabs({
@@ -110,11 +110,11 @@ new Switchable.Tabs({
 可以和 [alice.select](http://aliceui.org/select/) 进行配合。
 
 ````html
-<link href="/alice-select/1.1.0/dist/select.css" rel="stylesheet">
 <input type="text" id="input" placeholder="请输入 a">
 ````
 
 ````js
+require('alice-select');
 var $ = require('jquery');
 var AutoComplete = require('arale-autocomplete');
 new AutoComplete({
@@ -129,8 +129,6 @@ new AutoComplete({
 [Popup](http://aralejs.org/popup) 的职责是有触发元素的浮层交互，可以和 [alice/button-dropdown](http://aliceui.org/button-dropdown/) 配合使用。
 
 ````html
-<link href="/alice-button-dropdown/1.3.0/index.css" rel="stylesheet">
-
 <div class="ui-button-dropdown">
     <a class="ui-button ui-button-lorange ui-dbutton ui-dbutton-orange" id="popup-trigger">
         <span class="ui-dbutton-self">下拉菜单</span>
@@ -154,6 +152,7 @@ new AutoComplete({
 ````
 
 ````js
+require('alice-button-dropdown');
 var Popup = require('arale-popup');
 new Popup({
     trigger: '#popup-trigger',
@@ -204,10 +203,10 @@ new Tip({
 
 ````html
 <button class="ui-button ui-button-lorange" id="confirmbox">Please click me!!!</button>
-<link href="/arale-dialog/1.4.0/src/dialog.css" rel="stylesheet">
 ````
 
 ````js
+require('arale-dialog/src/dialog.css');
 var Dialog = require('arale-dialog');
 
 new Dialog.ConfirmBox({
