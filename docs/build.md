@@ -176,9 +176,9 @@ $ spm doc publish
 然后打开 myalipay.css ，在文件前面写入
 
 ```css
-@import url('alice-box');
-@import url('alice-button');
-@import url('alice-nav');
+@import url('~alice-box');
+@import url('~alice-button');
+@import url('~alice-nav');
 ```
 
 通过这种类似于 Arale 中 `require('')` 的方式，引入了这三个模块。
@@ -191,12 +191,14 @@ $ spm doc publish
 在 myalipay.css 中可以这样引入：
 
 ```css
-@import url('box');
-@import url('button');
-@import url('nav');
+@import url('~alice-box');
+@import url('~alice-button');
+@import url('~alice-nav');
 
 @import url('./user.css');  /* 引入内部文件 */
 ```
+
+> `~` 表示引入外部模块，不加表示内部文件。
 
 最后，和上面一样，用 `spm build` 命令打包出文件，你会发现在 dist 目录下多了
 两个文件 myalipay.css 和 myalipay-debug.css ，包含了 box、button、nav、user.css 和 myalipay.css 自身的所有代码。
