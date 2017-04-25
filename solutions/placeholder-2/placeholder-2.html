@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Placehoder 2</title>
+  <link rel="stylesheet" charset="utf-8" href="../../base.css" />
+  <style type="text/css">
+    body { padding: 30px; }
+    p { margin-bottom: 15px; }
+
+    .sl-placeholder, .sl-placeholder-input {
+      position: relative;
+    }
+
+    .sl-placeholder-label {
+      position: absolute;
+      left: .5em;
+      right: .5em;
+      top: .1em; /* 垂直居中 */
+      color: #8B9096;
+    }
+
+    .sl-placeholder-input {
+      background: transparent;
+      z-index: 0; /* 保证input层级在label之上 */
+    }
+
+    /* 聚焦状态 */
+    .sl-placeholder-focus .sl-placeholder-label {
+      color: #CCC;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <p>
+    <div class="sl-placeholder">
+      <label class="sl-placeholder-label" for="username" data-placeholder="Username">Username</label>
+      <input type="text" class="sl-placeholder-input" id="username" size="30">
+    </div>
+  </p>
+  <p>
+    <div class="sl-placeholder">
+      <label class="sl-placeholder-label" for="site" data-placeholder="Site">Site</label>
+      <input type="text" class="sl-placeholder-input" id="site" size="30">
+    </div>
+  </p>
+  
+</div> <!-- #wrapper -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  function placeholder(el) {
+    el = $(el);
+    var label = $('.sl-placeholder-label', el);
+    var defaultText = label.data('placeholder');
+    var input = $('.sl-placeholder-input', el).focus(function() {
+      el.addClass('sl-placeholder-focus');
+    }).blur(function() {
+      el.removeClass('sl-placeholder-focus');
+      checkInputVal();
+    }).keydown(function(e) {
+      var keyCode = e.keyCode;
+      //控制字符不可见
+      if (keyCode >= 0  && keyCode <= 31 || keyCode >= 127  && keyCode <= 157) {
+        return;
+      }
+      label.text('');
+    }).keyup(function() {
+      checkInputVal();
+    });
+
+    function checkInputVal() {
+      if (input.val().length == 0) {
+        label.text(defaultText);
+      }
+    }
+  }
+
+  $('.sl-placeholder').each(function(index, el) {
+    placeholder(el);
+  });
+</script>
+
+</body>
+</html>
