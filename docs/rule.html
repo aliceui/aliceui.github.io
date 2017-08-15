@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alice - 规范和最佳实践</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico-spm 0.5.5" />
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="../static/css/normalize.css" />
+        <link rel="stylesheet" href="../static/css/site.css" />
+        <link rel="stylesheet" href="../static/css/solarized.css" />
+        <link rel="stylesheet" href="../static/style.css" />
+
+        <style>
+          /* alipay iconfont */
+          @font-face {
+            font-family: "rei";
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+          }
+          .iconfont {
+            font-family: "rei"!important;
+            font-style: normal;
+            font-weight: normal;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+          }
+        </style>
+
+        <script>
+        if (!location.port) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-39169474-1', 'auto');
+          ga('send', 'pageview');
+        }
+        </script>
+        <script src="../static/js/sea.js?nowrap"></script>
+
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+
+    </head>
+    <body>
+
+        <script src="../dist/bundle.js?nowrap"></script>
+        
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <h1>
+                        <a href="../">Alice</a>
+                    </h1>
+                    <p class="description">写样式的更好方式</p>
+                    <img src="/static/alice-top.png" alt="alice" />
+                </div>
+                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="build.html">构建模块和样式库</a></li>
+                    <li><a href="framework.html">基础框架</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="rule.html">规范和最佳实践</a></li>
+                    <li><a href="start.html">开始使用</a></li>
+                    <li><a href="tool.html">工具</a></li>
+                    <li><a href="widget.html">通用样式库</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#模块组织规范">模块组织规范</a></li><li><a href="#模块化命名规范">模块化命名规范</a><ul><li><a href="#什么是模块化的样式">什么是模块化的样式</a></li><li><a href="#怎样才能写出模块化的样式">怎样才能写出模块化的样式</a></li><li><a href="#alice-类命名规范">Alice 类命名规范</a></li><li><a href="#命名规范的最后">命名规范的最后</a></li></ul></li><li><a href="#css-编码规范">CSS 编码规范</a></li><li><a href="#写样式的最佳实践">写样式的最佳实践</a></li><li><a href="#常见兼容解决方案">常见兼容解决方案</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>规范和最佳实践</h1>
+                    <div class="content"><!--filepath:docs/rule.md --> <blockquote>
+<p>When other men are limited by of laws, remember, Everything is permitted. 
+<em>「 Assassin&#39;s Creed: Brotherhood 」</em></p>
+</blockquote>
+<p>入乡随俗，有一些规则是必须要遵守的，有一些则是经验总结，欢迎拍砖。
+这页文档将介绍使用 Alice 开发样式时需要遵守的一些规则，统一可行的规范能保证团队产出优秀的代码。</p>
+<hr>
+<h2 id="模块组织规范">模块组织规范<a href="#模块组织规范" class="anchor">¶</a></h2><p>Alice 的样式模块组织方式追求扁平化的方式，分为三个层级：</p>
+<ol>
+<li><p>基础框架（reset + iconfont + 栅格）</p>
+</li>
+<li><p>通用模块（符合 Alice 规范的样式模块）</p>
+</li>
+<li><p>页面样式（继承通用模块）</p>
+</li>
+</ol>
+<p>Alice 推荐采用上述的层次来组织你的样式文件，在基础框架的基础上开发一定数量的通用模块，
+在页面样式模块中继承基础框架和通用模块，并进一步开发。</p>
+<h2 id="模块化命名规范">模块化命名规范<a href="#模块化命名规范" class="anchor">¶</a></h2><p>Alice 的命名规范是 <a href="http://sofish.de/">@小鱼</a> 提出的用于书写模块化样式的一套类命名规范，目前已经广泛应用在支付宝各页面，更多信息可以查看 <a href="http://www.slideshare.net/sofish/css-8943211"><a href="http://www.slideshare.net/sofish/css-8943211">http://www.slideshare.net/sofish/css-8943211</a></a> （需翻墙）。</p>
+<h3 id="什么是模块化的样式">什么是模块化的样式<a href="#什么是模块化的样式" class="anchor">¶</a></h3><p>Alice 对于模块化样式的理解是任何模块在页面上都应该像一个盒模型，不和页面的其他元素互相影响。
+完美的 Alice 模块应该是一个“口”字型结构。比如 box 模块：</p>
+<p><img src="https://i.alipayobjects.com/e/201303/2OcipsuaOK.png" alt=""></p>
+<p>ui-box 模块能够嵌到页面上任何一个位置，box 内部也能够嵌入别的模块（如图中的 ui-list 模块），它们之间不会互相影响。</p>
+<h3 id="怎样才能写出模块化的样式">怎样才能写出模块化的样式<a href="#怎样才能写出模块化的样式" class="anchor">¶</a></h3><p>一种简单的方式是使用 Alice 的类命名规范，当团队中都能采用这种方式书写样式，就能很好地避免样式冲突。
+在模块化和命名上，以一个 Tab 模块为例，分解如下：</p>
+<p><img src="https://i.alipayobjects.com/e/201303/2OclGkyShZ.jpg" alt=""></p>
+<p>值得注意的是：</p>
+<ul>
+<li><p>模块名是必选的。</p>
+<p>名字要求是表意的，一眼就基本能看出模块是做什么的。</p>
+</li>
+<li><p>模块内部的类名继承于上层的名称。</p>
+<p>比如：</p>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-box"</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-box-title"</span>&gt;</span><span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"ui-box-conent"</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><p>不要这样写，很容易造成命名上的冲突。</p>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-box"</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"title"</span>&gt;</span><span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"conent"</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></li>
+</ul>
+<ul>
+<li><p>在模块 DOM 结构的最外一层添加状态，而非给每一个内容添加状态。除非内容有独立的状态。</p>
+<p>比如，我们可以这样写：</p>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-box ui-box-hover"</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-box-title"</span>&gt;</span><span class="tag">&lt;/<span class="title">h3</span>&gt;</span>    
+   <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"ui-box-content"</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><p>但不要这样写：</p>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-new"</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-box-title ui-box-title-hover"</span>&gt;</span><span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"ui-box-content ui-box-content-hover"</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></li>
+</ul>
+<ul>
+<li><p>充分考虑标签的语义化</p>
+<p>语义化是什么？什么样的写法才是正确的。这里给一个建议，把你将要构建的页面当成一本书。
+是段落的，你就用 P(aragraph)；是标题的，就用 H(eader)；是引用的，就用 Blockquote。
+而不是简单的，块状的东西由块状元素包含，行内的元素用行内的标签包含。
+这里有点要求就是， 去深入了解每个 HTML 标签的用法。</p>
+<p>关于 HTML 的语义化，可以参考：<a href="http://sofish.de/1688">这样去写你的 HTML</a> 。</p>
+</li>
+</ul>
+<h3 id="alice-类命名规范">Alice 类命名规范<a href="#alice-类命名规范" class="anchor">¶</a></h3><p><img src="https://i.alipayobjects.com/e/201303/2OchzepKA0.png" alt=""></p>
+<ul>
+<li><p>模块名</p>
+<p>尽量让人看到名字就能知道是什么模块，比如 ui-tab， ui-nav 这样的命名。（反例：<code>ui-shit</code>）
+用 HTML ENTRY 来引用，不要写空标签，应使用 HTML ENTRY 来替代，以达到语义化的要求。
+HTML ENTRY 请参考这个文档：<a href="https://docs.google.com/Doc?docid=0AWiI12yCmwaoZGNiemJqOGpfMTVmaHZtOWNkeg">https://docs.google.com/Doc?docid=0AWiI12yCmwaoZGNiemJqOGpfMTVmaHZtOWNkeg</a></p>
+</li>
+<li><p>模块整体状态 = 模块名 + 状态</p>
+<p><code>常用状态</code>有：hover, current, selected, disabled, focus, blur, checked, success, error 等。通常你的命名应该看起来像 .ui-name-hover, .ui-name-error 这样。</p>
+</li>
+<li><p>子模块 = 模块名 + 子模块名</p>
+<p>常用模块名有：cnt(content)，hd(header)，text(txt)，img(images/pic)，title，item，cell 等，
+只要词义表达了组件要实现的功能或者要表现出来的的外观就可以了。</p>
+</li>
+<li><p>子模块状态 = 模块名 + 子模块名 + 状态</p>
+<p>参照常用状态。</p>
+</li>
+</ul>
+<p>命名注意：</p>
+<ul>
+<li><p>模块嵌套：大模块可有子模块命名。</p>
+<p>拿支付宝某项目中的的 .ui-nav 为例，如果有多级，可以这样命名：</p>
+<p>ui-nav &gt; ui-subnav(ui-nav的子类) &gt; ui-list(嵌套进去的其他模块)</p>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-nav"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-nav-item"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>nav Triggle Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-subnav"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-subnav-item"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>subNav Triggle Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list"</span>&gt;</span></code></pre></div></li>
+<li><p>统一命名风格：</p>
+<p>比如你比较喜欢 ui-tip-container ，另外的一个相同作用的地方，就不要写 ui-message-cnt 了，
+用 <code>ui-tip-container ui-message-container</code> 会是更好的选择。</p>
+</li>
+</ul>
+<h3 id="命名规范的最后">命名规范的最后<a href="#命名规范的最后" class="anchor">¶</a></h3><p>说了这么多，其实简单就是一句话，用 <code>-</code> 来做命名空间上的区隔，最小化两个模块之间的命名冲突。</p>
+<p>这种模块化的命名方式会很好地避免样式之间的冲突，特别推荐在团队中使用，
+可以参考 <a href="http://aliceui.org/box/">box</a>、<a href="http://aliceui.org/nav/">nav</a> 这些按照 Alice 命名规范实现的通用模块。</p>
+<p>在 Alice 中，第一个 <code>ui-</code> 是作为通用模块的标识，你可以选取其他前缀来分类你的模块。</p>
+<blockquote>
+<p>我们一共占用了两个前缀 <code>ui-</code>、<code>fn-</code>，各业务线可以选取自己的前缀。</p>
+</blockquote>
+<h2 id="css-编码规范">CSS 编码规范<a href="#css-编码规范" class="anchor">¶</a></h2><p>直接参考 Google 的规范吧，懒得写了。</p>
+<p><a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml"><a href="http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml</a></a></p>
+<h2 id="写样式的最佳实践">写样式的最佳实践<a href="#写样式的最佳实践" class="anchor">¶</a></h2><ol>
+<li><p>使用 iconfont 代替雪碧图。</p>
+</li>
+<li><p>坚持渐进增强策略，大胆使用新的 CSS3 技术，对低级浏览器保持基本的视觉支持。</p>
+</li>
+<li><p>设计 Html 结构是开发样式模块的核心工作，不要为了视觉效果迁就 Html 结构。</p>
+</li>
+<li><p>使用 fn-clear 来清除浮动，慎用 <code>overflow: hidden;</code> 。</p>
+</li>
+<li><p>样式模块不要依赖 reset.css ，要有对自身的 reset 代码。</p>
+</li>
+<li><p>不要去掉虚线框，为可用性考虑。</p>
+</li>
+<li><p>放弃 IE6 下的透明 png 修补方案。</p>
+</li>
+<li><p>欢迎补充。</p>
+</li>
+</ol>
+<h2 id="常见兼容解决方案">常见兼容解决方案<a href="#常见兼容解决方案" class="anchor">¶</a></h2><blockquote>
+<p>合适的、不使用 JS 的、尽量不使用 expression 的、无副作用的方案我们都会放在这里。</p>
+</blockquote>
+<ol>
+<li><p>inline-block</p>
+<div class="highlight"><pre><code class="css"><span class="tag">display</span>: <span class="tag">inline-block</span>;
+*<span class="tag">display</span>: <span class="tag">inline</span>;
+*<span class="tag">zoom</span>: 1;</code></pre></div></li>
+<li><p>最小高度 min-height</p>
+<div class="highlight"><pre><code class="css">min-height: 200px;
+_height: 200px; / hack for ie6 */</code></pre></div></li>
+<li><p>顺时针翻转 90 度。</p>
+<div class="highlight"><pre><code class="css">-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+transform: rotate(90deg);</code></pre></div></li>
+<li><p>用 transform: scale(xx%) 解决 chrome 的中文字体限制问题。</p>
+<div class="highlight"><pre><code class="css"><span class="tag">font-size</span>: 12<span class="tag">px</span>;
+<span class="tag">-webkit-transform</span>: <span class="tag">scale</span>(75%); <span class="comment">/* 相当于 9px */</span>
+<span class="tag">transform</span>: <span class="tag">scale</span>(75%);</code></pre></div></li>
+</ol>
+</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            <p class="powered">
+                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aliceui.org">Alice</a> •
+                <a href="http://seajs.org">Sea.js</a> •
+                <a href="http://spmjs.io">spmjs.io</a> •
+                <a href="http://lab.lepture.com/nico/">nico-spm</a>
+            </p>
+            </footer>
+        </div>
+        <script>
+          window['aliceui.org'].init();
+        </script>
+    </body>
+</html>

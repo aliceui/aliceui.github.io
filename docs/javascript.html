@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alice - JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico-spm 0.5.5" />
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="../static/css/normalize.css" />
+        <link rel="stylesheet" href="../static/css/site.css" />
+        <link rel="stylesheet" href="../static/css/solarized.css" />
+        <link rel="stylesheet" href="../static/style.css" />
+
+        <style>
+          /* alipay iconfont */
+          @font-face {
+            font-family: "rei";
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+          }
+          .iconfont {
+            font-family: "rei"!important;
+            font-style: normal;
+            font-weight: normal;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+          }
+        </style>
+
+        <script>
+        if (!location.port) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-39169474-1', 'auto');
+          ga('send', 'pageview');
+        }
+        </script>
+        <script src="../static/js/sea.js?nowrap"></script>
+
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+
+    </head>
+    <body>
+
+        <script src="../dist/bundle.js?nowrap"></script>
+        
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <h1>
+                        <a href="../">Alice</a>
+                    </h1>
+                    <p class="description">写样式的更好方式</p>
+                    <img src="/static/alice-top.png" alt="alice" />
+                </div>
+                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="build.html">构建模块和样式库</a></li>
+                    <li><a href="framework.html">基础框架</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="rule.html">规范和最佳实践</a></li>
+                    <li><a href="start.html">开始使用</a></li>
+                    <li><a href="tool.html">工具</a></li>
+                    <li><a href="widget.html">通用样式库</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#在-arale-中使用样式">在 Arale 中使用样式</a></li><li><a href="#switchable">Switchable</a></li><li><a href="#autocomplete">AutoComplete</a></li><li><a href="#popup">Popup</a></li><li><a href="#tip">Tip</a></li><li><a href="#dialog">Dialog</a></li><li><a href="#更多功能">更多功能</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>JavaScript</h1>
+                    <div class="content"><!--filepath:docs/javascript.md --> <blockquote>
+<p>I&#39;m going to make him an offer he can&#39;t refuse.
+<em>「 The GodFather 」1972</em></p>
+</blockquote>
+<p>只有样式模块是无法开发页面的，现在我们需要一些 JavaScript 的功能。</p>
+<p>万幸，我们有 <a href="http://aralejs.org/">Arale</a> 。本页面将用几个常用的范例介绍如何搭配使用 Alice 模块和 Arale 的 JS 模块。</p>
+<p><img src="https://i.alipayobjects.com/e/201303/2MPpg2ju9k.jpg" alt=""></p>
+<hr>
+<h2 id="在-arale-中使用样式">在 Arale 中使用样式<a href="#在-arale-中使用样式" class="anchor">¶</a></h2><p>Alice 是 Arale 整个前端解决方案的子集，有些简单页面使用 Alice 通用模块就可以搭建出来了，有些则需要配合 JavaScript 才能实现。那么如何在 Arale 中使用 Alice 呢？</p>
+<p>在 Arale 的解决方案中，使用样式主要有两种方式。</p>
+<ol>
+<li><p>用标准的 link 标签来调用 Alice 。</p>
+<p>此方案的优点是标准，样式无闪烁，统一可控，适合所有场景（特别是纯展现型的页面。）</p>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"alice-modules.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></code></pre></div><p>在 Alice 中，一般可以新建一个模块，打包出一个 CSS 文件再 link 到相应的位置就可以了。</p>
+</li>
+<li><p>使用 JavaScript 实现的 <a href="https://github.com/spmjs/spm/issues/641">importStyle</a> 功能在页面中动态插入 style 标签。</p>
+<div class="highlight"><pre><code class="javascript">require(<span class="string">'./style.css'</span>);</code></pre></div><p>优点是可以在 JavaScript 中统一调用样式模块（和 JS 模块保持一致），使用者可以不用关心样式，十分方便。</p>
+<p>缺点也很明显，样式只有等到 JS 生效后才会载入，展现型的页面会出现样式闪烁。
+而且在 IE 下有 style 标签数量限制的<a href="http://social.msdn.microsoft.com/Forums/en-US/iewebdevelopment/thread/ad1b6e88-bbfa-4cc4-9e95-3889b82a7c1d/">问题</a>。</p>
+<p>适合场景：需要 CSS 辅助的 JS 组件，比如 Calendar 日历组件，以及其他的应用型页面。</p>
+<p>在 Arale 的模块中，可以直接 <code>require(&#39;alice-poptip&#39;)</code> 来调用 Alice 模块。
+这样 Arale 模块就依赖了 Alice 的样式模块，无须再去单独打包引用样式。</p>
+</li>
+</ol>
+<p>以上是使用样式的两种方式，下面将针对如何结合 Alice 的模块和 Arale 的模块完成功能。</p>
+<h2 id="switchable">Switchable<a href="#switchable" class="anchor">¶</a></h2><p><a href="http://aralejs.org/switchable">Switchable</a> 是 Arale 中的一个 JS 组件，主要负责面板切换等功能。
+Alice 中的 tab 模块就非常适合和 Switchable 进行配合。</p>
+<div class="nico-insert-code"><style>
+.panel {
+    display: none;
+}
+</style>
+
+<div class="ui-tab">
+    <ul class="ui-tab-items">
+        <li class="ui-tab-item ui-tab-item-current">
+            <a href="javascript:;">全部交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">进行中的交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">等待发货的交易</a>
+        </li>
+        <li class="ui-tab-item">
+            <a href="javascript:;">未确认收获的交易</a>
+        </li>
+    </ul>
+</div>
+
+<ul class="panels">
+    <li class="panel">面板一的内容</li>
+    <li class="panel">面板二的内容</li>
+    <li class="panel">面板三的内容</li>
+    <li class="panel">面板四的内容</li>
+</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="class">.panel</span> <span class="rules">{
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tab"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-tab-items"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-tab-item ui-tab-item-current"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span>&gt;</span>全部交易<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-tab-item"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span>&gt;</span>进行中的交易<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-tab-item"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span>&gt;</span>等待发货的交易<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-tab-item"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:;"</span>&gt;</span>未确认收获的交易<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"panels"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"panel"</span>&gt;</span>面板一的内容<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"panel"</span>&gt;</span>面板二的内容<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"panel"</span>&gt;</span>面板三的内容<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"panel"</span>&gt;</span>面板四的内容<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><p>上面是 DOM 结构和样式文件。然后加上 Switchable 的代码。更多使用方式请访问 <a href="http://aralejs.org/switchable">文档</a> 。</p>
+<script class="nico-insert-code">(function(){window['alice-tab'];
+var Switchable = window['arale-switchable'];
+
+new Switchable.Tabs({
+    element: '.ui-tab',
+    triggers: '.ui-tab-item',
+    panels: '.panel',
+    triggerType: 'click',
+    activeTriggerClass: 'ui-tab-item-current'
+}).render();})()</script><textarea mode="javascript" class="spm-doc-textarea">(function(){require('alice-tab');
+var Switchable = require('arale-switchable');
+
+new Switchable.Tabs({
+    element: '.ui-tab',
+    triggers: '.ui-tab-item',
+    panels: '.panel',
+    triggerType: 'click',
+    activeTriggerClass: 'ui-tab-item-current'
+}).render();})()</textarea><div class="highlight"><pre><code class="javascript">require(<span class="string">'alice-tab'</span>);
+<span class="keyword">var</span> Switchable = require(<span class="string">'arale-switchable'</span>);
+
+<span class="keyword">new</span> Switchable.Tabs({
+    element: <span class="string">'.ui-tab'</span>,
+    triggers: <span class="string">'.ui-tab-item'</span>,
+    panels: <span class="string">'.panel'</span>,
+    triggerType: <span class="string">'click'</span>,
+    activeTriggerClass: <span class="string">'ui-tab-item-current'</span>
+}).render();</code></pre></div><h2 id="autocomplete">AutoComplete<a href="#autocomplete" class="anchor">¶</a></h2><p><a href="http://aralejs.org/autocomplete">AutoComplete</a> 是自动完成组件，
+可以和 <a href="http://aliceui.org/select/">alice.select</a> 进行配合。</p>
+<div class="nico-insert-code"><input type="text" id="input" placeholder="请输入 a"></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">id</span>=<span class="value">"input"</span> <span class="attribute">placeholder</span>=<span class="value">"请输入 a"</span>&gt;</span></code></pre></div><script class="nico-insert-code">(function(){window['alice-select'];
+var $ = window['jquery'];
+var AutoComplete = window['arale-autocomplete'];
+new AutoComplete({
+    trigger: '#input',
+    dataSource: ['abc', 'abd', 'abe', 'acd'],
+    width: 230
+}).render();})()</script><textarea mode="javascript" class="spm-doc-textarea">(function(){require('alice-select');
+var $ = require('jquery');
+var AutoComplete = require('arale-autocomplete');
+new AutoComplete({
+    trigger: '#input',
+    dataSource: ['abc', 'abd', 'abe', 'acd'],
+    width: 230
+}).render();})()</textarea><div class="highlight"><pre><code class="javascript">require(<span class="string">'alice-select'</span>);
+<span class="keyword">var</span> $ = require(<span class="string">'jquery'</span>);
+<span class="keyword">var</span> AutoComplete = require(<span class="string">'arale-autocomplete'</span>);
+<span class="keyword">new</span> AutoComplete({
+    trigger: <span class="string">'#input'</span>,
+    dataSource: [<span class="string">'abc'</span>, <span class="string">'abd'</span>, <span class="string">'abe'</span>, <span class="string">'acd'</span>],
+    width: <span class="number">230</span>
+}).render();</code></pre></div><h2 id="popup">Popup<a href="#popup" class="anchor">¶</a></h2><p><a href="http://aralejs.org/popup">Popup</a> 的职责是有触发元素的浮层交互，可以和 <a href="http://aliceui.org/button-dropdown/">alice/button-dropdown</a> 配合使用。</p>
+<div class="nico-insert-code"><div class="ui-button-dropdown">
+    <a class="ui-button ui-button-lorange ui-dbutton ui-dbutton-orange" id="popup-trigger">
+        <span class="ui-dbutton-self">下拉菜单</span>
+        <i class="ui-dbutton-arrow iconfont" title="下三角形">&#xF03C;</i>
+    </a>
+    <ul class="ui-button-dropdown-large" id="popup-element">
+        <li class="ui-button-dropdown-item">
+            <a href="#">设置代扣</a>
+        </li>
+        <li class="ui-button-dropdown-item">
+            <a href="#">标为已缴</a>
+        </li>
+    </ul>
+</div>
+
+<style>
+.ui-button-dropdown-large {
+    display: none;
+}
+</style></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-button-dropdown"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"ui-button ui-button-lorange ui-dbutton ui-dbutton-orange"</span> <span class="attribute">id</span>=<span class="value">"popup-trigger"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-dbutton-self"</span>&gt;</span>下拉菜单<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-dbutton-arrow iconfont"</span> <span class="attribute">title</span>=<span class="value">"下三角形"</span>&gt;</span>&amp;#xF03C;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-button-dropdown-large"</span> <span class="attribute">id</span>=<span class="value">"popup-element"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-button-dropdown-item"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>设置代扣<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-button-dropdown-item"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>标为已缴<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="class">.ui-button-dropdown-large</span> <span class="rules">{
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+<span class="rule">}</span></span>
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></code></pre></div><script class="nico-insert-code">(function(){window['alice-button-dropdown'];
+var Popup = window['arale-popup'];
+new Popup({
+    trigger: '#popup-trigger',
+    element: '#popup-element'
+});})()</script><textarea mode="javascript" class="spm-doc-textarea">(function(){require('alice-button-dropdown');
+var Popup = require('arale-popup');
+new Popup({
+    trigger: '#popup-trigger',
+    element: '#popup-element'
+});})()</textarea><div class="highlight"><pre><code class="javascript">require(<span class="string">'alice-button-dropdown'</span>);
+<span class="keyword">var</span> Popup = require(<span class="string">'arale-popup'</span>);
+<span class="keyword">new</span> Popup({
+    trigger: <span class="string">'#popup-trigger'</span>,
+    element: <span class="string">'#popup-element'</span>
+});</code></pre></div><h2 id="tip">Tip<a href="#tip" class="anchor">¶</a></h2><p><a href="http://aralejs.org/tip">Tip</a> 是典型的应用型组件，样式可以使用 JS 来进行载入。</p>
+<p>在 <a href="https://github.com/aralejs/tip/blob/master/src/tip.js#L7">arale/tip</a> 的代码中有这样的调用：</p>
+<div class="highlight"><pre><code class="javascript">require(<span class="string">'./poptip.css'</span>);</code></pre></div><p>使得 tip 不用需要单独引用相关的样式，使用起来非常方便。</p>
+<div class="nico-insert-code"><div id="tip-element">Please hover me!!!</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tip-element"</span>&gt;</span>Please hover me!!!<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><style>
+#tip-element {
+    background:rgb(255, 223, 176);
+    display:inline-block;
+    padding: 3px 5px;
+}
+</style>
+
+<script class="nico-insert-code">(function(){var Tip = window['arale-tip'];
+
+new Tip({
+    trigger: '#tip-element',
+    content: '我是 Tip 的内容'
+});})()</script><textarea mode="javascript" class="spm-doc-textarea">(function(){var Tip = require('arale-tip');
+
+new Tip({
+    trigger: '#tip-element',
+    content: '我是 Tip 的内容'
+});})()</textarea><div class="highlight"><pre><code class="javascript"><span class="keyword">var</span> Tip = require(<span class="string">'arale-tip'</span>);
+
+<span class="keyword">new</span> Tip({
+    trigger: <span class="string">'#tip-element'</span>,
+    content: <span class="string">'我是 Tip 的内容'</span>
+});</code></pre></div><h2 id="dialog">Dialog<a href="#dialog" class="anchor">¶</a></h2><p><a href="http://aralejs.org/dialog">Dialog</a> 模块和 Tip 类似，也是通过 JS 来内联需要的样式。
+不过 Dialog 没有依赖外部的 Alice 模块，因为它的样式只有他自己会使用，于是就把对应的样式
+放在 Dialog 的模块内进行管理。（这也是一种样式的实践方式！）</p>
+<p>这里演示一下 Dialog 下的 Confirmbox 模块的使用。</p>
+<div class="nico-insert-code"><button class="ui-button ui-button-lorange" id="confirmbox">Please click me!!!</button></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-button ui-button-lorange"</span> <span class="attribute">id</span>=<span class="value">"confirmbox"</span>&gt;</span>Please click me!!!<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre></div><script class="nico-insert-code">(function(){window['arale-dialog/src/dialog.css'];
+var Dialog = window['arale-dialog'];
+
+new Dialog.ConfirmBox({
+    trigger: '#confirmbox',
+    title: '您好~',
+    message: '啊哦，您打开了一个对话框！'
+});})()</script><textarea mode="javascript" class="spm-doc-textarea">(function(){require('arale-dialog/src/dialog.css');
+var Dialog = require('arale-dialog');
+
+new Dialog.ConfirmBox({
+    trigger: '#confirmbox',
+    title: '您好~',
+    message: '啊哦，您打开了一个对话框！'
+});})()</textarea><div class="highlight"><pre><code class="javascript">require(<span class="string">'arale-dialog/src/dialog.css'</span>);
+<span class="keyword">var</span> Dialog = require(<span class="string">'arale-dialog'</span>);
+
+<span class="keyword">new</span> Dialog.ConfirmBox({
+    trigger: <span class="string">'#confirmbox'</span>,
+    title: <span class="string">'您好~'</span>,
+    message: <span class="string">'啊哦，您打开了一个对话框！'</span>
+});</code></pre></div><h2 id="更多功能">更多功能<a href="#更多功能" class="anchor">¶</a></h2><p>上面几个示例是常见的 Arale 模块的使用范例，
+Arale 提供了完善的 JavaScript 解决方案，
+更多功能和演示请访问 <a href="http://aralejs.org/"><a href="http://aralejs.org/">http://aralejs.org/</a></a> 。 </p>
+</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            <p class="powered">
+                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aliceui.org">Alice</a> •
+                <a href="http://seajs.org">Sea.js</a> •
+                <a href="http://spmjs.io">spmjs.io</a> •
+                <a href="http://lab.lepture.com/nico/">nico-spm</a>
+            </p>
+            </footer>
+        </div>
+        <script>
+          window['aliceui.org'].init();
+        </script>
+    </body>
+</html>

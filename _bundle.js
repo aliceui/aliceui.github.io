@@ -1,0 +1,13 @@
+module.exports = require('../static/side.js')
+window['./docs/widget.css'] = require('../docs/widget.css');
+window['alice-button-dropdown'] = require('alice-button-dropdown');
+window['alice-select'] = require('alice-select');
+window['alice-tab'] = require('alice-tab');
+window['arale-autocomplete'] = require('arale-autocomplete');
+window['arale-dialog'] = require('arale-dialog');
+window['arale-dialog/src/dialog.css'] = require('arale-dialog/src/dialog.css');
+window['arale-popup'] = require('arale-popup');
+window['arale-switchable'] = require('arale-switchable');
+window['arale-tip'] = require('arale-tip');
+window['jquery'] = require('jquery');
+window['underscore'] = require('underscore');

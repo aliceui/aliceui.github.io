@@ -1,23 +1,102 @@
-# 通用样式库
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alice - 通用样式库</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico-spm 0.5.5" />
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="../static/css/normalize.css" />
+        <link rel="stylesheet" href="../static/css/site.css" />
+        <link rel="stylesheet" href="../static/css/solarized.css" />
+        <link rel="stylesheet" href="../static/style.css" />
 
-- order: 3
-- category: alice
+        <style>
+          /* alipay iconfont */
+          @font-face {
+            font-family: "rei";
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+          }
+          .iconfont {
+            font-family: "rei"!important;
+            font-style: normal;
+            font-weight: normal;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+          }
+        </style>
 
----
+        <script>
+        if (!location.port) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-39169474-1', 'auto');
+          ga('send', 'pageview');
+        }
+        </script>
+        <script src="../static/js/sea.js?nowrap"></script>
 
-> Life is like a box of chocolate.
-*「 Forrest Gump 」1994*
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
 
-这里是一套按照 [Alice 规范](/docs/rule.html) 和支付宝视觉规范搭建的的通用样式模块库。
-找到你需要的模块，复制代码，然后享受生活去吧。
+    </head>
+    <body>
 
-![](https://i.alipayobjects.com/e/201303/2MQNiaBkFJ.png)
-
----
-
-`````html
-<script type="text/spm">
-    require('./widget.css');
+        <script src="../dist/bundle.js?nowrap"></script>
+        
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <h1>
+                        <a href="../">Alice</a>
+                    </h1>
+                    <p class="description">写样式的更好方式</p>
+                    <img src="/static/alice-top.png" alt="alice" />
+                </div>
+                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="build.html">构建模块和样式库</a></li>
+                    <li><a href="framework.html">基础框架</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="rule.html">规范和最佳实践</a></li>
+                    <li><a href="start.html">开始使用</a></li>
+                    <li><a href="tool.html">工具</a></li>
+                    <li><a href="widget.html">通用样式库</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
+                    </ul>
+                </div>
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>通用样式库</h1>
+                    <div class="content"><!--filepath:docs/widget.md --> <blockquote>
+<p>Life is like a box of chocolate.
+<em>「 Forrest Gump 」1994</em></p>
+</blockquote>
+<p>这里是一套按照 <a href="/docs/rule.html">Alice 规范</a> 和支付宝视觉规范搭建的的通用样式模块库。
+找到你需要的模块，复制代码，然后享受生活去吧。</p>
+<p><img src="https://i.alipayobjects.com/e/201303/2MQNiaBkFJ.png" alt=""></p>
+<hr>
+<div class="nico-insert-code"><script >
+    window['./docs/widget.css'];
 </script>
 
 <script type="text/template" id="alice-module">
@@ -140,10 +219,10 @@ a {
 
 <div class="alice-modules"></div>
 
-<script type="text/spm">
-var $ = require('jquery');
-var _ = require('underscore');
-var Popup = require('arale-popup');
+<script >
+var $ = window['jquery'];
+var _ = window['underscore'];
+var Popup = window['arale-popup'];
 
 $('.alice-modules').on('mouseenter', '.alice-module-demo', function() {
     $(this).find('.alice-module-sourcecode').fadeIn(200);
@@ -242,5 +321,23 @@ function substractTitle(item) {
     list.appendTo('.side-area ul');
     return list;
 }
-</script>
-`````
+</script></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            <p class="powered">
+                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aliceui.org">Alice</a> •
+                <a href="http://seajs.org">Sea.js</a> •
+                <a href="http://spmjs.io">spmjs.io</a> •
+                <a href="http://lab.lepture.com/nico/">nico-spm</a>
+            </p>
+            </footer>
+        </div>
+        <script>
+          window['aliceui.org'].init();
+        </script>
+    </body>
+</html>

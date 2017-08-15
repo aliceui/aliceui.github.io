@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">        
+        <title>Alice - 写样式的更好方式</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico-spm 0.5.5" />
+        <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="./static/css/normalize.css" />
+        <link rel="stylesheet" href="./static/css/site.css" />
+        <link rel="stylesheet" href="./static/css/solarized.css" />
+        <link rel="stylesheet" href="./static/style.css" />
+
+        <style>
+          /* alipay iconfont */
+          @font-face {
+            font-family: "rei";
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+            src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+            url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+          }
+          .iconfont {
+            font-family: "rei"!important;
+            font-style: normal;
+            font-weight: normal;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+          }
+        </style>
+
+        <script>
+        if (!location.port) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-39169474-1', 'auto');
+          ga('send', 'pageview');
+        }
+        </script>
+        <script src="./static/js/sea.js?nowrap"></script>
+
+        <!--[if lt IE 9]>
+        <script src="./static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+
+    </head>
+    <body>
+
+        <script src="./dist/bundle.js?nowrap"></script>
+        
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <h1>
+                        <a href="./">Alice</a>
+                    </h1>
+                    <p class="description">写样式的更好方式</p>
+                    <img src="/static/alice-top.png" alt="alice" />
+                </div>
+                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="docs/build.html">构建模块和样式库</a></li>
+                    <li><a href="docs/framework.html">基础框架</a></li>
+                    <li><a href="docs/javascript.html">JavaScript</a></li>
+                    <li><a href="docs/rule.html">规范和最佳实践</a></li>
+                    <li><a href="docs/start.html">开始使用</a></li>
+                    <li><a href="docs/tool.html">工具</a></li>
+                    <li><a href="docs/widget.html">通用样式库</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#alice-是什么">Alice 是什么</a></li><li><a href="#alice-的特点">Alice 的特点</a></li><li><a href="#兼容性">兼容性</a></li><li><a href="#和-arale-的关系">和 Arale 的关系</a></li><li><a href="#加入我们">加入我们</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>关于 Alice</h1>
+                    <div class="content"><!--filepath:README.md --> <h2 id="alice-是什么">Alice 是什么<a href="#alice-是什么" class="anchor">¶</a></h2><p>Alice 是漫游仙境的童话女神，是支付宝的样式解决方案，是一套精选的基于 <a href="http://spmjs.io/search?q=alice">spm</a> 生态圈的样式模块集合，是 Arale 的子集，也是一套模块化的样式命名和组织规范，是写 <code>CSS</code> 的更好方式。</p>
+<p>她包括了一套通用样式模块库，一个模块化样式构建规范，一组帮助书写和组织样式的工具，以及产出更多 Alice 模块和样式库的完善方案。</p>
+<p><img src="/static/alice_by_meago.png" alt=""></p>
+<blockquote>
+<p>图片来自 <a href="http://meago.deviantart.com/art/Alice-350967722">meago</a>。</p>
+</blockquote>
+<h2 id="alice-的特点">Alice 的特点<a href="#alice-的特点" class="anchor">¶</a></h2><ol>
+<li><p>模块化的命名和组织方式。</p>
+<p>基于 <code>spm</code> 生态圈，使用了Alice 命名规范，以模块的方式组织样式。</p>
+</li>
+<li><p>强大的工具支持。</p>
+<p>Alice 使用了 <code>spm</code>、<code>nico</code>、<code>Peaches</code> 等实用的工具帮助开发样式。</p>
+</li>
+<li><p>使用 <code>iconfont</code> 和 <code>CSS3</code> 技术。</p>
+<p>我们推崇纯色和简单渐变的视觉效果，Alice 的通用样式模块一律不使用背景图片来实现，
+而是使用了 <code>iconfont</code> 和渐进增强的 <code>CSS3</code> 技术，视觉上有更好的适应性和现代感，并且支持 <code>Retina</code> 屏幕，
+而在低端浏览器下只保证了基础的视觉支持（比如没有圆角）。</p>
+<p>不使用图片的另一个好处是可以在页面中大胆使用通用模块而不用担心请求数过多影响性能。</p>
+<blockquote>
+<p>注：一切必须用背景图片才能实现的视觉效果都是耍流氓。</p>
+</blockquote>
+</li>
+<li><p>提供了样式开发方案。</p>
+<p>Alice 不仅仅是一套前端精选模块集，她为写样式提供了一套更好的方案，
+你能够很容易基于她的体系来产出属于自己和团队的模块和样式库。</p>
+</li>
+<li><p>完整的前端开发体系。</p>
+<p>Alice 是 <code>Arale</code> 的子集，她完善和补充了 Arale 中对于样式的解决方案。在背后有着 Arale 的强大支持，
+Alice 的样式模块也能做更多事情。</p>
+</li>
+</ol>
+<h2 id="兼容性">兼容性<a href="#兼容性" class="anchor">¶</a></h2><p>严正声明，我们不支持 <code>IE5.5</code> 或更早的版本！</p>
+<p>Alice 基于支付宝的实际需求产出了一套通用样式模块，因此这些模块仍然需要支持 <code>IE6/7</code> ，
+但不拘泥在低级浏览器上的视觉效果（我们讨厌它们，所以把视觉弄得很丑）。</p>
+<h2 id="和-arale-的关系">和 Arale 的关系<a href="#和-arale-的关系" class="anchor">¶</a></h2><p>Alice 是 Arale 的子集，是原有的 Arale 体系中对样式的补充。
+使用 Alice 的样式规范和工具开发出来的样式很容易和 Arale 的 JavaScript 的模块配合。</p>
+<p>什么，对 Arale 不熟悉？可以先访问下 Arale 的<a href="http://aralejs.org/">官网</a>。</p>
+<h2 id="加入我们">加入我们<a href="#加入我们" class="anchor">¶</a></h2><p>Alice 的前身是 <a href="http://github.com/sofish/alice"><a href="http://github.com/sofish/alice">http://github.com/sofish/alice</a></a>，
+新方案是在此基础上结合了 cmd 生态圈的特性和这一年来对实际需求的总结而产出的。
+感谢 <a href="http://sofish.de/">@小鱼</a> <a href="http://www.zhanxin.info/">@展新</a> @欣欣 同学过去的工作成果，也感谢社区对我们的关注和贡献。</p>
+<p>这是一个开放的体系，非常欢迎大家在 Alice 的规范下产出自己的模块和样式库。</p>
+<p>若对 Alice 有任何问题或建议，欢迎提 <a href="https://github.com/aliceui/aliceui.org/issues/new">issue</a> 与我们沟通。</p>
+<p><a href="https://github.com/aliceui/aliceui.org">Github 仓库</a></p>
+<p><a href="https://github.com/aliceui/">Github 组织</a></p>
+<p><a href="http://aralejs.org">Arale 官网</a></p>
+</div>
+                </div>
+                <div class="comment-area">
+                    <!-- Duoshuo Comment BEGIN -->
+                    <div class="ds-thread"></div>
+                    <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"aliceui"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = 'http://static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] 
+                        || document.getElementsByTagName('body')[0]).appendChild(ds);
+                        })();
+                    </script>
+                    <!-- Duoshuo Comment END -->
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            <p class="powered">
+                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aliceui.org">Alice</a> •
+                <a href="http://seajs.org">Sea.js</a> •
+                <a href="http://spmjs.io">spmjs.io</a> •
+                <a href="http://lab.lepture.com/nico/">nico-spm</a>
+            </p>
+            </footer>
+        </div>
+        <script>
+          window['aliceui.org'].init();
+        </script>
+    </body>
+</html>
